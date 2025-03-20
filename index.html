@@ -58,6 +58,7 @@
 
     <style>
 
+
         p {
             font-family: 'Spartan', sans-serif;
             font-size: 1.1rem;
@@ -423,6 +424,7 @@
             box-sizing: border-box;
             z-index: 99;
             position: relative;
+            overflow: hidden;
         }
 
         section.hero {
@@ -948,6 +950,24 @@
         }
 
 
+        @media only screen and (max-width: 1000px) {
+            
+            :root {
+                font-size: 12px;
+            }
+
+            div.subtitle-container-hero {
+                flex-direction: column;
+                width: 100%;
+                gap: 12rem;
+            }
+
+            div.subtitle-hero.right {
+                align-self: flex-end;
+            }
+        }
+
+
     </style>
 
 </head>
@@ -1003,7 +1023,7 @@
                 </div>
             </div>
 
-            <div class="title-container wide subtitle-hero">
+            <div class="title-container wide subtitle-hero right">
                 <div class="title-line-h1 wide small-gap right-align">
                     <h4>Hosted&nbsp;by</h4>
                 </div>
