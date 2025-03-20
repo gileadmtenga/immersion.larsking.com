@@ -1,0 +1,2526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- FONT FACE DECLARATIONS -->
+
+    <style>
+
+        @font-face {
+            font-family: 'Spartacus';
+            src: url('font-familia/SpartacusGMT-Light.woff2') format('woff2');
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Spartacus';
+            src: url('font-familia/SpartacusGMT-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Spartacus';
+            src: url('font-familia/SpartacusGMT-Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Spartacus';
+            src: url('font-familia/SpartacusGMT-SemiBold.woff2') format('woff2');
+            font-weight: 600;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Bask Bliss';
+            src: url('font-familia/BaskBlissGMT-Italic.woff2') format('woff2');
+            font-weight: 600;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Spartan';
+            src: url('font-familia/Spartan.woff2') format('woff2-variations');
+            font-weight: 100 1000;
+            font-display: swap;
+        }
+
+    </style>
+
+    <!-- FONT FACE DECLARATIONS -->
+
+    <style>
+
+        p {
+            font-family: 'Spartan', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            font-weight: 350;
+            max-width: 800px;
+        }
+
+        p.testimonials {
+            font-size: 1rem;
+        }
+
+        p.modalities {
+            font-size: 1.025rem;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Spartacus', sans-serif;
+            line-height: initial;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        strong.four {
+            font-weight: 400;
+        }
+
+        strong.five {
+            font-weight: 500;
+        }        
+
+        em {
+            font-family: 'Bask Bliss';
+            line-height: inherit;
+            letter-spacing: 0.05em;
+        }
+
+        .h-wrap {
+            font-family: 'Spartan', sans-serif;
+            line-height: 1.5;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 300;
+        }
+
+
+        h1.h-wrap {
+            font-size: calc(4rem * .92);
+        }
+
+        h1.h-wrap > em {
+            font-size: 4rem;
+        }
+
+        h2.and-a-half {
+            font-size: 3.25rem;
+            line-height: .69;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            font-weight: 300;
+            line-height: .65;
+        }
+
+        h2.h-wrap {
+            font-size: calc(2.25rem * .92);
+        }
+
+        h2.h-wrap > em {
+            font-size: 2.25rem;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            font-weight: 400;
+            line-height: .7;
+        }
+
+        h3.h-wrap {
+            font-size: calc(1.75rem * .92);
+        }
+
+        h3.h-wrap > em {
+            font-size: 1.75rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: .65;
+        }
+
+        h4.h-wrap {
+            font-size: calc(1.5rem * .92);
+        }
+
+        h4.h-wrap > em {
+            font-size: 1.5rem;
+        }
+
+        h5 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: .65;
+        }
+
+        h5.h-wrap {
+            font-size: calc(1.25rem * .92);
+        }
+
+        h5.h-wrap > em {
+            font-size: 1.25rem;
+        }
+
+        h6 {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: .65;
+        }
+
+        h6.h-wrap {
+            font-size: calc(1rem * .92);
+        }
+
+        h6.h-wrap > em {
+            font-size: 1rem;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+    </style>
+
+    <!-- ELEMENT STYLES -->
+
+    <style>
+
+        :root {
+                --gold: #FAB837;
+                --blue: #0080FF;
+                font-size: 16px;
+        }
+
+        html {
+            background:
+                linear-gradient(rgba(0, 128, 255, 0.36), rgba(0, 128, 255, 0.36)) fixed,
+                linear-gradient(0.52turn, var(--blue), rgba(0, 128, 255, .75), rgba(0, 128, 255, 0), var(--blue)) fixed,
+                url("HFLIP-lars-king-pointholding-immersion-steve-petty-unsplash.png") var(--blue) no-repeat center fixed;
+            background-size: cover;
+            background-blend-mode: normal, normal, normal;
+            z-index: -999;
+            position: relative;
+        }
+
+        html::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(grain-slow-240px-50OPA.gif) repeat;
+            background-size: 120px 90px;
+            opacity: 0.045; /* Adjust for transparency */
+            pointer-events: none; /* Ensures it doesn't block interactions */
+            mix-blend-mode: lighten; /* Adjust blend mode for effect */
+            z-index: -9; /* Places it over other layers */
+        }
+
+        section.subtitle::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(grain-slow-240px-50OPA.gif) repeat;
+            background-size: 120px 90px;
+            opacity: 0.5; /* Adjust for transparency */
+            pointer-events: none; /* Ensures it doesn't block interactions */
+            mix-blend-mode: lighten; /* Adjust blend mode for effect */
+            z-index: -9; /* Places it over other layers */
+        }
+
+
+        section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(grain-slow-240px-50OPA.gif) repeat;
+            background-size: 120px 90px;
+            opacity: 0.03; /* Adjust for transparency */
+            pointer-events: none; /* Ensures it doesn't block interactions */
+            mix-blend-mode: lighten; /* Adjust blend mode for effect */
+            z-index: 99; /* Places it over other layers */
+        }
+
+        /* 
+
+            background: 
+                linear-gradient(0deg, rgba(0, 128, 255, 0.36) 0%,
+                rgba(0, 128, 255, 0.36) 100%), 
+                linear-gradient(0deg, #0080FF 0.05%,
+                rgba(0, 128, 255, 0.00) 50.11%, #0080FF 100.05%),
+                url("grain-slow.gif") lightgray 0% 0% / 50px 50px repeat,
+                url("HFLIP-lars-king-pointholding-immersion-steve-petty-unsplash.png") lightgray 50% / cover no-repeat;
+                
+            background-blend-mode: 
+                lighten, 
+                normal, 
+                hue, 
+                normal;
+
+                url("HFLIP-lars-king-pointholding-immersion-steve-petty-unsplash.png") no-repeat center fixed;
+        
+        */
+
+        body {
+              
+                margin: 0%;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: antialiased;
+        }
+
+        img {
+            image-rendering: -webkit-optimize-contrast;
+            position: relative;
+        }
+
+
+
+        /* LINK BUTTON ETC. STYLES */
+
+        button {
+                background-color: #FAB837;
+                color: #FFF;
+                font-family: Spartan;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 400;
+                text-transform: uppercase;
+                padding: 1rem 1.8rem;
+                cursor: pointer;
+                font-family: 'League Spartan', sans-serif;
+                letter-spacing: 0.1rem;
+                border: none;
+                border-radius: 0rem;
+                box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
+                line-height: .8;
+            }
+
+            button:hover {
+                background-color: #FFF;
+                color: #FAB837;
+                box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.3);
+            }
+
+        /* BASE, VARIABLE MISC. STYLES */
+
+        .gold {
+            color: var(--gold);
+        }
+
+        .blue {
+            color: var(--blue);
+        }
+
+        .border-gold {
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .border-gold-small {
+            border-bottom: 1px solid var(--gold);
+        }
+
+        .border-blue {
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .border-blue-small {
+            border-bottom: 1.5px solid var(--blue);
+        }
+
+        .wide {
+            width: 100%;
+        }
+
+        .left-align {
+            justify-content: start;
+        }
+
+        .right-align {
+            justify-content: end;
+        }
+
+        .center-align {
+            justify-content: center;
+        }
+
+        .self-ailgn-start {
+            align-self: center;
+        }
+
+        .self-ailgn-center {
+            align-self: center;
+        }
+
+        .self-ailgn-right {
+            align-self: center;
+        }
+
+        .big-gap {
+            gap: 1rem;
+        }
+
+        .medium-gap {
+            gap: .75rem;
+        }
+
+        .small-gap {
+            gap: .5rem;
+        }
+
+        img.community {
+            max-width: 400px;
+            opacity: 0.99;
+        }
+
+        /* SECTION STYLES */
+
+        section {
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 99;
+            position: relative;
+        }
+
+        section.hero {
+            padding: 6.5rem;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            min-height: 400px;
+            justify-content: space-between;
+        }
+
+        section.main {
+            display: flex;
+            padding: 6.5rem 4rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6.5rem;
+            align-self: stretch;
+            z-index: 1;
+        }
+
+        section.subtitle {
+            gap: 4rem;
+            background: url(story-bg-lars-king-pointholding-immersion-sean-sinclair-C_NJKfnTR5A-unsplash.png) #F1EFE9 no-repeat center fixed;
+            background-blend-mode: normal;
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
+            z-index: 999;
+            overflow: visible;
+            position: relative;
+        }
+
+        section.story {
+            justify-items: start;
+            padding: 6.5rem;
+        }
+
+        section.one {
+            background-color: rgba(255, 255, 255, 0.98);
+        }
+
+        section.banner {
+            gap: 8rem;
+            background: linear-gradient(180deg, rgba(0, 128, 255, 0.00) 0%, rgba(0, 128, 255, 0.50) 50%, rgba(0, 128, 255, 0.00) 100%);
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.09) inset;
+            padding: 8rem;
+        }
+
+        section.alchemical {
+            gap: 6.5rem;
+            padding: 6.5rem;
+            padding-bottom: 0;
+        }
+
+        section.right-for-you {
+            background-color: rgba(255, 255, 255, 0.9);
+            flex-direction: row;
+            padding: 6rem;
+            gap: 6rem;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+        
+        section.testimonials {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25) inset;
+            padding: 6rem;
+            gap: 6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+
+        section.modalities {
+            padding: 6rem;
+            gap: 6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+
+
+        section.footer {
+            background-color: #0080FF;
+            padding: 5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* DIV STYLES */
+        
+        div.container {
+            display: flex;
+            max-width: 900px;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 2.5rem;
+            align-self: center;
+        }
+
+        div.title-container {
+            display: flex;
+            max-width: 1200px;
+            flex-direction: column;
+            align-self: stretch;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        div.title-container.banner {
+            align-self: center;
+        }
+
+        div.title-container.subtitle-hero {
+            max-width: 350px;
+            gap: .75rem;
+            align-self: stretch;
+        }
+        
+        div.title-container.bigger-gap {
+            gap: 1.25rem;
+        }
+
+        div.subtitle-container-hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: stretch;
+        }
+
+        div.title-line-h1 {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        div.container-columns {
+            display: flex;
+            max-width: 1200px;
+            justify-content: center;
+            align-items: end;
+            align-self: center;
+            gap: 4rem;
+        }
+
+        div.container-columns.two {
+            max-width: none;
+            justify-content: start;
+            align-items: end;
+            align-self: stretch;
+            gap: 0rem;
+            width: 100%;
+        /* 
+            background-image: url(alchemical-zdenek-machacek-L2Y43N68k4Y-unsplash.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right top;
+        */
+        }
+
+        div.community-copy {
+            display: flex;
+            max-width: 900px;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 4rem;
+            align-self: flex-end;
+        }
+
+        img.alchemical {
+            width: 100%;
+            min-width: 555px;
+            max-width: 777px;
+        }
+
+        div.alchemical {
+            display: flex;
+            width: 100%;
+            justify-self: center;
+        }
+
+        div.right-for-you {
+            display: flex;
+            max-width: 900px;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 2.5rem;
+            padding: 2.5rem;
+            width: 100%;
+            background-color: #FFF;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            font-weight: 300;
+            padding-inline-start: 1rem;
+            list-style-type: circle;
+            gap: 1.3rem;
+            font-family: 'Spartan', sans-serif;
+
+
+            font-size: 1.1rem;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            font-weight: 350;
+
+        }
+
+        li {
+            align-self: center;
+            /* list-style-position: inside; Moves bullets inside the content area */
+        }
+
+
+        ul.two {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            gap: 3.5rem;
+            color: #EAF5FF;
+            letter-spacing: .1em;
+            list-style-type: none;
+            background: radial-gradient(50% 50% at 50% 50%, #0080FF 0%, rgba(0, 128, 255, 0.00) 100%);
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        div.testimonials-columns {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2rem;
+            align-self: stretch;
+        }
+
+        div.testimonials-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+            width: 100%;
+        }
+
+        div.testimonials-column-two {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+            width: 45%;
+        }
+
+        div.testimonial {
+            display: flex;
+            padding: 1.5rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            align-self: stretch;
+            background: #EAF5FF
+        }
+
+        div.quote {
+            display: flex;
+            padding: 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+            align-self: stretch;
+            background: rgba(255, 255, 255, 0.75);
+            line-height: 1.5;
+        }
+
+        div.author {
+            display: flex;
+            padding: 0px 20px 20px 20px;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: .5rem;
+            align-self: stretch;
+            text-align: right;
+            color: var(--blue);
+        }
+
+        p.quote {
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.5;
+            font-family: 'Spartan', sans-serif;
+            text-transform: uppercase;
+            color: var(--blue);
+        }
+
+        p.author {
+            font-size: .9rem;
+            font-weight: 500;
+            line-height: 1.5;
+            font-family: 'Spartan', sans-serif;
+            text-transform: uppercase;
+            color: var(--blue);
+        }
+
+        div.modalities-columns {
+            display: flex;
+            max-width: 1200px;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 5rem;
+            align-self: center;
+        }
+
+        div.modalities-column-links {
+            display: flex;
+            width: 300px;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 4rem;
+            position: sticky;
+            top: -1px;
+        }
+
+        div.modalities-column-copy {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        div.modality {
+            display: flex;
+            padding: 2rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            align-self: stretch;
+            background: #EAF5FF;
+        }
+
+        div.modality-title {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            align-self: stretch;
+            color: #0080FF;
+            gap: .5rem;
+        }
+
+        div.modality-copy {
+            display: flex;
+            padding: 2rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            align-self: stretch;
+            background-color: #FFF;
+        }
+
+        a.modalities {
+            color: #0080FF;
+            text-decoration: none;
+        }
+
+        a.modalities.first {
+            margin-top: 4rem;
+        }
+
+        a.modalities:hover {
+            color: #FAB837;
+            cursor: pointer;
+        }
+
+        a.modalities:active {
+            color: #FAB837;
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #FAB837;
+        }
+
+        a.bio-link {
+            text-transform: none;
+            color: #0080FF;
+        }
+
+        a.bio-link:hover {
+            color: #FAB837;
+        }
+
+        a.ig:hover {
+            opacity: .5;
+        }
+
+        div.picture-wrapper {
+            display: flex;
+            width: 25rem;
+            height: 25rem;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 0rem;
+        }
+
+        div.picture-frame {
+            background-image: url(northstar-picture-frame.svg);
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1/1;
+        }
+
+        div.picture-border {
+            border-radius: 50%;
+            border: 1px solid rgba(250, 184, 55, 0.20);
+            width: 300px;
+            padding: .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1/1;
+        }
+
+        img.frame {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
+
+        img.frame {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
+
+        div.container.bios {
+            display: flex;
+            max-width: 1200px;
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
+            flex-direction: row;
+        }
+
+        div.bios-copy {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            align-self: center;
+        }
+
+        div.bios-title {
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+            color: #0080FF;
+            gap: 1rem;
+        }
+
+        div.story {
+            display: flex; 
+            flex-direction: column; 
+            gap: 4rem; 
+            align-items: stretch; 
+            width: 100%;
+        }
+
+        div.footer-title-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8rem;
+            align-self: stretch;
+        }
+
+        div.footer-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        div.line-footer {
+            width: 9rem;
+            height: 1px;
+            background-color: #FAB837;
+            margin-top: 0.2rem;
+        }
+
+        a.footer-links {
+            color: #FAB837;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        a.footer-links:hover {
+            color: #FAB837;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.2rem;
+        }
+
+        div.container.grid.parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- HERO HERO -->
+
+    <section class="gold hero">
+
+        <div class="title-container">
+
+            <h1 style="font-weight: normal;">Welcome</h1>
+
+            <h1>to&nbsp;the&nbsp;1&#8209;Day</h1>
+
+            <div class="title-line-h1 border-gold wide"><h1><strong>Pointholding</strong></h1></div>
+
+            <div class="title-line-h1 wide right-align">
+                <h1><em>Immersion</em></h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 59 60" fill="none">
+                    <path d="M29.5 57.5L35.2117 40.1328L29.5 30V57.5Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M39.6328 24.2882L43.25 16.25L29.5 30L39.6328 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M35.2117 19.8672L29.5 2.5V30L35.2117 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M23.7882 19.8672L15.75 16.25L29.5 30L23.7882 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M19.3672 24.2882L2 30H29.5L19.3672 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 30L39.6328 24.2882L57 30H29.5ZM29.5 30L39.6328 35.7117L43.25 43.75L29.5 30ZM29.5 30L23.7882 40.1328L15.75 43.75L29.5 30Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M23.7882 40.1328L29.5 57.5V30L23.7882 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M35.2117 40.1328L43.25 43.75L29.5 30L35.2117 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M39.6328 35.7117L57 30H29.5L39.6328 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M43.25 16.25L35.2117 19.8672L29.5 30L43.25 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M29.5 2.5L23.7882 19.8672L29.5 30V2.5Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M15.75 16.25L19.3672 24.2882L29.5 30L15.75 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M2 30L19.3672 35.7117L29.5 30H2Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M19.3672 35.7117L15.75 43.75L29.5 30L19.3672 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M29.5 2.5L35.2117 19.8672M29.5 2.5L23.7882 19.8672M29.5 2.5V30M35.2117 19.8672L43.25 16.25M35.2117 19.8672L29.5 30M23.7882 19.8672L15.75 16.25M23.7882 19.8672L29.5 30M15.75 16.25L19.3672 24.2882M15.75 16.25L29.5 30M19.3672 24.2882L2 30M19.3672 24.2882L29.5 30M2 30L19.3672 35.7117M2 30H29.5M19.3672 35.7117L15.75 43.75M19.3672 35.7117L29.5 30M15.75 43.75L23.7882 40.1328M15.75 43.75L29.5 30M23.7882 40.1328L29.5 57.5M23.7882 40.1328L29.5 30M29.5 57.5L35.2117 40.1328M29.5 57.5V30M35.2117 40.1328L43.25 43.75M35.2117 40.1328L29.5 30M43.25 43.75L39.6328 35.7117M43.25 43.75L29.5 30M39.6328 35.7117L57 30M39.6328 35.7117L29.5 30M57 30L39.6328 24.2882M57 30H29.5M39.6328 24.2882L43.25 16.25M39.6328 24.2882L29.5 30M43.25 16.25L29.5 30" stroke="#FAB837"/>
+                  </svg>
+            </div>
+
+        </div>
+
+        <div class="subtitle-container-hero">
+
+            <div class="title-container wide subtitle-hero">
+                <h4><strong>Austin</strong></h4>
+                <div class="title-line-h1 wide small-gap">
+                    <div class="title-line-h1 wide border-gold-small small-gap">
+                        <h4>Texas</h4>
+                    </div>
+                    <h4><strong>April&nbsp;19</strong></h4>
+                </div>
+                <div class="title-line-h1 wide small-gap right-align">
+                    <h4><em>2025</em></h4>
+                </div>
+            </div>
+
+            <div class="title-container wide subtitle-hero">
+                <div class="title-line-h1 wide small-gap right-align">
+                    <h4>Hosted&nbsp;by</h4>
+                </div>
+                <div class="title-line-h1 wide border-gold-small small-gap">
+                    <h4><em>Lars&nbsp;King</em></h4>
+                </div>
+                <h4>&&nbsp;2&nbsp;Skilled&nbsp;Facilitators</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SUBbb  -  TITLESSSSS -->
+
+    <section class="main subtitle">
+        <div class="container wide">
+            
+            <div class="title-container blue">
+
+                <h2>
+                    Restore&nbsp;the&nbsp;<strong>Light,</strong>
+                </h2>
+                <div class="title-line-h1 wide">
+                    
+
+                    <div class="title-line-h1">
+                        <h2><strong>Power</strong>&nbsp;and&nbsp;<strong>Truth</strong></h2>
+                    </div>
+
+                    <div class="title-line-h1 border-blue right-align wide">
+                        <h2><em>of&nbsp;your</em></h2>
+                    </div>
+
+                </div>
+                <div class="title-line-h1 right-align wide">
+                    <h2><em>Authentic&nbsp;Nature</em></h2>
+                </div>
+            </div>
+
+            <p>
+                You are invited to join me and a team of skilled facilitators in an intimate 
+                1-day immersion that is an answer to a prayer so many of us carry in our hearts. 
+                This is the most powerful offering I have.
+            </p>
+
+            <button>
+                Book <em>Now</em>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- SIMMMBBAAAAA... REEEEMEMMBERRRRR WHOOO YOU ARREEEE -->
+
+    <section class="main  one" style="padding: 6.5rem;">
+        
+        <div class="title-container bigger-gap blue" style="max-width: none;">
+
+            <h2 class="and-a-half">
+                This&nbsp;<em>Immersion</em>
+            </h2>
+            <div class="title-line-h1 wide">
+                
+
+                <div class="title-line-h1">
+                    <h2 class="and-a-half">
+                        is&nbsp;<strong>Based&nbsp;On</strong>
+                    </h2>
+                </div>
+
+                <div class="title-line-h1 border-blue right-align wide">
+                    <h2 class="and-a-half">
+                        <em>3&nbsp;Key</em>
+                    </h2>
+                </div>
+
+            </div>
+            <div class="title-line-h1 right-align wide">
+                <svg style="margin-top: -5px;" width="2.5rem" height="2.5rem" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="northstar-simple" d="M17 2.5L20.1155 11.973M17 2.5L13.8845 11.973M17 2.5V17.5M20.1155 11.973L24.5 10M20.1155 11.973L17 17.5M13.8845 11.973L9.5 10M13.8845 11.973L17 17.5M9.5 10L11.473 14.3845M9.5 10L17 17.5M11.473 14.3845L2 17.5M11.473 14.3845L17 17.5M2 17.5L11.473 20.6155M2 17.5H17M11.473 20.6155L9.5 25M11.473 20.6155L17 17.5M9.5 25L13.8845 23.027M9.5 25L17 17.5M13.8845 23.027L17 32.5M13.8845 23.027L17 17.5M17 32.5L20.1155 23.027M17 32.5V17.5M20.1155 23.027L24.5 25M20.1155 23.027L17 17.5M24.5 25L22.527 20.6155M24.5 25L17 17.5M22.527 20.6155L32 17.5M22.527 20.6155L17 17.5M32 17.5L22.527 14.3845M32 17.5H17M22.527 14.3845L24.5 10M22.527 14.3845L17 17.5M24.5 10L17 17.5" stroke="#0080FF"/>
+                </svg>
+                <h2 class="and-a-half">
+                    <em>Remembrances</em>
+                </h2>
+            </div>
+        </div>
+
+        <div class="container wide">
+            <div class="title-container blue">
+                <h3>
+                    <em>Remember</em>
+                </h3>
+
+                <div class="title-line-h1 wide">
+                    <div class="title-line-h1 border-blue-small right-align" style="width: 3rem;"></div>
+                    <h3>What&nbsp;Got&nbsp;Stuck</h3>
+                </div>
+            </div>
+
+            <p> 
+                Unlock and process deep-seated memories and stuck emotions—those that have been 
+                lodged in your body for months, years, or even decades. In our safe and supportive 
+                environment, these energies will surface, be processed, released, and transformed, 
+                allowing you to reclaim the light of your real self.
+            </p>
+        </div>
+
+        <div class="container wide">
+            <div class="title-container blue">
+                
+                <div class="title-line-h1 wide">
+                    <h3>Re</h3>
+                    <div class="title-line-h1 border-blue-small right-align" style="width: 3rem;"></div>
+                    <h3><em>Member</em></h3>
+                </div>
+            </div>
+
+            <p> 
+                Literally "come back into your body" where you have left parts of yourself behind. 
+                This reintegration is crucial for experiencing your full presence and power.
+            </p>
+        </div>
+
+        <div class="container wide">
+            <div class="title-container blue">
+                <h3>
+                    <em>Remember</em>
+                </h3>
+
+                <div class="title-line-h1 wide">
+                    <div class="title-line-h1 border-blue-small right-align" style="width: 4rem;"></div>
+                    <h3><em>Who&nbsp;You&nbsp;Are</em></h3>
+                </div>
+            </div>
+
+            <p> 
+                Feel secure reconnecting with your true nature as a unique being of love, empowerment, and inspiration.
+            </p>
+        </div>
+
+    </section>
+
+    <!--BANNER + BUTTON-->
+
+    <section class="main banner gold">
+
+        <div class="title-container banner wide">
+
+            <h1>The&nbsp;1-Day</h1>
+
+            <div class="title-line-h1 border-gold wide"><h1><strong>Pointholding</strong></h1></div>
+
+            <div class="title-line-h1 wide right-align">
+                <h1><em>Immersion</em></h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 59 60" fill="none">
+                    <path d="M29.5 57.5L35.2117 40.1328L29.5 30V57.5Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M39.6328 24.2882L43.25 16.25L29.5 30L39.6328 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M35.2117 19.8672L29.5 2.5V30L35.2117 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M23.7882 19.8672L15.75 16.25L29.5 30L23.7882 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M19.3672 24.2882L2 30H29.5L19.3672 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 30L39.6328 24.2882L57 30H29.5ZM29.5 30L39.6328 35.7117L43.25 43.75L29.5 30ZM29.5 30L23.7882 40.1328L15.75 43.75L29.5 30Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M23.7882 40.1328L29.5 57.5V30L23.7882 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M35.2117 40.1328L43.25 43.75L29.5 30L35.2117 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M39.6328 35.7117L57 30H29.5L39.6328 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M43.25 16.25L35.2117 19.8672L29.5 30L43.25 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M29.5 2.5L23.7882 19.8672L29.5 30V2.5Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M15.75 16.25L19.3672 24.2882L29.5 30L15.75 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M2 30L19.3672 35.7117L29.5 30H2Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M19.3672 35.7117L15.75 43.75L29.5 30L19.3672 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M29.5 2.5L35.2117 19.8672M29.5 2.5L23.7882 19.8672M29.5 2.5V30M35.2117 19.8672L43.25 16.25M35.2117 19.8672L29.5 30M23.7882 19.8672L15.75 16.25M23.7882 19.8672L29.5 30M15.75 16.25L19.3672 24.2882M15.75 16.25L29.5 30M19.3672 24.2882L2 30M19.3672 24.2882L29.5 30M2 30L19.3672 35.7117M2 30H29.5M19.3672 35.7117L15.75 43.75M19.3672 35.7117L29.5 30M15.75 43.75L23.7882 40.1328M15.75 43.75L29.5 30M23.7882 40.1328L29.5 57.5M23.7882 40.1328L29.5 30M29.5 57.5L35.2117 40.1328M29.5 57.5V30M35.2117 40.1328L43.25 43.75M35.2117 40.1328L29.5 30M43.25 43.75L39.6328 35.7117M43.25 43.75L29.5 30M39.6328 35.7117L57 30M39.6328 35.7117L29.5 30M57 30L39.6328 24.2882M57 30H29.5M39.6328 24.2882L43.25 16.25M39.6328 24.2882L29.5 30M43.25 16.25L29.5 30" stroke="#FAB837"/>
+                  </svg>
+            </div>
+
+        </div>
+
+        <button>
+            Book <em>Now</em>
+        </button>
+
+    </section>
+
+    <!-- ALCHEMICAL BUTTERFLY -->
+
+    <section class="main  one alchemical">
+
+        <div class="container-columns">
+
+            <div class="picture-wrapper">
+
+                <img class="community " src="img-community.png" alt="COMMUNITY"> 
+
+            </div>
+
+            <div class="community-copy" >
+
+                <div class="title-container bigger-gap blue" style="align-self: auto;">
+
+                    <div class="title-line-h1 wide">
+                        <h3>Transformative</h3>
+                        <div class="title-line-h1 border-blue-small right-align wide"></div>
+                    </div>
+
+                    <h3>
+                        <em>COMMUNITY&nbsp;&&nbsp;SUPPORT</em>
+                    </h3>
+                </div>
+                
+                <p>
+                    The Pointholding Immersion is more than just an immersion; it's an intimate 
+                    community experience where each participant contributes to the healing of others. 
+                    <br>
+                    <br>
+                    The immersion is designed to offer permanent shifts and upgrades, 
+                    based on life-changing tools and expert facilitation. 
+                    <br>
+                    <br>
+                    Here, surrounded by a healing space and like-minded people, you will 
+                    reconnect with the REAL YOU who is ready to lead an inspired life.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="container-columns two">
+
+            <div class="community-copy" style="padding-bottom: 6.5rem; width: 100%;">
+
+                <div class="title-container bigger-gap blue" style="align-self: auto;">
+
+                    <div class="title-line-h1 wide">
+                        <h2>An&nbsp;Embodied</h2>
+                        <div class="title-line-h1 border-blue right-align wide"></div>
+                    </div>
+
+                    <h2>
+                        <em>Alchemical&nbsp;Container</em>
+                    </h2>
+                </div>
+
+                <p>
+                    I've crafted an alchemical container that nurtures every aspect of your being—mental, 
+                    emotional, physical, and spiritual. 
+                    <br>
+                    <br>
+                    This full-spectrum experience is tailored for those who are ready to experience 
+                    the organic capacity their soul carries for healing and change.
+                </p>
+
+            </div>
+
+            <div class="alchemical">
+                <img class="alchemical " src="alchemical-zdenek-machacek-L2Y43N68k4Y-unsplash.png" alt="A Geode">
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!--BANNER "RIGHT FOR YOU"-->
+
+    <section class="main banner gold">
+
+        <div class="title-container banner wide">
+
+            <h1>Is&nbsp;This&nbsp;<em>Immersion</em></h1>
+            
+            <div class="title-line-h1 wide">
+                <h1><strong>Right</strong>&nbsp;For</h1>
+                <div class="title-line-h1 border-gold right-align wide">
+                    <h1><em>You?</em></h1>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--RIGHT FOR YOUUU-->
+
+    <section class="main  right-for-you">
+
+        <div class="right-for-you">
+
+            <div class="title-container blue" style="gap: .5em;">
+
+                <div class="title-line-h1 wide">
+                    <h4>This&nbsp;<em>Immersion</em></h4>
+                    <div class="title-line-h1 border-blue-small wide"></div>
+                </div>
+
+                <div class="title-line-h1">
+                    <h4 class="h-wrap">Is Right For You If...</h4>
+                </div>
+            </div>
+
+            <ul>
+                <li>You seek lasting change and are open to new experiences.</li>
+                <li>You're ready to see and embrace the truth about yourself, no matter how challenging.</li>
+                <li>You're energized by personal and collective transformation.</li>
+                <li>You've tried multiple things and are now ready for a deeper level of inner work.</li>
+                <li>You seek to address and resolve the root causes of your challenges.</li>
+                <li>You're ready to be fully seen and accepted for who you truly are.</li>
+
+            </ul>
+        </div>
+
+        <div class="right-for-you">
+
+            <div class="title-container blue" style="gap: .5em;">
+
+                <div class="title-line-h1 wide">
+                    <h4>This&nbsp;<em>Immersion</em></h4>
+                    <div class="title-line-h1 border-blue-small wide"></div>
+                </div>
+
+                <div class="title-line-h1">
+                    <h4 class="h-wrap">Might Not Be For You If...</h4>
+                </div>
+            </div>
+
+            <ul>
+                <li>You seek lasting change and are open to new experiences.</li>
+                <li>You're ready to see and embrace the truth about yourself, no matter how challenging.</li>
+                <li>You're energized by personal and collective transformation.</li>
+                <li>You've tried multiple things and are now ready for a deeper level of inner work.</li>
+                <li>You seek to address and resolve the root causes of your challenges.</li>
+                <li>You're ready to be fully seen and accepted for who you truly are.</li>
+
+            </ul>
+        </div>
+
+    </section>
+
+    <!--RECEIVE-->
+
+    <section class="main banner gold">
+
+        <div class="title-container banner wide" style="max-width: 500px;">
+
+            <h1>You <strong>Will</strong></h1>
+            
+            <div class="title-line-h1 wide">
+                <div class="title-line-h1 border-gold right-align wide">
+                    <h1><em>Recieve</em></h1>
+                </div>
+            </div>
+
+        </div>
+
+        <ul class="two">
+            <li>A Pointholding Session</li>
+            <li>An Integration Mini-Constellation</li>
+            <li>Multiple Nervous System Relaxation and Balancing Techniques</li>
+            <li>A Healthy, Organic Lunch and Dinner</li>
+            <li>One Group Preparation Call</li>
+            <li>One Group Integration Call</li>
+            <li>And So Much More...</li>
+        </ul>
+
+    </section>
+
+    <!--TESTIMONIALS-->
+
+    <section class="main  testimonials">
+
+        <div class="title-line-h1 blue">
+
+            <h2><em>Testimonials</em></h2>
+            <div class="title-line-h1 border-blue wide"></div>
+
+        </div>
+
+        <div class="testimonials-columns">
+
+            <div class="testimonials-column">
+
+                <div class="testimonial">
+
+                    <div class="quote">
+                        <h5 class="h-wrap blue">“I feel totally transformed at the core of my being...”</h5>
+                        <p class="testimonials">
+                            “The healing that Lars facilitated was some of the most powerful, profound, and effective inner 
+                            work I have ever experienced. I was able to release some of my deepest trauma that had been hidden away for 
+                            30+ years and that I had not been able to access with other modalities. I feel totally transformed at 
+                            the core of my being and my health and peace of mind have improved leaps and bounds in the span of a 
+                            few days. I have experienced countless healing modalities over the course of nearly 20 years in the space and 
+                            what Lars offers in his containers is truly life-changing”
+                        </p>
+                    </div>
+
+                    <div class="author">
+                        <div class="title-line-h1 wide">
+                            <div class="title-line-h1 border-blue-small right-align wide"></div>
+                            <h6><em>Justin&nbsp;Faerman</em></h6>
+                        </div>
+                        <p class="author">Co-Founder, Flow Consciousness Institute</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonials-column">
+
+                <div class="testimonial">
+
+                    <div class="quote">
+                        <h5 class="h-wrap blue">“I am much more grounded in my body and heart....”</h5>
+                        <p class="testimonials">
+                            “This immersion was a life-changing experience for me. It helped me 
+                            to understand and release the misperceptions and fears that have been holding me back. 
+                            It reminded me how powerful, sacred, and innocent I truly am. I felt the effects 
+                            reverberate through my lineage and have seen how my world and the people in it have 
+                            radically shifted as a result. I feel free and joyful, and I am much more 
+                            grounded in my body and heart. I've tried a lot of different methods, processes, 
+                            retreats, and programs over the years, and Lars's facilitation was some of the best 
+                            I've ever experienced. I felt so cared for and held throughout our time together. I 
+                            learned so much and have been using all of the tools and processes ever since because 
+                            they are each highly effective, fun, and easy. I can't wait for my next one!”
+                        </p>
+                    </div>
+
+                    <div class="author">
+                        <div class="title-line-h1 wide">
+                            <div class="title-line-h1 border-blue-small right-align wide"></div>
+                            <h6><em>Meghan&nbsp;MacDonald</em></h6>
+                        </div>
+                        <p class="author">Co-Founder, Conscious Lifestyle Magazine</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonials-column">
+
+                <div class="testimonial">
+
+                    <div class="quote">
+                        <h5 class="h-wrap blue">
+                            “This was the most transformational and powerful form of healing...”
+                        </h5>
+                    </div>
+
+                    <div class="author">
+                        <div class="title-line-h1 wide">
+                            <div class="title-line-h1 border-blue-small right-align wide"></div>
+                            <h6><em>Meghan&nbsp;MacDonald</em></h6>
+                        </div>
+                        <p class="author">Co-Founder, Conscious Lifestyle Magazine</p>
+                    </div>
+
+                </div>
+                
+                <div class="testimonial">
+
+                    <div class="quote">
+                        <h5 class="h-wrap blue">
+                            “It was one of - if not the most - powerful release and rebirth
+                            experiences in which I have participated, 
+                            all wrapped in a sacred and loving container.”
+                        </h5>
+                    </div>
+
+                    <div class="author">
+                        <div class="title-line-h1 wide">
+                            <div class="title-line-h1 border-blue-small right-align wide"></div>
+                            <h6><em>Dusty&nbsp;Drake</em></h6>
+                        </div>
+                        <p class="author">Energy Worker</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--BANNER "MODALITIES"-->
+
+    <section class="main banner gold">
+
+        <div class="title-container banner wide" style="max-width: 900px;">
+            
+            <div class="title-line-h1 wide">
+                <div class="title-line-h1 border-gold center-align wide">
+                    <h1><em>Modalities</em></h1>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--MODALITIES-->
+
+    <section class="main  one modalities">
+
+        <div class="modalities-columns">
+
+            <div class="modalities-column-links blue">
+
+                <a class="modalities first" href="#pointholding">
+                    <h5 class="h-wrap text-right">Pointholding <em>The Heart of the Immersion</em></h5>
+                </a>
+
+                <a class="modalities" href="#integration-mini">
+                    <h5 class="h-wrap text-right">Integration Mini-Constellation</h5>
+                </a>
+
+                <a class="modalities" href="#nervous-system">
+                    <h5 class="h-wrap text-right">Nervous System Relaxation + Balancing Techniques</h5>
+                </a>
+
+                <a class="modalities" href="#preperation-call">
+                    <h5 class="h-wrap text-right">Preparation Call</h5>
+                </a>
+
+                <a class="modalities" href="#integration-call">
+                    <h5 class="h-wrap text-right">Integration Call</h5>
+                </a>
+            </div>
+
+            <div class="modalities-column-copy">
+
+                <div class="modality" id="pointholding">
+                    <div class="modality-title">
+
+                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                            <div class="title-line-h1 wide">
+                                <h2>
+             
+                                        Pointholding
+                
+                                </h2>
+                                <div class="title-line-h1 border-blue right-align wide"></div>
+                            </div>
+        
+                            <h2 class="h-wrap">
+                                <em>The Heart of the Immersion</em>
+                            </h2>
+                        </div>
+                    
+                    </div>
+
+                    <div class="modality-copy">
+                        <h5 class="h-wrap blue">“Where the magic of science and love meet for massive transformation...”</h5>
+                        <p class="modalities">
+                            Pointholding is a powerfully transformative approach to releasing trauma and stuck energy, with consistently profound, permanent, 
+                            and liberating results. This practice involves applying sustained pressure to neurosomatic points on the body, granting access to the 
+                            limbic system, the emotional command center of the brain. It's here that we can unlock and gently release what's been held inside, often
+                            for a long time. You'll lay comfortably on a massage table while two points at the base of the skull are held. If there are other pointholders 
+                            present, they'll hold other specific points on your body (which correspond to specific meridian points in Chinese Medicine).
+                            <br>
+                            <br>
+                            Sessions resolve old traumatic imprints, allowing you to process and permanently release past emotions and negative beliefs at the root. 
+                            One of the most special things about this is how profoundly safe and easy it is to “go there,” and how the subconscious serves up exactly 
+                            what you are ready for (based on your intention for the session). Pointholding offers a unique channel to the wisdom of your body, cultivating 
+                            a new level of embodied connection with Self that leads to life-altering changes. I have facilitated and experienced miracles through this work. 
+                            I asked Judith Johnson, one of my mentors and a pioneer of this work, if she sees this as the most powerful somatic healing modality on the planet. 
+                            She responded “Yes, nothing touches it.” I sometimes call the experience an “internal power wash” for how clean and clear we often feel afterward 😊.
+                            <br>
+                            <br>
+                            All those present for these sessions, including pointholders, are blessed by the process. Holding these points allows for all involved to plug into 
+                            the purity of what is occurring. While trauma occurs in the darkness, pointholding sessions occur in the light and hands of a sacred container. 
+                            The process alone is incredibly powerful; being witnessed and physically held in it is a gift of its own.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="modality" id="integration-mini">
+                    <div class="modality-title">
+
+                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                            <div class="title-line-h1 wide">
+                                <h2>
+                                    Integration
+                                </h2>
+                                <div class="title-line-h1 border-blue right-align wide"></div>
+                            </div>
+        
+                            <h2 class="h-wrap">
+                                <em>Mini-Constellation</em>
+                            </h2>
+
+                        </div>
+
+                        <h6 class="h-wrap blue">From the <strong class="five">Family Constellations</strong> Method</h6>  
+
+                    </div>
+
+                    <div class="modality-copy">
+
+                        <h5 class="h-wrap blue">“A cosmic, interactive game that makes uncovering the truth fun...”</h5>
+                        <p class="modalities">
+                            Family Constellations is a fascinating and fun way to discover what's hidden in your subconscious 
+                            mind. With this modality, you can release family and ancestral burdens, and also receive personalized 
+                            wisdom and guidance that is intricately tailored to you. I will facilitate an integration 
+                            “mini-constellation” a new style of the work I've developed, where you will receive guidance that 
+                            supports you to discover the specific energy that life is encouraging you to claim. You'll walk away 
+                            clear, confident, and in awe of how accurate this was!
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="modality" id="nervous-system">
+                    <div class="modality-title">
+
+                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                            <div class="title-line-h1 wide">
+                                <h2>
+                                    Nervous&nbsp;System
+                                </h2>
+                                <div class="title-line-h1 border-blue right-align wide"></div>
+                            </div>
+        
+                            <h2 class="h-wrap">
+                                <em>Relaxation + Balancing Techniques</em>
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="modality-copy">
+
+                        <h5 class="h-wrap blue">“Tools that bring you all the way home to true integration...”</h5>
+                        <p class="modalities">
+                            These techniques come directly from experts in nervous system and vagus nerve research, 
+                            such as Peter Levine, Stanley Rosenberg, and Judith Johnson. Wherever you're at, they will 
+                            bring you into a parasympathetic "rest and digest" state. Combined with the profound work we're 
+                            doing at the immersion, these techniques greatly support the integration and embodiment process. 
+                            This practice balances energy and creates a lasting sense of peace and calm throughout your entire body.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="modality" id="preperation-call">
+                    <div class="modality-title">
+
+                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                            <div class="title-line-h1 wide">
+                                <h2>
+                         
+                                        Preperation
+                 
+                                </h2>
+                                <div class="title-line-h1 border-blue right-align wide"></div>
+                            </div>
+        
+                            <h2 class="h-wrap">
+                                <em>Call</em>
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="modality-copy">
+
+                        <h5 class="h-wrap blue">“Creating resonance and connection between attendees and facilitators...”</h5>
+                        <p class="modalities">
+                            Soon before the immersion, you'll join us for a preparation call where we will all get to know each other better, 
+                            and build a more resonant group energy field. I'll share more about the pointholding process, the schedule, 
+                            and answer any questions anyone has so everyone is fully prepared for the journey.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="modality" id="integration-call">
+                    <div class="modality-title">
+
+                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                            <div class="title-line-h1 wide">
+                                <h2>
+                                    Integration
+                                </h2>
+                                <div class="title-line-h1 border-blue right-align wide"></div>
+                            </div>
+        
+                            <h2 class="h-wrap">
+                                <em>Call</em>
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="modality-copy">
+
+                        <h5 class="h-wrap blue">“Reconnect and receive the support you require to bring the immersion fully home with you...”</h5>
+                        <p class="modalities">
+                            Soon after the immersion, join us for a lively group integration call! This is your chance to reconnect, 
+                            share your experiences post-immersion, and connect the transformation from the immersion with your fresh, 
+                            new life. I'll facilitate supportive, fun, and meaningful conversations, next steps, and laser coaching 
+                            to help you integrate everything you've learned and keep the positive momentum going 🚀
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--BANNER "WHO"-->
+
+    <section class="main banner gold">
+
+        <div class="title-container banner wide" style="max-width: 600px;">
+            
+            <div class="title-line-h1 wide">
+                <h1>Who&nbsp;<strong>We</strong></h1>
+                <div class="title-line-h1 border-gold right-align wide">
+                    <h1><em>Are</em></h1>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--BIOS-->
+
+    <section class="main  one" style="gap: 2rem;">
+
+        <div class="container bios">
+
+            <div class="picture-frame">
+                <div class="picture-border">
+                    <img class="frame " src="lars-king-bio.png" alt="A smiling Lars King"> 
+                </div>
+            </div>
+            
+            <div class="bios-copy">
+
+                <div class="bios-title">
+
+                    <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                        <div class="title-line-h1 wide">
+                            <h2><em>Lars&nbsp;King</em></h2>
+                            <div class="title-line-h1 border-blue right-align wide"></div>
+                        </div>
+
+                    </div>
+
+                    <h6 class="h-wrap blue"><strong class="five">Facilitator & Host</strong></h6>  
+
+                </div>
+
+                <p>
+                    Lars is a transformational facilitator who specializes in exploring and transforming the subconscious, to embody our most authentic selves.
+                    <br>
+                    <br>
+                    He loves helping people find the magic and truth within themselves and holds sacred space for people to 
+                    encounter and embrace all aspects of themselves. He intuitively senses what wants to emerge at any given moment.
+                    <br>
+                    <br>
+                    With his multiple modalities and caring spirit he supports people to go exactly where they need to go in themselves 
+                    so they can recommit to their most aligned path in life.
+                </p>
+
+                <h6 class="h-wrap blue">
+                    <strong class="five">
+                        Learn More About Lars' Work Here:
+                        <br>
+                        <a class="bio-link" href="www.larsking.com">
+                            www.larsking.com
+                        </a>
+                    </strong>
+                </h6>
+
+            </div>
+
+        </div>
+
+        <div class="container bios">
+
+            <div class="bios-copy">
+
+                <div class="bios-title">
+
+                    <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                        <div class="title-line-h1 wide">
+                            <h2><em>Hannah&nbsp;Barton</em></h2>
+                            <div class="title-line-h1 border-blue right-align wide"></div>
+                        </div>
+
+                    </div>
+
+                    <h6 class="h-wrap blue"><strong class="five">Facilitator</strong></h6>  
+
+                </div>
+
+                <p>
+                    Hannah Barton is an energy healer, bodyworker, and integration guide.
+                    <br>
+                    <br>
+                    As a bridge between the physical, 
+                    emotional, and energetic realms, she uses intuitive bodywork, emotional release techniques, and frequency 
+                    recalibration to help clients reconnect with their inner wisdom.
+                    <br>
+                    <br>
+                    With deep presence and an open heart, 
+                    Hannah cultivates nurturing spaces for transformation and self-exploration.
+                </p>
+
+                <h6 style="display: none;" class="h-wrap blue">
+                    <strong class="five">
+                        Learn More About Hannah's Work Here:
+                        <br>
+                        <a class="bio-link" href="www.flowwellnessatx.com">
+                            www.flowwellnessatx.com
+                        </a>
+                    </strong>
+                </h6>
+
+            </div>
+
+            <div class="picture-frame">
+                <div class="picture-border">
+                    <img class="frame" src="hannah-barton-pointholding-immersion-flow-wellness-austin.png" alt="A radiant Hannnah Barton"> 
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container bios">
+
+            <div class="picture-frame">
+                <div class="picture-border">
+                    <img class="frame" src="darci-barton-pointholding-immersion-flow-wellness-austin.png" alt="A beaming Darci Barton"> 
+                </div>
+            </div>
+
+            <div class="bios-copy">
+
+                <div class="bios-title">
+
+                    <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                        <div class="title-line-h1 wide">
+                            <h2><em>Darci&nbsp;Barton</em></h2>
+                            <div class="title-line-h1 border-blue right-align wide"></div>
+                        </div>
+
+                    </div>
+
+                    <h6 class="h-wrap blue"><strong class="five">Facilitator</strong></h6>  
+
+                </div>
+
+                <p>
+                    Darci Barton is an energy healer, bodyworker, and integration guide with a profound 
+                    ability to hold space for transformation. 
+                    She weaves intuitive bodywork, emotional healing, and nervous system regulation to support deep emotional self-awareness.
+                    <br>
+                    <br>
+                    Darci's presence fosters a sense of safety and connection, allowing her clients to access their own innate wisdom and healing.
+                </p>
+
+                <h6 style="display: none;" class="h-wrap blue">
+                    <strong class="five">
+                        Learn More About Darci's Work Here:
+                        <br>
+                        <a class="bio-link" href="www.flowwellnessatx.com">
+                            www.flowwellnessatx.com
+                        </a>
+                    </strong>
+                </h6>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--MY STORY WITH POINTHOLDING-->
+
+    <section class="main subtitle story">
+
+        <div class="title-container bigger-gap wide blue" style="max-width: 1200px;">
+
+            <div class="title-line-h1 wide">
+
+                <svg width="3rem" height="3rem" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="northstar-simple" d="M17 2.5L20.1155 11.973M17 2.5L13.8845 11.973M17 2.5V17.5M20.1155 11.973L24.5 10M20.1155 11.973L17 17.5M13.8845 11.973L9.5 10M13.8845 11.973L17 17.5M9.5 10L11.473 14.3845M9.5 10L17 17.5M11.473 14.3845L2 17.5M11.473 14.3845L17 17.5M2 17.5L11.473 20.6155M2 17.5H17M11.473 20.6155L9.5 25M11.473 20.6155L17 17.5M9.5 25L13.8845 23.027M9.5 25L17 17.5M13.8845 23.027L17 32.5M13.8845 23.027L17 17.5M17 32.5L20.1155 23.027M17 32.5V17.5M20.1155 23.027L24.5 25M20.1155 23.027L17 17.5M24.5 25L22.527 20.6155M24.5 25L17 17.5M22.527 20.6155L32 17.5M22.527 20.6155L17 17.5M32 17.5L22.527 14.3845M32 17.5H17M22.527 14.3845L24.5 10M22.527 14.3845L17 17.5M24.5 10L17 17.5" stroke="#0080FF"/>
+                </svg>
+
+                <h1><em>My&nbsp;Story</em></h1>
+            </div>
+
+            <div class="title-line-h1 wide">
+                <h1>With</h1>
+                <div class="title-line-h1 border-blue right-align wide"></div>
+                <!-- <h1 style="margin-left: -0.4em;"><strong>Pointholding</strong></h1> -->
+                <h1><strong>Pointholding</strong></h1>
+            </div>
+
+        </div>
+
+
+        <div class="story">
+            <div class="container">
+                <h5 class="h-wrap blue">
+                    <strong class="five">
+                        My first pointholding session was just weeks after my mom passed away, 
+                        and it supported me beyond what I knew was possible....
+                    </strong>
+                </h5>
+                <p>
+                    After my first experience, I knew that I needed to immerse myself in this. I've traveled all around the world 
+                    finding the modalities that resonate the most and achieve consistent, life changing results. 
+                    <br>
+                    <br>
+                    I've been offering pointholding retreats and immersions since 2021, and each time they improve.
+                    <br>
+                    <br>
+                    I love this work because it has completely revolutionized my and so many others' lives. 
+                    I used to be disembodied and disconnected from my heart, and pointholding helped me come back to my body, my love, and my true self.
+                    <br>
+                    <br>
+                    I have taken myself through everything I am offering here to you, and it is the absolute best I can give.
+                </p>
+            </div>
+
+            <div class="container" style="gap: 4rem; width: 100%;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                    <path d="M17 2L20.1155 11.473M17 2L13.8845 11.473M17 2V17M20.1155 11.473L24.5 9.5M20.1155 11.473L17 17M13.8845 11.473L9.5 9.5M13.8845 11.473L17 17M9.5 9.5L11.473 13.8845M9.5 9.5L17 17M11.473 13.8845L2 17M11.473 13.8845L17 17M2 17L11.473 20.1155M2 17H17M11.473 20.1155L9.5 24.5M11.473 20.1155L17 17M9.5 24.5L13.8845 22.527M9.5 24.5L17 17M13.8845 22.527L17 32M13.8845 22.527L17 17M17 32L20.1155 22.527M17 32V17M20.1155 22.527L24.5 24.5M20.1155 22.527L17 17M24.5 24.5L22.527 20.1155M24.5 24.5L17 17M22.527 20.1155L32 17M22.527 20.1155L17 17M32 17L22.527 13.8845M32 17H17M22.527 13.8845L24.5 9.5M22.527 13.8845L17 17M24.5 9.5L17 17" stroke="#0080FF"/>
+                </svg>
+
+            </div>
+
+            <div class="container" style="gap: 4rem; max-width: 1200px; width: 100%; padding-left: 2rem;">
+
+                <h5 class="h-wrap blue">
+
+                        <strong class="five">
+                        I would love to invite you
+                        <br>
+                        into this intimate space...
+                      </strong>
+                </h5>
+
+            </div>
+
+            <div class="container wide" style="align-self: start; max-width: none;">
+                <h3 class="blue">
+                    ...Of&nbsp;
+                    <em>
+                        Remembrance&nbsp;&&nbsp;REBIRTH;
+                    </em>
+                </h3>
+                <div class="title-line-h1 right-align blue wide">
+                    <div class="title-line-h1 border-blue-small wide"></div>
+                    <h3>You&nbsp;Will&nbsp;Never&nbsp;Be&nbsp;The&nbsp;Same.</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--BANNER "LOGISTICS"-->
+
+    <section class="main banner gold">
+
+
+        <div class="title-container banner wide">
+
+            <div class="title-line-h1 wide">
+              
+<h1><strong>Logistics</strong></h1>
+                <div class="title-line-h1 right-align border-gold wide"></div>
+
+        <!--  <img style="height: 3rem;" src="title-lars-king-pointholding-immersion.svg" alt="The 1-Day Pointholding Immersion"> -->
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--LOGISTICS-->
+
+    <section class="main one  modalities">
+
+        <div class="modalities-columns">
+
+            <div class="modalities-column-links blue">
+
+                <a class="modalities first" href="#location">
+                    <h5 class="h-wrap text-right">Location</h5>
+                </a>
+
+                <a class="modalities" href="#food">
+                    <h5 class="h-wrap text-right">Food</h5>
+                </a>
+
+                <a class="modalities" href="#pricing">
+                    <h5 class="h-wrap text-right">Pricing</h5>
+                </a>
+
+            </div>
+
+            <div class="modalities-column-copy">
+
+                <div class="modality" id="location">
+                    <div class="modality-title">
+
+                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                            <div class="title-line-h1 wide">
+                                <h2>
+             
+                                        Location
+                
+                                </h2>
+                                <div class="title-line-h1 border-blue right-align wide"></div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="modality-copy">
+                        <h5 class="h-wrap blue">
+                            <strong class="five">
+                                Flow Massage and Wellness
+                            </strong>
+                            <br>
+                            <br>
+                            12401 Hy meadow Dr, 1-B
+                            <br>
+                            Austin, TX 78750
+                        </h5>
+
+                        <p class="modalities">
+                            This beautiful and serene wellness studio offers multiple private rooms for sessions, 
+                            as well as comfortable places to relax, nap, and integrate.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="modality" id="food">
+                    <div class="modality-title">
+
+                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                            <div class="title-line-h1 wide">
+                                <h2>
+                                    Food
+                                </h2>
+                                <div class="title-line-h1 border-blue right-align wide"></div>
+                            </div>
+    
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="modality-copy">
+
+                        <h5 class="h-wrap blue">
+                            Fresh and Healthy Meals
+                        </h5>
+                        <p class="modalities">
+                            Family Constellations is a fascinating and fun way to discover what's hidden in your subconscious 
+                            mind. With this modality, you can release family and ancestral burdens, and also receive personalized 
+                            wisdom and guidance that is intricately tailored to you. I will facilitate an integration 
+                            “mini-constellation” a new style of the work I've developed, where you will receive guidance that 
+                            supports you to discover the specific energy that life is encouraging you to claim. You'll walk away 
+                            clear, confident, and in awe of how accurate this was!
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="modality" id="pricing">
+                    <div class="modality-title">
+
+                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                            <div class="title-line-h1 wide">
+                                <h2>
+                                    Pricing
+                                </h2>
+                                <div class="title-line-h1 border-blue right-align wide"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="modality-copy">
+
+                        <h5 class="h-wrap blue">
+                            More Accessible Than Ever
+                        </h5>
+                        <p class="modalities">
+                            This transformative retreat was originally offered at $3500. To make this powerful experience 
+                            more accessible to people's schedules and budgets, I've condensed it into a single day while 
+                            maintaining its core value and integration focus.
+                        </p>
+                    </div>
+                </div> 
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--BANNER + BUTTON-->
+
+    <section class="main banner gold">
+
+        <div class="title-container banner wide">
+
+            <div class="title-line-h1 wide center-align">
+                <h1><strong>Book</strong>&nbsp;<em>Now</em></h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 59 60" fill="none">
+                    <path d="M29.5 57.5L35.2117 40.1328L29.5 30V57.5Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M39.6328 24.2882L43.25 16.25L29.5 30L39.6328 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M35.2117 19.8672L29.5 2.5V30L35.2117 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M23.7882 19.8672L15.75 16.25L29.5 30L23.7882 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M19.3672 24.2882L2 30H29.5L19.3672 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 30L39.6328 24.2882L57 30H29.5ZM29.5 30L39.6328 35.7117L43.25 43.75L29.5 30ZM29.5 30L23.7882 40.1328L15.75 43.75L29.5 30Z" fill="#0080FF" fill-opacity="0.2"/>
+                    <path d="M23.7882 40.1328L29.5 57.5V30L23.7882 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M35.2117 40.1328L43.25 43.75L29.5 30L35.2117 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M39.6328 35.7117L57 30H29.5L39.6328 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M43.25 16.25L35.2117 19.8672L29.5 30L43.25 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M29.5 2.5L23.7882 19.8672L29.5 30V2.5Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M15.75 16.25L19.3672 24.2882L29.5 30L15.75 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M2 30L19.3672 35.7117L29.5 30H2Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M19.3672 35.7117L15.75 43.75L29.5 30L19.3672 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
+                    <path d="M29.5 2.5L35.2117 19.8672M29.5 2.5L23.7882 19.8672M29.5 2.5V30M35.2117 19.8672L43.25 16.25M35.2117 19.8672L29.5 30M23.7882 19.8672L15.75 16.25M23.7882 19.8672L29.5 30M15.75 16.25L19.3672 24.2882M15.75 16.25L29.5 30M19.3672 24.2882L2 30M19.3672 24.2882L29.5 30M2 30L19.3672 35.7117M2 30H29.5M19.3672 35.7117L15.75 43.75M19.3672 35.7117L29.5 30M15.75 43.75L23.7882 40.1328M15.75 43.75L29.5 30M23.7882 40.1328L29.5 57.5M23.7882 40.1328L29.5 30M29.5 57.5L35.2117 40.1328M29.5 57.5V30M35.2117 40.1328L43.25 43.75M35.2117 40.1328L29.5 30M43.25 43.75L39.6328 35.7117M43.25 43.75L29.5 30M39.6328 35.7117L57 30M39.6328 35.7117L29.5 30M57 30L39.6328 24.2882M57 30H29.5M39.6328 24.2882L43.25 16.25M39.6328 24.2882L29.5 30M43.25 16.25L29.5 30" stroke="#FAB837"/>
+                    </svg>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--BOOK A CALL-->
+
+    <section style="background-blend-mode: screen;" class="main  one">
+
+        <div class="title-container banner wide blue" style="max-width: 900px;">
+
+            <h1>The&nbsp;1-Day</h1>
+
+            <div class="title-line-h1 border-blue wide"><h1><strong>Pointholding</strong></h1></div>
+
+            <div class="title-line-h1 wide right-align">
+                <h1><em>Immersion</em></h1>
+                <svg width="3rem" height="3rem" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="northstar-simple" d="M17 2.5L20.1155 11.973M17 2.5L13.8845 11.973M17 2.5V17.5M20.1155 11.973L24.5 10M20.1155 11.973L17 17.5M13.8845 11.973L9.5 10M13.8845 11.973L17 17.5M9.5 10L11.473 14.3845M9.5 10L17 17.5M11.473 14.3845L2 17.5M11.473 14.3845L17 17.5M2 17.5L11.473 20.6155M2 17.5H17M11.473 20.6155L9.5 25M11.473 20.6155L17 17.5M9.5 25L13.8845 23.027M9.5 25L17 17.5M13.8845 23.027L17 32.5M13.8845 23.027L17 17.5M17 32.5L20.1155 23.027M17 32.5V17.5M20.1155 23.027L24.5 25M20.1155 23.027L17 17.5M24.5 25L22.527 20.6155M24.5 25L17 17.5M22.527 20.6155L32 17.5M22.527 20.6155L17 17.5M32 17.5L22.527 14.3845M32 17.5H17M22.527 14.3845L24.5 10M22.527 14.3845L17 17.5M24.5 10L17 17.5" stroke="#0080FF"/>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="container text-center" style="align-items: center; gap: 4rem;">
+
+            <h3 class="h-wrap blue">
+                <strong class="five">
+                    Book a Call with Lars
+                </strong> 
+                to 
+                <strong class="five">
+                    Reserve Your Spot!
+                </strong> 
+            </h3>
+
+            <p>
+                Because there are only 6 spots available for this intimate experience, I encourage you to book a 
+                call with me sooner rather than later to secure your spot. I'm happy to answer any questions as well!
+            </p>
+
+            <button style="font-size: 1.7rem;">
+                <strong class="five">Book</strong>&nbsp;<em>A call</em>
+            </button>
+        
+        </div>
+
+    </section>
+
+    <!--TESTIMONIALS-->
+
+    <section class="main  testimonials">
+
+        <div class="title-line-h1 blue">
+
+            <h2><em>Testimonials</em></h2>
+            <div class="title-line-h1 border-blue wide"></div>
+
+        </div>
+
+        <div class="testimonials-columns">
+
+            <div class="testimonials-column">
+
+                <div class="testimonial" id="Jackie">
+
+                    <div class="quote">
+                        <h5 class="h-wrap blue">“A safe and beautiful container...”</h5>
+                        <p class="testimonials">
+                            “Lars provides a safe and beautiful container for deep transformation. 
+                            With their unique blend of somatic and intuitive modalities, I was able to 
+                            access and release deeply imprinted emotions and feel more love, acceptance, 
+                            and peace at the end of the immersion.”
+                        </p>
+                    </div>
+
+                    <div class="author">
+                        <div class="title-line-h1 wide">
+                            <div class="title-line-h1 border-blue-small right-align wide"></div>
+                            <h6><em>Jackie&nbsp;Knetchel</em></h6>
+                        </div>
+                        <p class="author">Co-Founder, Flow Consciousness Institute</p>
+                    </div>
+
+                </div>
+
+                <div class="testimonial" id="Lori">
+
+                    <div class="quote">
+                        <h5 class="h-wrap blue">“Experience...unlike anything I've ever experienced...”</h5>
+                        <p class="testimonials">
+                            “My pointholding experience was unlike anything I've ever experienced. 
+                            The loving, gentle space that was created in the room and throughout the entire immersion was amazing. 
+                            I touched my true feelings deeper than I ever have before. It is the blast I needed to reconnect me 
+                            to my innocence and enable me to live a life of true freedom and power in a very real way. 
+                            EVERYONE needs to experience pointholding!!! It is life-changing.”
+                        </p>
+                    </div>
+
+                    <div class="author">
+                        <div class="title-line-h1 wide">
+                            <div class="title-line-h1 border-blue-small right-align wide"></div>
+                            <h6><em>Lori&nbsp;Vazquez</em></h6>
+                        </div>
+                        <p class="author">Registered Nurse, Texas Home Health Hospice</p>
+                    </div>
+
+                </div>
+
+                <div class="testimonial" id="Holly">
+                
+                    <div class="quote">
+                        <h5 class="h-wrap blue">“The biggest gift I received....”</h5>
+                        <p class="testimonials">
+                            “The biggest gift I received from this immersion was getting intimately in touch with my 
+                            feeling world as an integrated aspect of my daily awareness. I had previously done powerful 
+                            pieces of work that would touch into memories or stored emotion, but this immersion gave 
+                            me an entire context to “stay” with my feeling world and work emotional material real-time.”
+                        </p>
+                    </div>
+
+                    <div class="author">
+                        <div class="title-line-h1 wide">
+                            <div class="title-line-h1 border-blue-small right-align wide"></div>
+                            <h6><em>Holly&nbsp;Odneal</em></h6>
+                        </div>
+                        <p class="author">
+                            Spiritual Psychologist
+                        </p>
+                    
+                    </div>
+
+                </div>
+
+
+            
+
+                <div class="testimonials-columns">
+
+                    <div class="testimonial" id="Rex">
+
+                        <div class="quote">
+                            <h5 class="h-wrap blue">“You're in great hands (literally) with Lars.....”</h5>
+                            <p class="testimonials">
+                                “I had been disconnected from my heart and some of the magic. Experiencing and giving back in this communal 
+                                process created a state where I was able to open my heart and reorient to bringing service, sacredness, 
+                                and presence to my life. Integration was more direct than other modalities I've tried. I'd highly recommend 
+                                trying point holding if you're on the fence-- you're in great hands (literally) with Lars. 😊”
+                            </p>
+                        </div>
+
+                        <div class="author">
+                            <div class="title-line-h1 wide">
+                                <div class="title-line-h1 border-blue-small right-align wide"></div>
+                                <h6><em>Rex&nbsp;Loyer</em></h6>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonial" id="Cody">
+        
+                        <div class="quote">
+                            <h5 class="h-wrap blue">“At the end of it I felt a wave of peace come over me...”</h5>
+                            <p class="testimonials">
+                                “Before pointholding I was experiencing a lot of anger and frustration 
+                                that was simmering in my life that I didn't know what to do with. In the immersion 
+                                I felt the pointholding unlocked a part of me where I was able to put a voice 
+                                to a lot of that and process it and move the energy which felt liberating. 
+                                At the end of it I felt a wave of peace come over me and a connection to 
+                                my masculine leadership that moved me beyond some passive patterns.”
+                            </p>
+                        </div>
+
+                        <div class="author">
+                            <div class="title-line-h1 wide">
+                                <div class="title-line-h1 border-blue-small right-align wide"></div>
+                                <h6><em>Cody&nbsp;Packer</em></h6>
+                            </div>
+                            <!--
+                            <p class="author">
+                                Spiritual Psychologist
+                            </p>
+                            -->
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="testimonials-column-two">
+
+                <div class="testimonial" id="Summer">
+                
+                    <div class="quote">
+                        <h5 class="h-wrap blue">“Overall... I am back in my power...”</h5>
+                        <p class="testimonials">
+                            “I was blown away at how transformative it was for me. I've done lots of subconscious work but 
+                            this modality has been the most effective and easiest to navigate. The session revealed the patterns, 
+                            habits, and mechanisms that I had built where I lost touch with my own body, my presence and my love. 
+                            I feel so present in my body and so clear on what I get to integrate into my life, relationships and business 
+                            moving forward. One session helped me come back into my heart, overflowing onto others. Overall, 
+                            I am back in my power again, with trust, love, excitement and clarity.”
+                        </p>
+                    </div>
+
+                    <div class="author">
+                        <div class="title-line-h1 wide">
+                            <div class="title-line-h1 border-blue-small right-align wide"></div>
+                            <h6><em>Summer&nbsp;Pheonix</em></h6>
+                        </div>
+                        <!--
+                        <p class="author">
+                            Spiritual Psychologist
+                        </p>
+                        -->
+
+                    </div>
+                
+                </div>
+
+                <div class="testimonial" id="Mar">
+            
+                    <div class="quote">
+                        <h5 class="h-wrap blue">“Now... I feel liberated, empowered and more expressed in my being!”</h5>
+                        <p class="testimonials">
+                            “Before experiencing point holding I felt disconnected from the wild side of myself that held a lot of passion as
+                            well as my depth of anger/frustration. Through the experience I was able to meet these emotions and parts of myself 
+                            with compassion and allow myself to receive the gifts they hold. Now, I feel liberated, empowered and more expressed 
+                            in my being! This energy has spread out into my relationships and business through subtle shifts where I see myself 
+                            showing up more authentically. I can't thank Lars enough for his support along this journey, he is a great facilitator 
+                            and genuine guide. I recommend this to anyone who wants to feel and experience more of their truth.”
+                        </p>
+                    </div>
+
+                    <div class="author">
+                        <div class="title-line-h1 wide">
+                            <div class="title-line-h1 border-blue-small right-align wide"></div>
+                            <h6><em>Mar&nbsp;Chelle</em></h6>
+                        </div>
+                        <!--
+                        <p class="author">
+                            Spiritual Psychologist
+                        </p>
+                        -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+        
+    <section class="footer">
+
+        <div class="footer-title-links">
+
+            <div class="title-banner left-align gold" style="align-self: flex-start;">
+
+                <img style="height: 6rem;" src="title-lars-king-pointholding-immersion.svg" alt="The 1-Day Pointholding Immersion">
+
+            </div>
+
+            <div class="footer-links">
+
+                <div class="line-footer"></div>
+                <a href="#modalities" class="footer-links"> 
+                    
+                    <h6>
+
+                        <strong class="five">
+
+                            Modalities
+                            
+                        </strong>
+
+                    </h6>
+
+                </a>
+
+                <a href="#who" class="footer-links"> 
+                    
+                    <h6>
+
+                        <strong class="five">
+
+                            Who We Are
+                            
+                        </strong>
+
+                    </h6>
+                    
+                </a>
+
+                <a href="#logistics" class="footer-links"> 
+
+                    <h6>
+
+                        <strong class="five">
+                            
+                            Logistics
+                            
+                        </strong>
+
+                    </h6>
+
+                </a>
+
+                <a href="#book" class="footer-links"> 
+
+                    <h6>
+
+                        <strong class="five">
+                            
+                            Book Now
+                            
+                        </strong>
+
+                    </h6>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem; align-self: flex-end;">
+
+            <img style="width: 9rem;" src="Lars King.svg" alt="Lars King">
+
+            <div class="footer-links">
+
+                <a href="https://www.larsking.com/" class="footer-links"> 
+                    
+                    <h6 style="text-transform: lowercase;">
+
+                        <strong class="five">
+
+                            www.larsking.com
+
+                        </strong>
+
+                    </h6>
+
+                </a>
+
+                <div class="line-footer" style="width: 3rem;"></div>
+
+                <a class="ig" href="https://www.instagram.com/thelarsking/">
+                    <img style="margin-top: .3rem;" src="instagram.svg" alt="Instagram Logo">
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</body>
+</html>

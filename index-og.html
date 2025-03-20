@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>1-Day Pointholding Immersion</title>
+    <!-- @font-face styles -->
+        <style>
+
+            @font-face {
+                font-family: 'Spartan';
+                src: url('fonts/Spartan.woff2') format('woff2-variations');
+                font-weight: 100 1000;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'Libre Baskerville';
+                src: url('fonts/LibreBaskerville-Italic.woff2') format('woff2');
+                font-weight: 100 1000;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'League Spartan';
+                src: url(fonts/LeagueSpartan-ExtraLight.woff2) format(woff2),
+                    url(fonts/LeagueSpartan-ExtraLight.woff) format(woff);
+                font-weight: 200;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'League Spartan';
+                src: url(fonts/LeagueSpartan-Light.woff2) format(woff2),
+                    url(fonts/LeagueSpartan-Light.woff) format(woff);
+                font-weight: 300;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'League Spartan';
+                src: url(fonts/LeagueSpartan-Regular.woff2) format(woff2),
+                    url(fonts/LeagueSpartan-Regular.woff) format(woff);
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'League Spartan';
+                src: url(fonts/LeagueSpartan-Medium.woff2) format(woff2),
+                    url(fonts/LeagueSpartan-Medium.woff) format(woff);
+                font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'League Spartan';
+                src: url(fonts/LeagueSpartan-SemiBold.woff2) format(woff2),
+                    url(fonts/LeagueSpartan-SemiBold.woff) format(woff);
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'League Spartan';
+                src: url(fonts/LeagueSpartan-Bold.woff2) format(woff2),
+                    url(fonts/LeagueSpartan-Bold.woff) format(woff);
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+        </style>
+    <!-- @font-face Butler styles -->
+        <style>
+            @font-face {
+                font-family: 'Butler';
+                src: url(font/Butler-Free-Med-FF.woff2) format(woff2), 
+                    url(font/Butler-Free-Med-FF.woff) format(woff);
+                font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+            }
+        </style>
+    <!-- text styles -->
+        <style>
+            html {
+                font-size: 16px;
+                line-height: 1.3;
+                letter-spacing: 0.05em;
+                font-family: 'Spartan', sans-serif;
+            }
+
+            em {
+                font-family: 'Libre Baskerville', serif;
+                font-weight: 500;
+                font-style: italic;
+                font-size: 1.065em;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 300;
+                margin: 0;
+                color: #212121;
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Spartan', sans-serif;
+                text-transform: uppercase;
+                font-weight: 200;
+                line-height: 1;
+                margin: 0;
+                color: inherit;
+            }
+
+            p.h1-lib {
+                margin-bottom: 0.65rem;
+                font-family: 'Libre Baskerville', serif;
+                font-size: 3.8rem;
+                text-transform: uppercase;
+                border-bottom: 2px solid #FAB837;
+                display: flex;
+                height: 3.65rem;
+                width: 100%;
+            }
+
+            h1 > em.underline {
+                margin-bottom: 0.65rem;
+                font-family: 'Libre Baskerville', serif;
+                font-size: 3.8rem;
+                text-transform: uppercase;
+                border-bottom: 2px solid #FAB837;
+                display: flex;
+                height: 3.65rem;
+                width: 100%;
+            }
+
+            h1.underline {
+                margin-bottom: 0.65rem;
+                font-family: 'Libre Baskerville', serif;
+                font-size: 3.8rem;
+                text-transform: uppercase;
+                border-bottom: 2px solid #FAB837;
+                display: flex;
+                height: 3.65rem;
+                width: 100%;
+            }
+
+            h1 > strong, h2 > strong, h3 > strong, h4 > strong, h5 > strong, h6 > strong {
+                font-weight: 500;
+            }
+            
+            h1 > em, h2 > em, h3 > em, h4 > em, h5 > em, h6 > em {
+                font-family: 'Libre Baskerville', serif;
+                font-weight: 500;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+                line-height: 3rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            h3 {
+                font-size: 1.7rem;
+                font-weight: 300;
+            }
+
+            h3 > strong {
+                font-weight: 400;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+            }
+
+            h5 {
+                font-size: 1.3rem;
+            }
+
+            .blue {
+                color: #0080FF;
+            }
+
+            .gold {
+                color: #FAB837;
+            }
+
+            .text-left {
+                text-align: left;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            .text-right {
+                text-align: right;
+            }
+
+        </style>
+    <!-- element styles styles -->
+        <style>
+            body {
+                background-color: #0080FF;
+                margin: 0%;
+            }
+
+            section {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            section.hero {
+                display: flex;
+                height: 100vh;
+                padding: 9rem;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            div.title {
+                display: flex;
+                flex-direction: column;
+                align-self: stretch;
+            }
+
+            div.title-hero {
+                display: flex;
+                flex-direction: column;
+                align-self: flex-start;
+                gap: 1rem;
+                max-width: 900px;
+                width: 100%;
+                padding-bottom: -0.5rem;
+            }
+
+            div.title-border {
+                display: flex;
+                align-items: flex-start;
+                border-bottom: 2px solid #FAB837;
+                width: 100%;
+                height: 3rem;
+            }
+
+            div.title-banner {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+            }
+
+            div.subtitle {
+                display: flex;
+                flex-direction: column;
+                align-self: stretch;
+            }
+
+            div.title-copy {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                align-self: stretch;
+            }
+
+            div.h1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .5rem;
+            }
+
+            section.main {
+                display: flex;
+                padding: 6rem 4rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 6rem;
+                align-self: stretch;
+                z-index: 1;
+            }
+
+            section.subtitle {
+                background-color: #F1EFE9;
+                box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+                z-index: 999;
+                overflow: visible;
+            }
+
+            section.two {
+                background-color: rgba(255, 255, 255, 0.87);
+            }
+
+            section.banner {
+                background: linear-gradient(180deg, rgba(0, 128, 255, 0.00) 0%, rgba(0, 128, 255, 0.50) 50%, rgba(0, 128, 255, 0.00) 100%);
+                box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25) inset;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 6rem;
+                gap: 6rem;
+            }
+
+            section.right-for-you {
+                background-color: rgba(255, 255, 255, 0.87);
+                display: flex;
+                flex-direction: row;
+                padding: 6rem;
+                gap: 6rem;
+                justify-content: stretch;
+                align-items: stretch;
+            }
+
+            section.testimonials {
+                background-color: rgba(255, 255, 255, 0.87);
+                box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25) inset;
+                padding: 6rem;
+                gap: 6rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: stretch;
+                align-items: stretch;
+            }
+
+            section.modalities {
+                padding: 6rem;
+                gap: 6rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: stretch;
+                align-items: stretch;
+            }
+
+            section.story {
+                background: linear-gradient(0deg, rgba(250, 184, 55, 0.24) 0%, rgba(250, 184, 55, 0.24) 100%), url(section-8-mystory.png) lightgray 50% / cover no-repeat;
+                background-blend-mode: color, normal;
+
+            }
+
+            section.footer {
+                background-color: #0080FF;
+                padding: 5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            div.container {
+                display: flex;
+                max-width: 900px;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                gap: 2.5rem;
+                width: 100%;
+            }
+            
+            div.modalities-columns {
+                display: flex;
+                max-width: 1200px;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 5rem;
+                align-self: center;
+            }
+
+            div.modalities-column-links {
+                display: flex;
+                width: 16rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2rem;
+                position: sticky;
+                top: -1px;
+            }
+
+            div.modalities-column-copy {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                width: 100%;
+            }
+
+            div.modality {
+                display: flex;
+                padding: 2rem;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                align-self: stretch;
+                background: #EAF5FF;
+            }
+
+            div.modality-title {
+                display: flex;
+                padding: 30px;
+                gap: 30px;
+                align-self: stretch;
+                color: #0080FF;
+            }
+
+            div.modality-copy {
+                display: flex;
+                padding: 2rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2rem;
+                align-self: stretch;
+                background-color: #FFF;
+            }
+            
+            div.testimonials-columns {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 2rem;
+                align-self: stretch;
+            }
+
+            div.testimonials-column {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+                width: 100%;
+            }
+
+            div.testimonial {
+                display: flex;
+                padding: 1.5rem;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+                align-self: stretch;
+                background: #EAF5FF
+            }
+
+            div.quote {
+                display: flex;
+                padding: 1.5rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+                align-self: stretch;
+                background: rgba(255, 255, 255, 0.75);
+            }
+
+            div.author {
+                display: flex;
+                padding: 0px 20px 20px 20px;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: .5rem;
+                align-self: stretch;
+                text-align: right;
+            }
+
+            div.right-for-you {
+                display: flex;
+                max-width: 900px;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                gap: 3rem;
+                padding: 3rem;
+                width: 100%;
+                background-color: #FFF;
+            }
+
+            div.blurbs {
+                display: flex;
+                max-width: 1200px;
+                justify-content: space-between;
+                align-items: center;
+                align-self: center;
+                flex-direction: row;
+            }
+
+            div.subtitle-star {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .5rem;
+            }
+
+            div.h3-star {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .5rem;
+            }
+
+            div.footer-title-links {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4rem;
+                align-self: stretch;
+            }
+
+            div.footer-links {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            div.line-footer {
+                width: 9rem;
+                height: 1px;
+                background-color: #FAB837;
+                margin-top: 0.2rem;
+            }
+
+
+            button {
+                background-color: #FAB837;
+                color: #FFF;
+                font-family: Spartan;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 400;
+                text-transform: uppercase;
+                padding: .8rem 1.8rem;
+                padding-top: .65rem;
+                cursor: pointer;
+                font-family: 'League Spartan', sans-serif;
+                letter-spacing: 0.1rem;
+                border: none;
+                border-radius: 0rem;
+                box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
+            }
+
+            button:hover {
+                background-color: #FFF;
+                color: #FAB837;
+                box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.3);
+            }
+
+            .left-align {
+                align-items: start;
+            }
+
+            .right-align {
+                align-items: end;
+            }
+
+            .center-align {
+                align-items: center;
+            }
+
+            div.picture-frame {
+                background-image: url(northstar-picture-frame.svg);
+                background-size: cover;
+                background-position: center;
+                height: 25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                aspect-ratio: 1/1;
+            }
+
+            div.picture-frame.bios {
+                height: 35rem;
+            }
+
+            div.picture-border {
+                border-radius: 50%;
+                border: 1px solid rgba(250, 184, 55, 0.20);
+                width: 14rem;
+                padding: .5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                aspect-ratio: 1/1;
+            }
+
+            div.picture-border.bios {
+                width: 22rem;
+            }
+
+            img.frame {
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                font-size: 1.3rem;
+                font-weight: 300;
+                padding-inline-start: 1rem;
+                list-style-type: circle;
+                gap: 1.3rem;
+            }
+
+            ul.two {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                gap: 2.5rem;
+                align-items: center;
+                color: #EAF5FF;
+                letter-spacing: .1em;
+            }
+
+            a.modalities {
+                color: #0080FF;
+                text-decoration: none;
+            }
+
+            a.modalities:hover {
+                color: #FAB837;
+                cursor: pointer;
+            }
+
+            a.modalities:active {
+                color: #FAB837;
+            }
+
+            a.footer-links {
+                color: #FAB837;
+                text-decoration: none;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+            }
+
+            a.footer-links:hover {
+                color: #FAB837;
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-underline-offset: 0.2rem;
+            }
+
+            .line {
+                width: 100%;
+                height: 1px;
+                background-color: #FAB837;
+            }
+
+            a.bio-link {
+                text-transform: none;
+                color: #0080FF;
+            }
+
+            a.bio-link:hover {
+                color: #FAB837;
+            }
+
+            a.ig:hover {
+                opacity: .5;
+            }
+
+            div.container.grid.parent {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 2.5rem;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+    <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="title-hero left-align gold">
+                <h1 style="font-weight: 300;">Welcome</h1>
+                <h1>to the 1-Day</h1>
+                
+                <div>
+                    <p class="h1-lib gold">
+                        Immersion
+                    </p>
+                </div>
+
+                <div class="title-border">
+                    <h1><strong>Pointholding</strong></h1>
+                </div>
+                
+                <div class="h1">
+                    <h1><em>Immersion</em></h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 59 60" fill="none">
+                        <path d="M29.5 57.5L35.2117 40.1328L29.5 30V57.5Z" fill="#0080FF" fill-opacity="0.2"/>
+                        <path d="M39.6328 24.2882L43.25 16.25L29.5 30L39.6328 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
+                        <path d="M35.2117 19.8672L29.5 2.5V30L35.2117 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
+                        <path d="M23.7882 19.8672L15.75 16.25L29.5 30L23.7882 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
+                        <path d="M19.3672 24.2882L2 30H29.5L19.3672 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 30L39.6328 24.2882L57 30H29.5ZM29.5 30L39.6328 35.7117L43.25 43.75L29.5 30ZM29.5 30L23.7882 40.1328L15.75 43.75L29.5 30Z" fill="#0080FF" fill-opacity="0.2"/>
+                        <path d="M23.7882 40.1328L29.5 57.5V30L23.7882 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
+                        <path d="M35.2117 40.1328L43.25 43.75L29.5 30L35.2117 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
+                        <path d="M39.6328 35.7117L57 30H29.5L39.6328 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
+                        <path d="M43.25 16.25L35.2117 19.8672L29.5 30L43.25 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
+                        <path d="M29.5 2.5L23.7882 19.8672L29.5 30V2.5Z" fill="#FAB837" fill-opacity="0.5"/>
+                        <path d="M15.75 16.25L19.3672 24.2882L29.5 30L15.75 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
+                        <path d="M2 30L19.3672 35.7117L29.5 30H2Z" fill="#FAB837" fill-opacity="0.5"/>
+                        <path d="M19.3672 35.7117L15.75 43.75L29.5 30L19.3672 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
+                        <path d="M29.5 2.5L35.2117 19.8672M29.5 2.5L23.7882 19.8672M29.5 2.5V30M35.2117 19.8672L43.25 16.25M35.2117 19.8672L29.5 30M23.7882 19.8672L15.75 16.25M23.7882 19.8672L29.5 30M15.75 16.25L19.3672 24.2882M15.75 16.25L29.5 30M19.3672 24.2882L2 30M19.3672 24.2882L29.5 30M2 30L19.3672 35.7117M2 30H29.5M19.3672 35.7117L15.75 43.75M19.3672 35.7117L29.5 30M15.75 43.75L23.7882 40.1328M15.75 43.75L29.5 30M23.7882 40.1328L29.5 57.5M23.7882 40.1328L29.5 30M29.5 57.5L35.2117 40.1328M29.5 57.5V30M35.2117 40.1328L43.25 43.75M35.2117 40.1328L29.5 30M43.25 43.75L39.6328 35.7117M43.25 43.75L29.5 30M39.6328 35.7117L57 30M39.6328 35.7117L29.5 30M57 30L39.6328 24.2882M57 30H29.5M39.6328 24.2882L43.25 16.25M39.6328 24.2882L29.5 30M43.25 16.25L29.5 30" stroke="#FAB837"/>
+                      </svg>
+                </div>
+            </div>
+
+            <div class="subtitle right-align gold">
+                <h2 class="text-right"><strong>Austin</strong>, Texas | <strong>April 19</strong>, 2025
+                    <br>
+                    Hosted by <em>Lars King</em> &
+                    <br>
+                    2 Skilled Facilitators
+                </h2>
+            </div>
+
+        </section>
+
+    <!-- SUBTITLE -->
+
+        <section class="main subtitle">
+
+            <div class="container">
+
+                <div class="subtitle left-align">
+                    <h2 class="blue">Restore the <strong>Light Power</strong>, and <strong>Truth</strong></h2>
+                    <div class="subtitle-star">
+                        <h2 class="blue"><em>of Your Authentic Nature</em></h2>
+                        <img style="width: 30px; height: 30px;" src="northstar-simple-blue-30px.svg" alt="Northstar">
+                    </div>
+                </div>
+                <p>You are invited to join me and a team of skilled facilitators in an intimate 1-day immersion that is an answer to a prayer so many of us carry in our hearts. This is the most powerful offering I have.</p>
+                <button>
+                    BOOK NOW
+                </button>
+            </div>
+
+        </section>
+
+    <!-- REMEMBRANCES -->
+
+        <section class="main two">
+            <div class="container">
+                <div class="subtitle left">
+                    <h2 class="blue">This <em>Immersion</em> is based on</h2>
+                    <h2 class="blue"><strong>3 Key Remembrances</strong></h2>
+                </div>
+            </div>
+            <div class="container" style="gap: 4rem;">
+
+                <div class="title-copy left-align">
+                    <div class="h3-star blue">
+                        <img style="width: 25px; height: 25px; padding-top: 3px;" src="northstar-simple-blue-30px.svg" alt="Northstar">
+                        <h3><strong>Remember</strong> What Got Stuck</h3>
+                    </div>
+                    <p>
+                        Unlock and process deep-seated memories and stuck emotions—those that have been lodged in your body for months, years, or even decades. In our safe and supportive environment, these energies will surface, be processed, released, and transformed, allowing you to reclaim the light of your real self.
+                    </p>
+                </div>
+
+                <div class="title-copy left-align">
+                    <div class="h3-star blue">
+                        <img style="width: 25px; height: 25px; padding-top: 3px;" src="northstar-simple-blue-30px.svg" alt="Northstar">
+                        <h3><strong>Re</strong> &mdash; <strong>Member</strong></h3>
+                    </div>
+                    <p>
+                        Literally "come back into your body" where you have left parts of yourself behind. This reintegration is crucial for experiencing your full presence and power.
+                    </p>
+                </div>
+
+                <div class="title-copy left-align">
+                    <div class="h3-star blue">
+                        <img style="width: 25px; height: 25px; padding-top: 3px;" src="northstar-simple-blue-30px.svg" alt="Northstar">
+                        <h3><strong>Remember</strong> Who You Are</h3>
+                    </div>
+                    <p>
+                        Feel secure reconnecting with your true nature as a unique being of love, empowerment, and inspiration.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    <!-- BANNER + BUTTON -->
+
+        <section class="banner">
+
+            <div class="title-banner left-align gold">
+                <h1>1-Day <strong>Pointholding</strong></h1>
+                <div class="h1">
+                    <h1><em>Immersion</em></h1>
+                    <img style="width: 3rem; height: 3rem;" src="northstar-simple-hero.svg" alt="Northstar">
+                </div>
+            </div>
+
+            <button>
+                BOOK NOW
+            </button>
+
+        </section>
+
+    <!-- COMMUNITY/ALCHEMICAL BLURBS -->
+
+        <section class="main two">
+
+            <div class="container blurbs">
+
+                <div class="picture-frame">
+                    <div class="picture-border">
+                        <img class="frame" src="img.png" alt="COMMUNITY"> 
+                    </div>
+                </div>
+                
+                <div class="title-copy left-align" style="align-self: center;">
+                        <h2 class="blue"><strong>Transformative<br>Community</strong> and <strong>Support</strong></h2>
+                    <p>
+                        The Pointholding Immersion is more than just an immersion; it's an intimate community experience where each participant contributes to the healing of others.
+                        <br>
+                        <br>
+                        The immersion is designed to offer permanent shifts and upgrades, based on life-changing tools and expert facilitation.
+                        <br>
+                        <br>
+                        Here, surrounded by a healing space and like-minded people, you will reconnect with the REAL YOU who is ready to lead an inspired life.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="container blurbs">
+                
+                <div class="title-copy left-align" style="align-self: center;">
+                        <h2 class="blue">An<strong> Embodied<br>Alchemical Container</strong></h2>
+                    <p>
+                        I've crafted an alchemical container that nurtures every aspect of your being—mental, emotional, physical, and spiritual.
+                        <br>
+                        <br>
+                        This full-spectrum experience is tailored for those who are ready to experience the organic capacity their soul carries for healing and change.
+                    </p>
+                </div>
+
+                <div class="picture-frame">
+                    <div class="picture-border">
+                        <img class="frame" src="img2.png" alt="COMMUNITY"> 
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    <!-- BANNER + RIGHT FOR YOU -->
+
+        <section class="banner">
+
+            <div class="title-banner left-align gold">
+                <div class="h1">
+                    <h1>Is This <em>Immersion</em></h1>
+                    <img style="width: 3rem; height: 3rem;" src="northstar-simple-hero.svg" alt="Northstar">
+                </div>
+                            
+                <h1 style="padding-left: 10rem;"><strong>Right</strong> For <em>You?</em></h1>
+                
+
+            </div>
+
+        </section>
+
+    <!-- RIGHT FOR YOU -->
+
+        <section class="main right-for-you">
+            <div class="container right-for-you">
+                <h3 class="blue">This <strong>Immersion is For You</strong> If...</h3>
+                <ul>
+                    <li>You seek lasting change and are open to new experiences.</li>
+                    <li>You're ready to see and embrace the truth about yourself, no matter how challenging.</li>
+                    <li>You're energized by personal and collective transformation.</li>
+                    <li>You've tried multiple things and are now ready for a deeper level of inner work.</li>
+                    <li>You seek to address and resolve the root causes of your challenges.</li>
+                    <li>You're ready to be fully seen and accepted for who you truly are.</li>
+
+                </ul>
+            </div>
+
+            <div class="container right-for-you">
+                <h3 class="blue">This <strong>Immersion Might Not be For You</strong> If...</h3>
+                <ul>
+                    <li>You're new to personal development and inner work.</li>
+                    <li>You're hesitant about making real change in your life.</li>
+                    <li>You're not ready to let go into deep emotional processes.</li>
+                    <li>You're uncomfortable with witnessing or engaging in emotional expression with others.</li>
+                    <li>You'd rather focus on the surface-level symptoms rather than underlying issues.</li>
+                </ul>
+            </div>
+        </section>
+
+    <!-- RECIEVE -->
+
+        <section class="banner">
+
+            <div class="title-banner left-align gold">
+
+                <h1>You <strong>Will</strong></h1>
+                <div class="h1" style="padding-left: 7rem;">
+                    <img style="width: 3rem; height: 3rem;" src="northstar-simple-hero.svg" alt="Northstar">
+                    <h1><em>Recieve</em></h1>
+                </div>
+
+            </div>
+
+            <ul class="two">
+                <li><h3>A <strong>Pointholding Session</strong></h3></li>
+                <li><h3>An <strong>Integration Mini-Constellation</strong></h3></li>
+                <li><h3>Multiple <strong>Nervous System Relaxation and Balancing Techniques</strong></h3></li>
+                <li><h3>A <strong>Healthy, Organic Lunch and Dinner</strong></h3></li>
+                <li><h3>One <strong>Group Preparation Call</strong></h3></li>
+                <li><h3>One <strong>Group Integration Call</strong></h3></li>
+                <li><h3>And <strong>So Much More...</strong></h3></li>
+            </ul>
+
+        </section>
+
+        <div class="testimonial">
+
+            <div class="quote">
+                <h4 class="blue">“I feel <strong>totally transformed at the core of my being</strong>...”</h4>
+                <p>“The healing that Lars facilitated was some of the most powerful, profound, and effective inner work I have ever experienced. I was able to release some of my deepest trauma that had been hidden away for 30+ years and that I had not been able to access with other modalities. I feel totally transformed at the core of my being and my health and peace of mind have improved leaps and bounds in the span of a few days. I have experienced countless healing modalities over the course of nearly 20 years in the space and what Lars offers in his containers is truly life-changing”</p>
+            </div>
+
+            <div class="author">
+                <h5 class="blue"><strong>Justin Faerman</strong></h5>
+                <h5 class="blue">Co-Founder, Flow Consciousness Institute</h5>
+            </div>
+
+        </div>
+
+        <div class="testimonial">
+
+            <div class="quote">
+                <h4 class="blue">“I feel <strong> free and joyful, and I am much more grounded in my body and heart</strong>...”</h4>
+                <p>“This immersion was a life-changing experience for me. It helped me to understand and release the misperceptions and fears that have been holding me back. It reminded me how powerful, sacred, and innocent I truly am. I felt the effects reverberate through my lineage and have seen how my world and the people in it have radically shifted as a result. I feel free and joyful, and I am much more grounded in my body and heart. I've tried a lot of different methods, processes, retreats, and programs over the years, and Lars's facilitation was some of the best I've ever experienced. I felt so cared for and held throughout our time together. I learned so much and have been using all of the tools and processes ever since because they are each highly effective, fun, and easy. I can't wait for my next one!”</p>
+            </div>
+
+            <div class="author text-right">
+                <h5 class="blue"><strong>Meghan MacDonald</strong></h5>
+                <h5 class="blue">Co-Founder, Conscious Lifestyle Magazine</h5>
+            </div>
+
+        </div>
+
+        
+
+    <!-- TESTIMONIALS -->
+
+        <section class="main testimonials">
+
+            <h2 class="blue text-center"><em>Testimonials</em></h2>
+
+            <div class="testimonials-columns">
+
+
+
+                    <div class="testimonial">
+
+                        <div class="quote">
+                            <h4 class="blue">“I feel <strong>totally transformed at the core of my being</strong>...”</h4>
+                            <p>“The healing that Lars facilitated was some of the most powerful, profound, and effective inner work I have ever experienced. I was able to release some of my deepest trauma that had been hidden away for 30+ years and that I had not been able to access with other modalities. I feel totally transformed at the core of my being and my health and peace of mind have improved leaps and bounds in the span of a few days. I have experienced countless healing modalities over the course of nearly 20 years in the space and what Lars offers in his containers is truly life-changing”</p>
+                        </div>
+
+                        <div class="author">
+                            <h5 class="blue"><strong>Justin Faerman</strong></h5>
+                            <h5 class="blue">Co-Founder, Flow Consciousness Institute</h5>
+                        </div>
+
+                    </div>
+
+         
+
+        
+
+                    <div class="testimonial">
+
+                        <div class="quote">
+                            <h4 class="blue">“I feel <strong> free and joyful, and I am much more grounded in my body and heart</strong>...”</h4>
+                            <p>“This immersion was a life-changing experience for me. It helped me to understand and release the misperceptions and fears that have been holding me back. It reminded me how powerful, sacred, and innocent I truly am. I felt the effects reverberate through my lineage and have seen how my world and the people in it have radically shifted as a result. I feel free and joyful, and I am much more grounded in my body and heart. I've tried a lot of different methods, processes, retreats, and programs over the years, and Lars's facilitation was some of the best I've ever experienced. I felt so cared for and held throughout our time together. I learned so much and have been using all of the tools and processes ever since because they are each highly effective, fun, and easy. I can't wait for my next one!”</p>
+                        </div>
+
+                        <div class="author text-right">
+                            <h5 class="blue"><strong>Meghan MacDonald</strong></h5>
+                            <h5 class="blue">Co-Founder, Conscious Lifestyle Magazine</h5>
+                        </div>
+
+                    </div>
+
+
+
+                <div class="testimonials-column">
+
+                    <div class="testimonial">
+
+                        <div class="quote">
+                            <h4 class="blue">“This was <strong>the most transformational and powerful</strong> form of healing <strong>I have ever experienced</strong>.”</h4>
+                         </div>
+
+                        <div class="author">
+                            <h5 class="blue"><strong>Hasmig Annoush</strong></h5>
+                            <h5 class="blue">Founder, Hasmig Annoush Jewelry</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonial">
+
+                        <div class="quote">
+                            <h4 class="blue">“It was one of - if not <strong>he most - powerful release and rebirth experiences</strong> in which I have participated, <strong>all wrapped in a sacred and loving container</strong>.”</h4>
+                         </div>
+
+                        <div class="author">
+                            <h5 class="blue"><strong>Hasmig Annoush</strong></h5>
+                            <h5 class="blue">Founder, Hasmig Annoush Jewelry</h5>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    <!-- BANNER "MODALITIES" -->
+
+        <section class="banner" id="modalities">
+
+            <div class="title-banner left-align gold">
+                <div class="h1">
+                    <h1><em>Modalities</em></h1>
+                    <img style="width: 3rem; height: 3rem;" src="northstar-simple-hero.svg" alt="Northstar">
+                </div>
+            </div>
+
+        </section>
+
+    <!-- MODALITIES -->
+
+        <section class="main two modalities">
+
+            <div class="modalities-columns">
+
+                <div class="modalities-column-links">
+
+                    <div class="line"></div>
+
+                    <a class="modalities" href="#pointholding">
+                        <h4><strong>Pointholding</strong>: The <strong>Heart</strong> of the <strong>Immersion</strong></h4>
+                    </a>
+
+                    <div class="line"></div>
+
+                    <a class="modalities" href="#integration-mini">
+                        <h4><strong>Integration Mini-Constellation</strong></h4>
+                    </a>
+
+                    <div class="line"></div>
+
+                    <a class="modalities" href="#nervous-system">
+                        <h4><strong>Nervous System Relaxation + Balancing Techniques</strong></h4>
+                    </a>
+
+                    <div class="line"></div>
+
+                    <a class="modalities" href="#preparation-call">
+                        <h4><strong>Preparation Call</strong></h4>
+                    </a>
+
+                    <div class="line"></div>
+
+                    <a class="modalities" href="#integration-call">
+                        <h4><strong>Integration Call</strong></h4>
+                    </a>
+            
+                </div>
+
+                <div class="modalities-column-copy">
+
+                    <div class="modality" id="pointholding">
+                        <div class="modality-title">
+                            <h2><strong>Pointholding</strong>: The <strong>Heart</strong> of<br>the <em>Immersion</em></h2>
+                        </div>
+
+                        <div class="modality-copy">
+                            <h5 class="blue">“Where <strong>the magic of science and love meet</strong> for <strong>massive transformation</strong>...”</h5>
+                            <p>
+                                Pointholding is a powerfully transformative approach to releasing trauma and stuck energy, with consistently profound, permanent, 
+                                and liberating results. This practice involves applying sustained pressure to neurosomatic points on the body, granting access to the 
+                                limbic system, the emotional command center of the brain. It's here that we can unlock and gently release what's been held inside, often
+                                for a long time. You'll lay comfortably on a massage table while two points at the base of the skull are held. If there are other pointholders 
+                                present, they'll hold other specific points on your body (which correspond to specific meridian points in Chinese Medicine).
+                                <br>
+                                <br>
+                                Sessions resolve old traumatic imprints, allowing you to process and permanently release past emotions and negative beliefs at the root. 
+                                One of the most special things about this is how profoundly safe and easy it is to “go there,” and how the subconscious serves up exactly 
+                                what you are ready for (based on your intention for the session). Pointholding offers a unique channel to the wisdom of your body, cultivating 
+                                a new level of embodied connection with Self that leads to life-altering changes. I have facilitated and experienced miracles through this work. 
+                                I asked Judith Johnson, one of my mentors and a pioneer of this work, if she sees this as the most powerful somatic healing modality on the planet. 
+                                She responded “Yes, nothing touches it.” I sometimes call the experience an “internal power wash” for how clean and clear we often feel afterward 😊.
+                                <br>
+                                <br>
+                                All those present for these sessions, including pointholders, are blessed by the process. Holding these points allows for all involved to plug into 
+                                the purity of what is occurring. While trauma occurs in the darkness, pointholding sessions occur in the light and hands of a sacred container. 
+                                The process alone is incredibly powerful; being witnessed and physically held in it is a gift of its own.
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="modality" id="integration-mini">
+                        <div class="modality-title">
+                            <h2><strong>Integration Mini-Constellation</strong>
+                                <br>
+                                From the Family Constellations method
+                            </h2>
+                        </div>
+
+                        <div class="modality-copy">
+                            <h5 class="blue">“A <strong>cosmic, interactive game</strong> that <strong>makes uncovering the truth fu</strong>n...”</h5>
+                            <p>Family Constellations is a fascinating and fun way to discover what's hidden in your subconscious mind. With this modality, you can release family and ancestral burdens, and also receive personalized wisdom and guidance that is intricately tailored to you. I will facilitate an integration “mini-constellation” a new style of the work I've developed, where you will receive guidance that supports you to discover the specific energy that life is encouraging you to claim. You'll walk away clear, confident, and in awe of how accurate this was!</p>
+                        </div>
+                    </div> 
+
+                    <div class="modality" id="nervous-system">
+                        <div class="modality-title">
+                            <h2><strong>Nervous System Relaxation + Balancing Techniques</strong></h2>
+                        </div>
+
+                        <div class="modality-copy">
+                            <h5 class="blue">“Tools that bring you <strong>all the way home</strong> to <strong>true integration</strong>...”</h5>
+                            <p>
+                                Pointholding is a powerfully transformative approach to releasing trauma, with consistently profound, permanent, and liberating results. This practice involves applying sustained pressure to neurosomatic points on the body, granting access to the limbic system, the emotional command center of the brain. It's here that we can unlock and gently release long-held trauma. You’ll lay comfortably on a massage table while two points at the base of the skull are held. Sessions resolve old traumatic imprints, allowing you to process and permanently release past emotions and negative beliefs at the root. Pointholding offers a unique channel to the wisdom of your body, cultivating a new level of embodied connection with Self that leads to life-altering changes. I have facilitated and experienced miracles through this work.
+                                <br>
+                                <br>
+                                All those present for these sessions, including pointholders, are blessed by the process. Holding these points allows for all involved to plug into the purity of what is occurring. While trauma occurs in the darkness, pointholding sessions occur in the light and hands of a sacred container. The process alone is incredibly powerful; being witnessed and physically held in it is a gift of its own‍.
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="modality" id="preperation-call">
+                        <div class="modality-title">
+                            <h2><strong>Preparation Call</strong></h2>
+                        </div>
+
+                        <div class="modality-copy">
+                            <h5 class="blue">“<strong>Creating resonance and connection</strong> between attendees and facilitators...”</h5>
+                            <p>Family Constellations is a fascinating and fun way to discover what's hidden in your subconscious mind. With this modality, you can release family and ancestral burdens, and also receive personalized wisdom and guidance that is intricately tailored to you. I will facilitate an integration “mini-constellation” a new style of the work I've developed, where you will receive guidance that supports you to discover the specific energy that life is encouraging you to claim. You'll walk away clear, confident, and in awe of how accurate this was!</p>
+                        </div>
+                    </div> 
+
+                    <div class="modality" id="integration-call">
+                        <div class="modality-title">
+                            <h2><strong>Integration Call</strong></h2>
+                        </div>
+
+                        <div class="modality-copy">
+                            <h5 class="blue">“<strong>Reconnect and receive the support you require</strong> to <strong>bring the Immersion fully home with you</strong>...”</h5>
+                            <p>
+                                Pointholding is a powerfully transformative approach to releasing trauma, with consistently profound, permanent, and liberating results. This practice involves applying sustained pressure to neurosomatic points on the body, granting access to the limbic system, the emotional command center of the brain. It's here that we can unlock and gently release long-held trauma. You’ll lay comfortably on a massage table while two points at the base of the skull are held. Sessions resolve old traumatic imprints, allowing you to process and permanently release past emotions and negative beliefs at the root. Pointholding offers a unique channel to the wisdom of your body, cultivating a new level of embodied connection with Self that leads to life-altering changes. I have facilitated and experienced miracles through this work.
+                                <br>
+                                <br>
+                                All those present for these sessions, including pointholders, are blessed by the process. Holding these points allows for all involved to plug into the purity of what is occurring. While trauma occurs in the darkness, pointholding sessions occur in the light and hands of a sacred container. The process alone is incredibly powerful; being witnessed and physically held in it is a gift of its own‍.
+                            </p>
+                        </div>
+                    </div>     
+
+                </div>
+
+            </div>
+
+        </section>
+
+    <!-- BANNER WHO? -->
+        
+        <section class="banner" id="who">
+
+            <div class="title-banner left-align gold">
+                <div class="h1">
+                    <h1>Who <em>We</em> <strong>Are</strong></h1>
+                    <img style="width: 3rem; height: 3rem;" src="northstar-simple-hero.svg" alt="A star, a Northstar">
+                </div>
+            </div>
+
+        </section>
+
+    <!-- BIOS -->
+
+        <section class="main two">
+
+            <div class="container blurbs">
+
+                <div class="picture-frame bios">
+                    <div class="picture-border bios">
+                        <img class="frame" src="lars-king-bio.png" alt="A smiling Lars King"> 
+                    </div>
+                </div>
+                
+                <div class="title-copy left-align" style="align-self: center;">
+                    <h2 class="blue">
+                        <em>Lars King</em>
+                        <br>
+                        Facilitator & Host
+                    </h2>
+                    <h5 style="display: none;" class="blue">Lars is a <strong>transformational facilitator</strong> who <strong>specializes in exploring and transforming the subconscious</strong>, to <strong>embody our most authentic selves</strong>.</h5>
+                    <p>
+                        Lars is a transformational facilitator who specializes in exploring and transforming the subconscious, to embody our most authentic selves.
+                        <br>
+                        <br>
+                        He loves helping people find the magic and truth within themselves and holds sacred space for people to encounter and embrace all aspects of themselves. He intuitively senses what wants to emerge at any given moment. With his multiple modalities and caring spirit he supports people to go exactly where they need to go in themselves so they can recommit to their most aligned path in life.
+                    </p>
+                    <h5 class="blue"><strong>LEARN MORE</strong> ABOUT LARS' WORK HERE:<br><a class="bio-link" href="www.larsking.com">www.larsking.com</a></h6>
+                </div>
+
+            </div>
+
+            <div class="container blurbs">
+
+                <div class="title-copy left-align" style="align-self: center;">
+                    <h2 class="blue">
+                        <em>Hannah Barton</em>
+                        <br>
+                        Facilitator
+                    </h2>
+
+                    <p>
+                        Hannah Barton is an energy healer, bodyworker, and integration guide. As a bridge between the physical, emotional, 
+                        and energetic realms, she uses intuitive bodywork, emotional release techniques, and frequency recalibration 
+                        to help clients reconnect with their inner wisdom. 
+                        <br>
+                        <br>
+                        With deep presence and an open heart, Hannah cultivates nurturing spaces for transformation and self-exploration.
+                    </p>
+
+                    <h5 style="display: none;" class="blue"><strong>LEARN MORE</strong> ABOUT HANNAH'S WORK HERE:<br><a class="bio-link" href="www.larsking.com">www.larsking.com</a></h6>
+                </div>
+
+                <div class="picture-frame bios">
+                    <div class="picture-border bios">
+                        <img class="frame" src="placeholder-bio.png" alt="Hannah Barton with <3"> 
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="container blurbs">
+
+                <div class="picture-frame bios">
+                    <div class="picture-border bios">
+                        <img class="frame" src="placeholder-bio.png" alt="Hannah Barton with <3"> 
+                    </div>
+                </div>
+
+                <div class="title-copy left-align" style="align-self: center;">
+                    <h2 class="blue">
+                        <em>Darci Barton</em>
+                        <br>
+                        Facilitator
+                    </h2>
+
+                    <p>
+                        Darci Barton is an energy healer, bodyworker, and integration guide with a profound ability to hold space for transformation.
+                        She weaves intuitive bodywork, emotional healing, and nervous system regulation to support deep emotional self-awareness. 
+                        <br>
+                        <br>
+                        Darci's presence fosters a sense of safety and connection, allowing her clients to access their own innate wisdom and healing.
+                    </p>
+
+                    <h5 style="display: none;" class="blue"><strong>LEARN MORE</strong> ABOUT HANNAH'S WORK HERE:<br><a class="bio-link" href="www.larsking.com">www.larsking.com</a></h6>
+                </div>
+                
+            </div>
+
+        </section>
+
+    <!-- MY STORY -->
+        
+        <section class="main story">
+
+            <div class="container" style="width: 100%;">
+
+                <div class="title-banner left-align blue" style="width: 100%;">
+                    <div class="h1">
+                        
+                        <img style="width: 3rem; height: 3rem;" src="northstar-simple-blue-big.svg" alt="Northstar">
+                        <h1><em>My Story</em></h1>
+                        
+                    </div>                    
+                    <h1>With <strong>Pointholding</strong></h1>
+
+                </div>
+
+            </div>
+
+            <div class="container" style="width: 100%;">
+
+                <h3 class="blue">
+                    <strong>My first pointholding session</strong> was just weeks after my mom passed away, 
+                    and it supported me beyond what I knew was possible....
+                </h3>
+
+                <p>
+                    After my first experience, I knew that I needed to immerse myself in this. 
+                    I've traveled all around the world finding the modalities that resonate the most and achieve consistent, life changing results. 
+                    <br>
+                    <br>
+                    I've been offering pointholding retreats and immersions since 2021, and each time they improve.
+                    <br>
+                    <br>
+                    I love this work because it has completely revolutionized my and so many others' lives. 
+                    I used to be disembodied and disconnected from my heart, and pointholding helped me come back to my body, my love, and my true self.
+                </p>
+
+                <h4 class="blue">
+                    I have taken myself through <strong>everything I am offering here to you</strong>, and it <strong>is the absolute best I can give</strong>.
+                </h4>
+
+                <p>I would love to invite you into this intimate space of rebirth and remembrance; you will never be the same!</p>
+
+                <img style="width: 3rem; height: 3rem;" src="northstar-simple-blue-big.svg" alt="Northstar">
+
+            </div>
+
+        </section>
+
+    <!-- BANNER "LOGISTICS" -->
+
+        <section class="banner" id="logistics">
+
+            <div class="title-banner left-align gold">
+                <h1>1-Day <strong>Pointholding</strong></h1>
+                <div class="h1">
+                    <h1><em>Immersion</em></h1>
+                    <img style="width: 3rem; height: 3rem;" src="northstar-simple-hero.svg" alt="Northstar">
+                </div>
+                <h1 style="width: 100%;" class="text-right">&mdash; <em>Logistics</em></h1>
+            </div>
+
+        </section>
+    
+    <!-- LOGISTICS -->
+
+        <section class="main two modalities">
+
+            <div class="modalities-columns">
+
+                <div class="modalities-column-links">
+
+                    <div class="line"></div>
+
+                    <a class="modalities" href="#location">
+                        <h4><strong>Location</strong></h4>
+                    </a>
+
+                    <div class="line"></div>
+
+                    <a class="modalities" href="#food">
+                        <h4><strong>Food</strong></h4>
+                    </a>
+
+                    <div class="line"></div>
+
+                    <a class="modalities" href="#pricing">
+                        <h4><strong>Pricing</strong></h4>
+                    </a>
+            
+                </div>
+
+                <div class="modalities-column-copy">
+
+                    <div class="modality" id="location">
+                        <div class="modality-title" style="align-items: center;">
+                            <img style="width: 2rem; height: 2rem;" src="northstar-simple-blue-big.svg" alt="Northstar">
+                            <h2><strong>Location</strong></h2>
+                        </div>
+
+                        <div class="modality-copy">
+                            <h5 class="blue"><strong>Flow Massage and Wellness</strong></h5>
+                            
+                            <h5 class="blue">
+                                12401 Hy meadow Dr, 1-B
+                                <br>
+                                Austin, TX 78750
+                            </h5>
+
+                            <p>
+                                This beautiful and serene wellness studio offers multiple private rooms for sessions, 
+                                as well as comfortable places to relax, nap, and integrate.
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="modality" id="food">
+                        <div class="modality-title" style="align-items: center;">
+                            <img style="width: 2rem; height: 2rem;" src="northstar-simple-blue-big.svg" alt="Northstar">
+                            <h2><strong>Food</strong></h2> 
+                        </div>
+
+                        <div class="modality-copy">
+                            <h5 class="blue"><strong>Fresh</strong>, <strong>Healthy Meals</strong></h5>
+                            <p>
+                                Enjoy organic meals designed to nourish and support your transformation. 
+                                Dietary needs are carefully accommodated. Meals will be cooked with love by private chef Tyler Patrick. 
+                                Tea and organic snacks will be available as well.
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="modality" id="pricing">
+                        <div class="modality-title" style="align-items: center;">
+                            <img style="width: 2rem; height: 2rem;" src="northstar-simple-blue-big.svg" alt="Northstar">
+                            <h2><strong>Pricing</strong></h2>
+                        </div>
+
+                        <div class="modality-copy">
+                            <h5 class="blue"><strong>More Accessible</strong> Than <strong>Ever</strong></h5>
+                            <p>
+                                I used to run longer pointholding retreats at $3500, and while it was very much worth the investment for attendees, 
+                                I wanted to make the experience more accessible and a simpler fit into people's schedules 
+                                (while also keeping it as valuable and integration focused as I could). That's why I shortened it to one full Saturday, 
+                                where attendees can have a self-guided integration day on Sunday. The investment is about 1/4 of what it used to be, 
+                                with more facilitators (3 facilitators for 6 attendees), more preparation support, and generous payment plans if necessary.
+                            </p>
+                        </div>
+                    </div>   
+
+                </div>
+
+            </div>
+
+        </section>
+
+    <!-- BANNER "BOOK A CALL" -->
+
+        <section class="banner" id="book">
+
+            <div class="title-banner left-align gold">
+                <div class="h1">
+                    <h1><strong>Book</strong> <em>NOW</em></h1>
+                    <img style="width: 3rem; height: 3rem;" src="northstar-simple-hero.svg" alt="A star, a Northstar">
+                </div>
+            </div>
+
+        </section>
+
+    <!-- BOOK -->
+        
+        <section class="main two">
+
+            <div class="title-banner left-align blue">
+
+                <h1>1-Day <strong>Pointholding</strong></h1>
+
+                <div class="h1">
+                    <h1><em>Immersion</em></h1>
+                    <img style="width: 3rem; height: 3rem;" src="northstar-simple-blue-big.svg" alt="Northstar">
+                </div>
+
+            </div>
+            
+            <div class="container text-center" style="align-items: center;">
+
+                <h3 class="blue">
+                    <strong>Book a Call with Lars</strong> 
+                    to 
+                    <strong>Reserve Your Spot!</strong>
+                </h3>
+
+                <p>
+                    Because there are only 6 spots available for this intimate experience, I encourage you to book a 
+                    call with me sooner rather than later to secure your spot. I'm happy to answer any questions as well!
+                </p>
+            
+            </div>
+
+            <button style="font-size: 1.7rem;">
+                BOOK A CALL
+            </button>
+
+        </section>
+    
+    <!-- FOOTER -->
+        
+        <section class="footer">
+
+            <div class="footer-title-links">
+                <div class="title-banner left-align gold" style="align-self: flex-start;">
+
+                    <img src="title-lars-king-pointholding-immersion.svg" alt="The 1-Day Pointholding Immersion">
+    
+                </div>
+
+                <div class="footer-links">
+
+                    <div class="line-footer"></div>
+                    <a href="#modalities" class="footer-links"> 
+                            Modalities
+                    </a>
+
+                    <a href="#who" class="footer-links"> 
+                        Who We Are
+                    </a>
+
+                    <a href="#logistics" class="footer-links"> 
+                        Logistics
+                    </a>
+
+                    <a href="#book" class="footer-links"> 
+                        Book Now
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem; align-self: flex-end;">
+
+                <img style="width: 10rem;" src="Lars King.svg" alt="Lars King">
+
+                <div class="footer-links">
+
+                    <a href="https://www.larsking.com/" class="footer-links" style="text-transform: lowercase;"> 
+                        www.larsking.com
+                    </a>
+
+                    <div class="line-footer" style="width: 3rem;"></div>
+
+                    <a class="ig" href="https://www.instagram.com/thelarsking/">
+                        <img style="margin-top: .3rem;" src="instagram.svg" alt="Instagram Logo">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </body>
+</html>
