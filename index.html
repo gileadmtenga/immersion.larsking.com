@@ -992,6 +992,25 @@
             height: 6rem;
         }
 
+        div.title-line-h1.breaking-title-three {
+            flex-wrap: wrap;
+            row-gap: 1.25rem;
+        }
+
+        div.container.desktop-only {
+            display: flex;
+        }
+
+        div.container.mobile-only {
+            display: none;
+        }
+
+        div.container.story-end {
+            gap: 4rem;
+            max-width: 1200px;
+            width: 100%;
+            padding-left: 2rem;
+        }
 
         @media only screen and (max-width: 1000px) {
             
@@ -1159,6 +1178,23 @@
 
             h2 {
                 font-size: 2rem;
+            }
+
+            h2.h-wrap > em {
+                font-size: 2rem;
+            }
+
+            div.container.mobile-only {
+                display: flex;
+                padding-left: 0rem;
+            }
+
+            div.container.desktop-only {
+                display: none;
+            }
+
+            div.container.story-end {
+                padding-left: 0rem;
             }
 
         }
@@ -1517,9 +1553,26 @@
                             <div class="title-line-h1 border-blue-small right-align wide"></div>
                         </div>
 
-                        <h3>
-                            <em>COMMUNITY&nbsp;&&nbsp;SUPPORT</em>
-                        </h3>
+                        <div class="title-line-h1 breaking-title-three">
+                            
+                            <h3>
+                                <em>Community</em>
+                            </h3>
+
+                            <div class="title-line-h1">
+                                
+                                <h3>
+                                    <em>&</em>
+                                </h3>
+                                
+                                <h3>
+                                    <em>Support</em>
+                                </h3>
+
+                            </div>
+
+                        </div>
+
                     </div>
                     
                     <p>
@@ -1915,7 +1968,7 @@
                             </div>
         
                             <h2 class="h-wrap">
-                                <em>Mini-Constellation</em>
+                                <em>Mini-<span style="word-break: break-all;">Constellation</span></em>
                             </h2>
 
                         </div>
@@ -2273,7 +2326,7 @@
 
             </div>
 
-            <div class="container" style="gap: 4rem; max-width: 1200px; width: 100%; padding-left: 2rem;">
+            <div class="container desktop-only" style="gap: 4rem; max-width: 1200px; width: 100%; padding-left: 2rem;">
 
                 <h5 class="h-wrap blue">
 
@@ -2282,11 +2335,36 @@
                         <br>
                         into this intimate space...
                       </strong>
+
                 </h5>
 
             </div>
 
-            <div class="container wide" style="align-self: start; max-width: none;">
+            <div class="container mobile-only story-end">
+
+                <h5 class="h-wrap blue">
+
+                        <strong class="five">
+                        I would love to invite you
+                        <br>
+                        into this intimate space of...
+                        </strong>
+
+                </h5>
+
+                <h4 class="h-wrap blue" style="align-self: flex-end; text-align: right;">
+
+                    <em>Remembrance & Rebirth;</em>
+                    <br>
+                    <br>
+                    You will Never Be The Same.
+
+                </h4>
+
+            </div>
+
+
+            <div class="container wide desktop-only" style="align-self: start; max-width: none;">
                 <h3 class="blue">
                     ...Of&nbsp;
                     <em>
