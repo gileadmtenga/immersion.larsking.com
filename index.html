@@ -70,6 +70,8 @@
             max-width: 800px;
         }
 
+        
+
         p.testimonials {
             font-size: 1rem;
         }
@@ -413,7 +415,7 @@
         }
 
         img.community {
-            max-width: 400px;
+            max-width: 25rem;
             opacity: 0.99;
         }
 
@@ -475,8 +477,27 @@
 
         section.alchemical {
             gap: 6.5rem;
-            padding: 6.5rem;
+            padding: 0px;
+            overflow: visible;
+        }
+
+        section.container-alchemical-one {
+            padding-top: 6.5rem 0rem 0rem;
+            overflow: visible;
+        }
+
+        section.container-alchemical-two {
+            gap: 6.5rem;
+            padding: 0px;
             padding-bottom: 0;
+        }
+
+        section.container-alchemical-one::before {
+            background: transparent;
+        }
+
+        section.container-alchemical-two::before {
+            background: transparent;
         }
 
         section.right-for-you {
@@ -543,9 +564,9 @@
         }
 
         div.title-container.subtitle-hero {
-            max-width: 350px;
             gap: .75rem;
             align-self: stretch;
+            width: 21.5rem;
         }
         
         div.title-container.bigger-gap {
@@ -572,6 +593,8 @@
             align-items: end;
             align-self: center;
             gap: 4rem;
+            padding-left: 6.5rem;
+            padding-right: 6.5rem;
         }
 
         div.container-columns.two {
@@ -580,7 +603,8 @@
             align-items: end;
             align-self: stretch;
             gap: 0rem;
-            width: 100%;
+            padding-top: 1rem;
+            width: 100vw;
         /* 
             background-image: url(alchemical-zdenek-machacek-L2Y43N68k4Y-unsplash.png);
             background-size: cover;
@@ -599,10 +623,20 @@
             align-self: flex-end;
         }
 
-        img.alchemical {
+        div.community-copy-two {
+            display: flex;
+            max-width: 900px;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 4rem;
+            align-self: flex-end;
+            padding-bottom: 6.5rem; 
             width: 100%;
-            min-width: 555px;
-            max-width: 777px;
+        }
+
+        img.alchemical {
+            height: 160%;
         }
 
         div.alchemical {
@@ -619,7 +653,7 @@
             align-items: start;
             gap: 2.5rem;
             padding: 2.5rem;
-            width: 100%;
+            align-self: stretch;
             background-color: #FFF;
         }
 
@@ -632,8 +666,6 @@
             list-style-type: circle;
             gap: 1.3rem;
             font-family: 'Spartan', sans-serif;
-
-
             font-size: 1.1rem;
             line-height: 1.5;
             letter-spacing: 0.04em;
@@ -659,6 +691,7 @@
             font-size: 1.2rem;
             font-weight: 400;
             text-transform: uppercase;
+            text-align: center;
         }
 
         div.testimonials-columns {
@@ -682,6 +715,7 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 1.5rem;
+
             width: 45%;
         }
 
@@ -842,8 +876,8 @@
             background-image: url(northstar-picture-frame.svg);
             background-size: cover;
             background-position: center;
-            height: 500px;
-            width: 500px;
+            height: 30rem;
+            width: 30rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -853,7 +887,7 @@
         div.picture-border {
             border-radius: 50%;
             border: 1px solid rgba(250, 184, 55, 0.20);
-            width: 300px;
+            width: 20rem;
             padding: .5rem;
             display: flex;
             justify-content: center;
@@ -919,6 +953,7 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+            min-height: 28px;
         }
 
         div.line-footer {
@@ -949,6 +984,19 @@
             gap: 2.5rem;
         }
 
+        div.title-container.transformative-community {
+            align-self: auto;
+        }
+
+        div.container.bios-reverse {
+            display: flex;
+            max-width: 1200px;
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
+            flex-direction: row;
+        }
+
 
         @media only screen and (max-width: 1000px) {
             
@@ -956,6 +1004,31 @@
                 font-size: 12px;
             }
 
+            p {
+                font-size: 1.2rem;
+            }
+
+            p.testimonials {
+                font-size: 1.1rem;
+            }
+
+            p.modalities {
+                font-size: 1.225rem;
+            }
+
+            ul {
+                font-size: 1.2rem;
+            }
+
+
+            ul.two {
+                font-size: 1.3rem;
+            }
+
+        }
+
+        @media only screen and (max-width: 750px) {
+            
             div.subtitle-container-hero {
                 flex-direction: column;
                 width: 100%;
@@ -965,8 +1038,118 @@
             div.subtitle-hero.right {
                 align-self: flex-end;
             }
+            
+            
+            div.container-columns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            div.community-copy-two {
+                padding-bottom: 0rem; 
+            }
+
+            div.container-columns.two {
+                width: 100%;
+                max-width: fit-content;
+            }
+
+            div.title-container.transformative-community {
+                align-self: center;
+            }
+
+            section.right-for-you {
+                flex-direction: column;
+            }
+
+            div.testimonials-columns {
+                flex-direction: column;
+            }
+
+            div.testimonials-column-two {
+                width: auto;
+            }
+
+            div.modalities-column-links {
+                display: none;
+            }
+
+            div.container.bios-reverse {
+                flex-direction: column-reverse;
+            }
+
+            div.container.bios {
+                flex-direction: column;
+            }
+
+            section.footer {
+                gap: 8rem;
+                flex-direction: column;
+            }
+
+            div.footer-links {
+                width: 100%;
+            }
+
+            div.line-footer {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            div.title-line-h1.breaking-title {
+                flex-direction: column;
+            }
+
         }
 
+        @media only screen and (max-width: 595px) {
+            section.hero {
+                padding: 4rem;
+            }
+
+            section.main {
+                padding: 4rem 3rem;
+            }
+
+            section.subtitle {
+                gap: 3rem;
+            }
+
+            section.story {
+                padding: 4rem;
+            }
+
+            section.banner {
+                padding: 5rem 3rem;
+            }
+
+            section.alchemical {
+                gap: 6.5rem;
+            }
+
+            section.container-alchemical-one {
+                padding-top: 6.5rem 0rem 0rem;
+            }
+
+            section.container-alchemical-two {
+                gap: 6.5rem;
+            }
+        }
+
+        /*
+        div.subtitle-container-hero {
+                flex-direction: column;
+                width: 100%;
+                gap: 12rem;
+            }
+
+            div.subtitle-hero.right {
+                align-self: flex-end;
+            }
+        */
 
     </style>
 
@@ -1040,6 +1223,7 @@
     <!-- SUBbb  -  TITLESSSSS -->
 
     <section class="main subtitle">
+    
         <div class="container wide">
             
             <div class="title-container blue">
@@ -1047,7 +1231,7 @@
                 <h2>
                     Restore&nbsp;the&nbsp;<strong>Light,</strong>
                 </h2>
-                <div class="title-line-h1 wide">
+                <div class="title-line-h1 wide breaking-title">
                     
 
                     <div class="title-line-h1">
@@ -1086,7 +1270,7 @@
             <h2 class="and-a-half">
                 This&nbsp;<em>Immersion</em>
             </h2>
-            <div class="title-line-h1 wide">
+            <div class="title-line-h1 wide breaking-title">
                 
 
                 <div class="title-line-h1">
@@ -1208,83 +1392,86 @@
 
     <!-- ALCHEMICAL BUTTERFLY -->
 
-    <section class="main  one alchemical">
+    <section class="main one alchemical">
+    
+        <section class="container-alchemical-one">
+            <div class="container-columns">
 
-        <div class="container-columns">
+                <div class="picture-wrapper">
 
-            <div class="picture-wrapper">
+                    <img class="community " src="img-community.png" alt="COMMUNITY"> 
 
-                <img class="community " src="img-community.png" alt="COMMUNITY"> 
-
-            </div>
-
-            <div class="community-copy" >
-
-                <div class="title-container bigger-gap blue" style="align-self: auto;">
-
-                    <div class="title-line-h1 wide">
-                        <h3>Transformative</h3>
-                        <div class="title-line-h1 border-blue-small right-align wide"></div>
-                    </div>
-
-                    <h3>
-                        <em>COMMUNITY&nbsp;&&nbsp;SUPPORT</em>
-                    </h3>
-                </div>
-                
-                <p>
-                    The Pointholding Immersion is more than just an immersion; it's an intimate 
-                    community experience where each participant contributes to the healing of others. 
-                    <br>
-                    <br>
-                    The immersion is designed to offer permanent shifts and upgrades, 
-                    based on life-changing tools and expert facilitation. 
-                    <br>
-                    <br>
-                    Here, surrounded by a healing space and like-minded people, you will 
-                    reconnect with the REAL YOU who is ready to lead an inspired life.
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="container-columns two">
-
-            <div class="community-copy" style="padding-bottom: 6.5rem; width: 100%;">
-
-                <div class="title-container bigger-gap blue" style="align-self: auto;">
-
-                    <div class="title-line-h1 wide">
-                        <h2>An&nbsp;Embodied</h2>
-                        <div class="title-line-h1 border-blue right-align wide"></div>
-                    </div>
-
-                    <h2>
-                        <em>Alchemical&nbsp;Container</em>
-                    </h2>
                 </div>
 
-                <p>
-                    I've crafted an alchemical container that nurtures every aspect of your being—mental, 
-                    emotional, physical, and spiritual. 
-                    <br>
-                    <br>
-                    This full-spectrum experience is tailored for those who are ready to experience 
-                    the organic capacity their soul carries for healing and change.
-                </p>
+                <div class="community-copy" >
+
+                    <div class="title-container bigger-gap blue transformative-community">
+
+                        <div class="title-line-h1 wide">
+                            <h3>Transformative</h3>
+                            <div class="title-line-h1 border-blue-small right-align wide"></div>
+                        </div>
+
+                        <h3>
+                            <em>COMMUNITY&nbsp;&&nbsp;SUPPORT</em>
+                        </h3>
+                    </div>
+                    
+                    <p>
+                        The Pointholding Immersion is more than just an immersion; it's an intimate 
+                        community experience where each participant contributes to the healing of others. 
+                        <br>
+                        <br>
+                        The immersion is designed to offer permanent shifts and upgrades, 
+                        based on life-changing tools and expert facilitation. 
+                        <br>
+                        <br>
+                        Here, surrounded by a healing space and like-minded people, you will 
+                        reconnect with the REAL YOU who is ready to lead an inspired life.
+                    </p>
+
+                </div>
 
             </div>
+        </section>
 
-            <div class="alchemical">
-                <img class="alchemical " src="alchemical-zdenek-machacek-L2Y43N68k4Y-unsplash.png" alt="A Geode">
+        <section class="container-alchemical-two">
+            <div class="container-columns two">
+
+                <div class="community-copy-two">
+
+                    <div class="title-container bigger-gap blue" style="align-self: auto;">
+
+                        <div class="title-line-h1 wide">
+                            <h2>An&nbsp;Embodied</h2>
+                            <div class="title-line-h1 border-blue right-align wide"></div>
+                        </div>
+
+                        <h2>
+                            <em>Alchemical&nbsp;Container</em>
+                        </h2>
+                    </div>
+
+                    <p>
+                        I've crafted an alchemical container that nurtures every aspect of your being—mental, 
+                        emotional, physical, and spiritual. 
+                        <br>
+                        <br>
+                        This full-spectrum experience is tailored for those who are ready to experience 
+                        the organic capacity their soul carries for healing and change.
+                    </p>
+
+                </div>
+
+                <div class="alchemical">
+                    <img class="alchemical " src="alchemical-zdenek-machacek-L2Y43N68k4Y-unsplash.png" alt="A Geode">
+                </div>
+
             </div>
-
-        </div>
-
-
+        </section>
 
     </section>
+    
 
     <!--BANNER "RIGHT FOR YOU"-->
 
@@ -1292,7 +1479,10 @@
 
         <div class="title-container banner wide">
 
-            <h1>Is&nbsp;This&nbsp;<em>Immersion</em></h1>
+            <div class="title-line-h1 breaking-title">
+                <h1>Is&nbsp;This</h1>
+                <h1><em>Immersion</em></h1>
+            </div>
             
             <div class="title-line-h1 wide">
                 <h1><strong>Right</strong>&nbsp;For</h1>
@@ -1812,7 +2002,7 @@
 
         </div>
 
-        <div class="container bios">
+        <div class="container bios-reverse">
 
             <div class="bios-copy">
 
@@ -1928,9 +2118,11 @@
                 <h1><em>My&nbsp;Story</em></h1>
             </div>
 
-            <div class="title-line-h1 wide">
-                <h1>With</h1>
-                <div class="title-line-h1 border-blue right-align wide"></div>
+            <div class="title-line-h1 breaking-title wide">
+                <div class="title-line-h1">
+                    <h1>With</h1>
+                    <div class="title-line-h1 border-blue right-align wide"></div>
+                </div>
                 <!-- <h1 style="margin-left: -0.4em;"><strong>Pointholding</strong></h1> -->
                 <h1><strong>Pointholding</strong></h1>
             </div>
@@ -2469,7 +2661,7 @@
 
                         <strong class="five">
 
-                            Who We Are
+                            Who&nbsp;We&nbsp;Are
                             
                         </strong>
 
@@ -2497,7 +2689,7 @@
 
                         <strong class="five">
                             
-                            Book Now
+                            Book&nbsp;Now
                             
                         </strong>
 
