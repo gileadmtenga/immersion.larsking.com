@@ -477,7 +477,7 @@
 
         section.alchemical {
             gap: 6.5rem;
-            padding: 0px;
+            padding: 0rem;
             overflow: visible;
         }
 
@@ -593,8 +593,7 @@
             align-items: end;
             align-self: center;
             gap: 4rem;
-            padding-left: 6.5rem;
-            padding-right: 6.5rem;
+            padding: 6.5rem 6rem 0rem;
         }
 
         div.container-columns.two {
@@ -603,14 +602,7 @@
             align-items: end;
             align-self: stretch;
             gap: 0rem;
-            padding-top: 1rem;
-            width: 100vw;
-        /* 
-            background-image: url(alchemical-zdenek-machacek-L2Y43N68k4Y-unsplash.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: right top;
-        */
+            padding: 1rem 0rem 0rem 6.5rem;
         }
 
         div.community-copy {
@@ -636,12 +628,11 @@
         }
 
         img.alchemical {
-            height: 160%;
+            min-height: 25rem ;
         }
 
         div.alchemical {
             display: flex;
-            width: 100%;
             justify-self: center;
         }
 
@@ -997,6 +988,10 @@
             flex-direction: row;
         }
 
+        img.footer-title {
+            height: 6rem;
+        }
+
 
         @media only screen and (max-width: 1000px) {
             
@@ -1039,19 +1034,19 @@
                 align-self: flex-end;
             }
             
-            
             div.container-columns {
                 flex-direction: column;
                 align-items: center;
             }
 
             div.community-copy-two {
+                align-items: stretch;
                 padding-bottom: 0rem; 
             }
 
             div.container-columns.two {
-                width: 100%;
-                max-width: fit-content;
+                padding: 1rem 6.5rem 0rem;
+                align-items: center;
             }
 
             div.title-container.transformative-community {
@@ -1076,10 +1071,12 @@
 
             div.container.bios-reverse {
                 flex-direction: column-reverse;
+                width: 100%;
             }
 
             div.container.bios {
                 flex-direction: column;
+                width: 100%;
             }
 
             section.footer {
@@ -1114,10 +1111,6 @@
                 padding: 4rem 3rem;
             }
 
-            section.subtitle {
-                gap: 3rem;
-            }
-
             section.story {
                 padding: 4rem;
             }
@@ -1127,7 +1120,12 @@
             }
 
             section.alchemical {
+                padding: 0rem;
                 gap: 6.5rem;
+            }
+
+            section.remember {
+                padding: 4rem;
             }
 
             section.container-alchemical-one {
@@ -1137,6 +1135,112 @@
             section.container-alchemical-two {
                 gap: 6.5rem;
             }
+
+            div.container-columns {
+                padding: 6.5rem 4rem 0rem;
+            }
+
+            div.container-columns.two {
+                padding: 1rem 4rem 0rem;
+            }
+
+            img.community {
+                max-width: none;
+                max-height: 130%;
+            }
+
+            h1 {
+                font-size: 3.25rem;
+            }
+
+            h2.and-a-half {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+        }
+
+        @media only screen and (max-width: 499px) {
+            
+            div.title-line-h1.breaking-title-two {
+                flex-direction: column;
+                gap: 1.25rem;
+            }
+                
+            div.footer-links {
+                flex-direction: column;
+            }
+
+            div.footer-links.one {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            div.footer-links.two {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            img.footer-title {
+                height: auto;
+                width: 100%;
+            }
+
+            section.hero {
+                padding: 2rem;
+            }
+
+            section.main {
+                padding: 4rem 1rem;
+            }
+
+            section.story {
+                padding: 2rem;
+            }
+
+            section.banner {
+                padding: 5rem 1rem;
+            }
+
+            section.alchemical {
+                padding: 0rem;
+            }
+
+            section.remember {
+                padding: 2rem;
+            }
+
+            section.container-alchemical-one {
+                padding-top: 6.5rem 0rem 0rem;
+            }
+
+            section.container-alchemical-two {
+                gap: 6.5rem;
+            }
+
+            div.container-columns {
+                padding: 6.5rem 2rem 0rem;
+            }
+
+            div.container-columns.two {
+                padding: 1rem 2rem 0rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2.and-a-half {
+                font-size: 2.15rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
         }
 
         /*
@@ -1263,15 +1367,15 @@
 
     <!-- SIMMMBBAAAAA... REEEEMEMMBERRRRR WHOOO YOU ARREEEE -->
 
-    <section class="main  one" style="padding: 6.5rem;">
+    <section class="main remember one">
         
         <div class="title-container bigger-gap blue" style="max-width: none;">
 
             <h2 class="and-a-half">
                 This&nbsp;<em>Immersion</em>
             </h2>
-            <div class="title-line-h1 wide breaking-title">
-                
+
+            <div class="title-line-h1 wide bigger-gap breaking-title">
 
                 <div class="title-line-h1">
                     <h2 class="and-a-half">
@@ -1286,6 +1390,7 @@
                 </div>
 
             </div>
+
             <div class="title-line-h1 right-align wide">
                 <svg style="margin-top: -5px;" width="2.5rem" height="2.5rem" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id="northstar-simple" d="M17 2.5L20.1155 11.973M17 2.5L13.8845 11.973M17 2.5V17.5M20.1155 11.973L24.5 10M20.1155 11.973L17 17.5M13.8845 11.973L9.5 10M13.8845 11.973L17 17.5M9.5 10L11.473 14.3845M9.5 10L17 17.5M11.473 14.3845L2 17.5M11.473 14.3845L17 17.5M2 17.5L11.473 20.6155M2 17.5H17M11.473 20.6155L9.5 25M11.473 20.6155L17 17.5M9.5 25L13.8845 23.027M9.5 25L17 17.5M13.8845 23.027L17 32.5M13.8845 23.027L17 17.5M17 32.5L20.1155 23.027M17 32.5V17.5M20.1155 23.027L24.5 25M20.1155 23.027L17 17.5M24.5 25L22.527 20.6155M24.5 25L17 17.5M22.527 20.6155L32 17.5M22.527 20.6155L17 17.5M32 17.5L22.527 14.3845M32 17.5H17M22.527 14.3845L24.5 10M22.527 14.3845L17 17.5M24.5 10L17 17.5" stroke="#0080FF"/>
@@ -1447,9 +1552,15 @@
                             <div class="title-line-h1 border-blue right-align wide"></div>
                         </div>
 
-                        <h2>
-                            <em>Alchemical&nbsp;Container</em>
-                        </h2>
+                        <div class="title-line-h1 breaking-title-two">
+                            <h2>
+                                <em>Alchemical</em>
+                            </h2>
+                            <h2>
+                                <em>Container</em>
+                            </h2>
+                        </div>
+
                     </div>
 
                     <p>
@@ -2118,7 +2229,7 @@
                 <h1><em>My&nbsp;Story</em></h1>
             </div>
 
-            <div class="title-line-h1 breaking-title wide">
+            <div class="title-line-h1 bigger-gap breaking-title wide">
                 <div class="title-line-h1">
                     <h1>With</h1>
                     <div class="title-line-h1 border-blue right-align wide"></div>
@@ -2634,11 +2745,11 @@
 
             <div class="title-banner left-align gold" style="align-self: flex-start;">
 
-                <img style="height: 6rem;" src="title-lars-king-pointholding-immersion.svg" alt="The 1-Day Pointholding Immersion">
+                <img class="footer-title" src="title-lars-king-pointholding-immersion.svg" alt="The 1-Day Pointholding Immersion">
 
             </div>
 
-            <div class="footer-links">
+            <div class="footer-links one">
 
                 <div class="line-footer"></div>
                 <a href="#modalities" class="footer-links"> 
@@ -2704,7 +2815,7 @@
 
             <img style="width: 9rem;" src="Lars King.svg" alt="Lars King">
 
-            <div class="footer-links">
+            <div class="footer-links two">
 
                 <a href="https://www.larsking.com/" class="footer-links"> 
                     
