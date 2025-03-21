@@ -233,6 +233,43 @@
 
         html {
             background:
+                linear-gradient(rgba(0, 128, 255, 0.36), rgba(0, 128, 255, 0.36)),
+                linear-gradient(0.52turn, var(--blue), rgba(0, 128, 255, .75), rgba(0, 128, 255, 0), var(--blue));
+            background-size: cover;
+            background-blend-mode: normal, normal;
+            position: relative;
+        }
+
+        html::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("HFLIP-lars-king-pointholding-immersion-steve-petty-unsplash.png") var(--blue) no-repeat center;
+            background-size: cover;
+            z-index: -999; /* Ensures it stays in the background */
+        }
+
+        html::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("grain-slow-240px-50OPA.gif") repeat;
+            background-size: 120px 90px;
+            opacity: 0.045; /* Adjust for transparency */
+            pointer-events: none; /* Ensures it doesn't block interactions */
+            mix-blend-mode: lighten; /* Adjust blend mode for effect */
+            z-index: -9; /* Places it over the background image */
+        }
+
+        /*
+        html {
+            background:
                 linear-gradient(rgba(0, 128, 255, 0.36), rgba(0, 128, 255, 0.36)) fixed,
                 linear-gradient(0.52turn, var(--blue), rgba(0, 128, 255, .75), rgba(0, 128, 255, 0), var(--blue)) fixed,
                 url("HFLIP-lars-king-pointholding-immersion-steve-petty-unsplash.png") var(--blue) no-repeat center fixed;
@@ -251,22 +288,12 @@
             height: 100%;
             background: url(grain-slow-240px-50OPA.gif) repeat;
             background-size: 120px 90px;
-            opacity: 0.045; /* Adjust for transparency */
-            pointer-events: none; /* Ensures it doesn't block interactions */
-            mix-blend-mode: lighten; /* Adjust blend mode for effect */
-            z-index: -9; /* Places it over other layers */
-        }
-
-        @media only screen and (max-width: 750px) {
-            html {
-                background:
-                    linear-gradient(rgba(0, 128, 255, 0.36), rgba(0, 128, 255, 0.36)) fixed,
-                    linear-gradient(0.52turn, var(--blue), rgba(0, 128, 255, .75), rgba(0, 128, 255, 0), var(--blue)) fixed,
-                    url("HFLIP-lars-king-pointholding-immersion-steve-petty-unsplash.png") var(--blue) no-repeat center top;
-                background-size: cover;
-                background-blend-mode: normal, normal, normal;
+            opacity: 0.045;
+            pointer-events: none;
+            mix-blend-mode: lighten; 
+            z-index: -9;
             }
-        }
+        */
 
         section.subtitle::before {
             content: "";
