@@ -257,6 +257,17 @@
             z-index: -9; /* Places it over other layers */
         }
 
+        @media only screen and (max-width: 750px) {
+            html {
+                background:
+                    linear-gradient(rgba(0, 128, 255, 0.36), rgba(0, 128, 255, 0.36)) fixed,
+                    linear-gradient(0.52turn, var(--blue), rgba(0, 128, 255, .75), rgba(0, 128, 255, 0), var(--blue)) fixed,
+                    url("HFLIP-lars-king-pointholding-immersion-steve-petty-unsplash.png") var(--blue) no-repeat center top;
+                background-size: cover;
+                background-blend-mode: normal, normal, normal;
+            }
+        }
+
         section.subtitle::before {
             content: "";
             position: absolute;
