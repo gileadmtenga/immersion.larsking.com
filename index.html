@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>1-Day Pointholding Immersion - Transform & Reconnect in Austin, TX</title>
+    <meta name="description" content="Join Lars King & expert facilitators for a 1-day immersion in Pointholding. Release trauma, restore your authentic self, and experience profound transformation in Austin, TX on April 19, 2025.">  
+    <meta name="keywords" content="Pointholding, healing retreat, trauma release, transformation, Austin TX, self-discovery, embodiment, nervous system healing, energy work, holistic healing, spiritual retreat">  
+    <meta name="author" content="Lars King">  
+    <meta name="robots" content="index, follow">  
 
     <!-- FONT FACE DECLARATIONS -->
 
@@ -222,6 +226,7 @@
     <style>
 
         :root {
+                scroll-behavior: smooth;
                 --gold: #FAB837;
                 --blue: #0080FF;
                 font-size: 16px;
@@ -383,29 +388,34 @@
 
         /* LINK BUTTON ETC. STYLES */
 
-        button {
-                background-color: #FAB837;
-                color: #FFF;
-                font-family: Spartan;
-                font-size: 1.5rem;
-                font-style: normal;
-                font-weight: 400;
-                text-transform: uppercase;
-                padding: 1rem 1.8rem;
-                cursor: pointer;
-                font-family: 'League Spartan', sans-serif;
-                letter-spacing: 0.1rem;
-                border: none;
-                border-radius: 0rem;
-                box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
-                line-height: .8;
-            }
+        a.button {
+            background-color: #FAB837;
+            color: #FFF;
+            font-family: Spartan;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 1rem 1.8rem;
+            cursor: pointer;
+            font-family: 'League Spartan', sans-serif;
+            letter-spacing: 0.1rem;
+            border: none;
+            border-radius: 0rem;
+            box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
+            line-height: .8;
+            text-decoration: none;
+        }
 
-            button:hover {
-                background-color: #FFF;
-                color: #FAB837;
-                box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.3);
-            }
+        a.button.book {
+            font-size: 1.7rem;
+        }
+
+        a.button:hover {
+            background-color: #FFF;
+            color: #FAB837;
+            box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.3);
+        }
 
         /* BASE, VARIABLE MISC. STYLES */
 
@@ -1497,9 +1507,9 @@
                 This is the most powerful offering I have.
             </p>
 
-            <button onclick="location.href='#book'" type="button">
+            <a class="button" href="#book">
                 Book <em>Now</em>
-            </button>
+            </a>
 
         </div>
     </section>
@@ -1616,9 +1626,9 @@
 
         </div>
 
-        <button onclick="location.href='#book'" type="button">
+        <a class="button" href="#book">
             Book <em>Now</em>
-        </button>
+        </a>
 
     </section>
 
@@ -1955,7 +1965,7 @@
 
     <!--BANNER "MODALITIES"-->
 
-    <section class="main banner gold">
+    <section class="main banner gold" id="modalities">
 
         <div class="title-container banner wide" style="max-width: 900px;">
             
@@ -1971,7 +1981,7 @@
 
     <!--MODALITIES-->
 
-    <section class="main  one modalities" id="modalities">
+    <section class="main  one modalities">
 
         <div class="modalities-columns">
 
@@ -2187,7 +2197,7 @@
 
     <!--BANNER "WHO"-->
 
-    <section class="main banner gold">
+    <section class="main banner gold" id="who">
 
         <div class="title-container banner wide" style="max-width: 600px;">
             
@@ -2204,7 +2214,7 @@
 
     <!--BIOS-->
 
-    <section class="main  one" style="gap: 2rem;" id="who">
+    <section class="main  one" style="gap: 2rem;">
 
         <div class="container bios">
 
@@ -2468,7 +2478,7 @@
 
     <!--BANNER "LOGISTICS"-->
 
-    <section class="main banner gold">
+    <section class="main banner gold" id="logistics">
 
 
         <div class="title-container banner wide">
@@ -2488,7 +2498,7 @@
 
     <!--LOGISTICS-->
 
-    <section class="main one  modalities" id="logistics">
+    <section class="main one  modalities">
 
         <div class="modalities-columns">
 
@@ -2617,7 +2627,7 @@
 
     <!--BANNER + "BOOK NOW"-->
 
-    <section class="main banner gold">
+    <section class="main banner gold" id="book">
 
         <div class="title-container banner wide">
 
@@ -2632,7 +2642,7 @@
 
     <!--BOOK A CALL-->
 
-    <section style="background-blend-mode: screen;" class="main  one" id="book">
+    <section style="background-blend-mode: screen;" class="main one">
 
         <div class="title-container banner wide blue" style="max-width: 900px;">
 
@@ -2664,9 +2674,9 @@
                 call with me sooner rather than later to secure your spot. I'm happy to answer any questions as well!
             </p>
 
-            <button onclick="location.href='#book'" type="button" style="font-size: 1.7rem;">
-                <strong class="five">Book</strong>&nbsp;<em>A call</em>
-            </button>
+            <a class="button book" href="https://www.calendly.com/larsking/immersion" target="_blank">
+                Book <em>Now</em>
+            </a>
         
         </div>
 
@@ -2674,7 +2684,7 @@
 
     <!--TESTIMONIALS-->
 
-    <section class="main  testimonials">
+    <section class="main testimonials">
 
         <div class="title-line-h1 blue">
 
@@ -2963,7 +2973,7 @@
 
             <div class="footer-links two">
 
-                <a href="https://www.larsking.com/" class="footer-links"> 
+                <a href="https://www.larsking.com/" class="footer-links" target="_blank"> 
                     
                     <h6 style="text-transform: lowercase;">
 
@@ -2979,7 +2989,7 @@
 
                 <div class="line-footer" style="width: 3rem;"></div>
 
-                <a class="ig" href="https://www.instagram.com/thelarsking/">
+                <a class="ig" href="https://www.instagram.com/thelarsking/" target="_blank">
                     <img style="margin-top: .3rem;" src="instagram.svg" alt="Instagram Logo">
                 </a>
 
