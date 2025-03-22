@@ -58,7 +58,6 @@
 
     <style>
 
-
         p {
             font-family: 'Spartan', sans-serif;
             font-size: 1.1rem;
@@ -69,8 +68,6 @@
             font-weight: 350;
             max-width: 800px;
         }
-
-        
 
         p.testimonials {
             font-size: 1rem;
@@ -118,7 +115,6 @@
             font-size: 4rem;
             font-weight: 300;
         }
-
 
         h1.h-wrap {
             font-size: calc(4rem * .92);
@@ -236,16 +232,12 @@
         }
 
         div.bg {
-            content: "";
             position: fixed;
             top: 0;
             left: 0;
-            width: 100dvw;
-            height: 100dvh;
-            background:
-                linear-gradient(rgba(0, 128, 255, 0.36), rgba(0, 128, 255, 0.36)) fixed,
-                linear-gradient(0.52turn, var(--blue), rgba(0, 128, 255, .75), rgba(0, 128, 255, 0), var(--blue)) fixed,
-                url("HFLIP-lars-king-pointholding-immersion-steve-petty-unsplash.png") var(--blue) no-repeat center fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url(background-lars-king-immersion-steve-petty-QM7V795AvEM-unsplash.png);
             background-size: cover;
             z-index: -999; /* Ensures it stays in the background */
         }
@@ -1207,6 +1199,7 @@
 
             div.title-line-h1.breaking-title {
                 flex-direction: column;
+                gap: 4rem;
             }
 
         }
@@ -1284,6 +1277,10 @@
                 font-size: 2rem;
             }
 
+            h4.subtitle {
+                font-size: 1.3rem;
+            }
+
             div.container.mobile-only {
                 display: flex;
                 padding-left: 0rem;
@@ -1301,6 +1298,10 @@
 
         @media only screen and (max-width: 499px) {
             
+            :root {
+                font-size: 11px;
+            }  
+
             div.title-line-h1.breaking-title-two {
                 flex-direction: column;
                 gap: 1.25rem;
@@ -1388,6 +1389,10 @@
                 object-fit: cover;
             }
 
+            h4.subtitle {
+                font-size: 1.15rem;
+            }
+
         }
 
         /*
@@ -1409,7 +1414,7 @@
 
     <div class="bg"></div>
 
-    <!-- HERO HERO -->
+    <!--HERO HERO-->
 
     <section class="gold hero">
 
@@ -1431,33 +1436,33 @@
         <div class="subtitle-container-hero">
 
             <div class="title-container wide subtitle-hero">
-                <h4><strong>Austin</strong></h4>
+                <h4 class="subtitle"><strong>Austin</strong></h4>
                 <div class="title-line-h1 wide small-gap">
                     <div class="title-line-h1 wide border-gold-small small-gap">
-                        <h4>Texas</h4>
+                        <h4 class="subtitle">Texas</h4>
                     </div>
-                    <h4><strong>April&nbsp;19</strong></h4>
+                    <h4 class="subtitle"><strong>April&nbsp;19</strong></h4>
                 </div>
                 <div class="title-line-h1 wide small-gap right-align">
-                    <h4><em>2025</em></h4>
+                    <h4 class="subtitle"><em>2025</em></h4>
                 </div>
             </div>
 
             <div class="title-container wide subtitle-hero right">
                 <div class="title-line-h1 wide small-gap right-align">
-                    <h4>Hosted&nbsp;by</h4>
+                    <h4 class="subtitle">Hosted&nbsp;by</h4>
                 </div>
                 <div class="title-line-h1 wide border-gold-small small-gap">
-                    <h4><em>Lars&nbsp;King</em></h4>
+                    <h4 class="subtitle"><em>Lars&nbsp;King</em></h4>
                 </div>
-                <h4>&&nbsp;2&nbsp;Skilled&nbsp;Facilitators</h4>
+                <h4 class="subtitle">&&nbsp;2&nbsp;Skilled&nbsp;Facilitators</h4>
             </div>
 
         </div>
 
     </section>
 
-    <!-- SUBbb  -  TITLESSSSS -->
+    <!--SUBbb - TITLESSSSS-->
 
     <section class="main subtitle">
     
@@ -1492,14 +1497,14 @@
                 This is the most powerful offering I have.
             </p>
 
-            <button>
+            <button onclick="location.href='#book'" type="button">
                 Book <em>Now</em>
             </button>
 
         </div>
     </section>
 
-    <!-- SIMMMBBAAAAA... REEEEMEMMBERRRRR WHOOO YOU ARREEEE -->
+    <!--SIMMMBBAAAAA... REEEEMEMMBERRRRR WHOOO YOU ARREEEE-->
 
     <section class="main remember one">
         
@@ -1611,13 +1616,13 @@
 
         </div>
 
-        <button>
+        <button onclick="location.href='#book'" type="button">
             Book <em>Now</em>
         </button>
 
     </section>
 
-    <!-- ALCHEMICAL BUTTERFLY -->
+    <!--ALCHEMICAL BUTTERFLY-->
 
     <section class="main one alchemical">
     
@@ -1729,7 +1734,7 @@
 
         <div class="title-container banner wide">
 
-            <div class="title-line-h1 breaking-title">
+            <div class="title-line-h1 breaking-title" style="gap: 1rem;">
                 <h1>Is&nbsp;This</h1>
                 <h1><em>Immersion</em></h1>
             </div>
@@ -2366,8 +2371,8 @@
                 <h1><em>My&nbsp;Story</em></h1>
             </div>
 
-            <div class="title-line-h1 bigger-gap breaking-title wide">
-                <div class="title-line-h1">
+            <div class="title-line-h1 bigger-gap breaking-title wide" style="gap: 1rem;">
+                <div class="title-line-h1 wide">
                     <h1>With</h1>
                     <div class="title-line-h1 border-blue right-align wide"></div>
                 </div>
@@ -2408,7 +2413,7 @@
 
             </div>
 
-            <div class="container desktop-only" style="gap: 4rem; max-width: 1200px; width: 100%; padding-left: 2rem;">
+            <div class="container desktop-only" style="gap: 4rem; max-width: 1200px; width: 100%; padding-left: 6.5rem;">
 
                 <h5 class="h-wrap blue">
 
@@ -2448,9 +2453,8 @@
 
             <div class="container wide desktop-only" style="align-self: start; max-width: none;">
                 <h3 class="blue">
-                    ...Of&nbsp;
                     <em>
-                        Remembrance&nbsp;&&nbsp;REBIRTH;
+                        ...Of&nbsp;Remembrance&nbsp;&&nbsp;REBIRTH;
                     </em>
                 </h3>
                 <div class="title-line-h1 right-align blue wide">
@@ -2660,7 +2664,7 @@
                 call with me sooner rather than later to secure your spot. I'm happy to answer any questions as well!
             </p>
 
-            <button style="font-size: 1.7rem;">
+            <button onclick="location.href='#book'" type="button" style="font-size: 1.7rem;">
                 <strong class="five">Book</strong>&nbsp;<em>A call</em>
             </button>
         
@@ -2879,7 +2883,7 @@
 
     </section>
 
-    <!-- FOOTER -->
+    <!--FOOTER-->
         
     <section class="footer">
 
@@ -2984,8 +2988,6 @@
         </div>
 
     </section>
-
-
 
 </body>
 </html>
