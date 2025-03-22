@@ -232,11 +232,40 @@
         }
 
         html {
-
-            background-blend-mode: normal, normal;
             position: relative;
         }
 
+        div.bg {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100dvw;
+            height: 100dvh;
+            background:
+                linear-gradient(rgba(0, 128, 255, 0.36), rgba(0, 128, 255, 0.36)) fixed,
+                linear-gradient(0.52turn, var(--blue), rgba(0, 128, 255, .75), rgba(0, 128, 255, 0), var(--blue)) fixed,
+                url("HFLIP-lars-king-pointholding-immersion-steve-petty-unsplash.png") var(--blue) no-repeat center fixed;
+            background-size: cover;
+            z-index: -999; /* Ensures it stays in the background */
+        }
+
+        div.bg::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(grain-slow-240px-50OPA.gif) repeat;
+            background-size: 120px 90px;
+            opacity: 0.045;
+            pointer-events: none;
+            mix-blend-mode: lighten; 
+            z-index: -9;
+        }
+
+        /* last bg
         html::before {
             content: "";
             position: fixed;
@@ -249,7 +278,7 @@
                 linear-gradient(0.52turn, var(--blue), rgba(0, 128, 255, .75), rgba(0, 128, 255, 0), var(--blue)) fixed,
                 url("HFLIP-lars-king-pointholding-immersion-steve-petty-unsplash.png") var(--blue) no-repeat center fixed;
             background-size: cover;
-            z-index: -999; /* Ensures it stays in the background */
+            z-index: -999;
         }
 
         html::after {
@@ -261,10 +290,10 @@
             height: 100%;
             background: url("grain-slow-240px-50OPA.gif") repeat;
             background-size: 120px 90px;
-            opacity: 0.045; /* Adjust for transparency */
-            pointer-events: none; /* Ensures it doesn't block interactions */
-            mix-blend-mode: lighten; /* Adjust blend mode for effect */
-            z-index: -9; /* Places it over the background image */
+            opacity: 0.045;
+            pointer-events: none;
+            mix-blend-mode: lighten;
+            z-index: -9;
         }
 
         /*
@@ -397,19 +426,27 @@
         }
 
         .border-gold {
-            border-bottom: 2px solid var(--gold);
+            border-bottom: 0.15rem solid var(--gold);
+        }
+
+        .border-gold-mid {
+            border-bottom: 0.12rem solid var(--gold);
         }
 
         .border-gold-small {
-            border-bottom: 1px solid var(--gold);
+            border-bottom: 0.1rem solid var(--gold);
         }
 
         .border-blue {
-            border-bottom: 2px solid var(--blue);
+            border-bottom: 0.15rem solid var(--blue);
+        }
+
+        .border-blue-mid {
+            border-bottom: 0.12rem solid var(--blue);
         }
 
         .border-blue-small {
-            border-bottom: 1.5px solid var(--blue);
+            border-bottom: 0.1rem solid var(--blue);
         }
 
         .wide {
@@ -565,6 +602,7 @@
             flex-direction: column;
             justify-content: stretch;
             align-items: stretch;
+            overflow: visible;
         }
 
 
@@ -1050,6 +1088,15 @@
             padding-left: 2rem;
         }
 
+        img.northstar-h1 {
+            height: 3rem;
+        }
+
+        img.northstar-h2-and-a-half {
+            height: 2.75rem;
+            margin-top: -0.3rem;
+        }
+
         @media only screen and (max-width: 1000px) {
             
             :root {
@@ -1084,7 +1131,7 @@
             div.subtitle-container-hero {
                 flex-direction: column;
                 width: 100%;
-                gap: 12rem;
+                gap: 6.5rem;
             }
 
             div.subtitle-hero.right {
@@ -1139,6 +1186,7 @@
             section.footer {
                 gap: 8rem;
                 flex-direction: column;
+                padding: 12vw;
             }
 
             div.footer-links {
@@ -1151,6 +1199,10 @@
 
             h1 {
                 font-size: 3.5rem;
+            }
+
+            img.northstar-h1 {
+                height: 2.5rem;
             }
 
             div.title-line-h1.breaking-title {
@@ -1205,6 +1257,16 @@
                 max-width: none;
                 max-height: 130%;
             }
+
+            img.northstar-h1 {
+                height: 2.5rem;
+            }
+
+            img.northstar-h2-and-a-half {
+                height: 2.5rem;
+                margin-top: -0.45rem;
+            }
+
 
             h1 {
                 font-size: 3.25rem;
@@ -1264,11 +1326,13 @@
             }
 
             section.hero {
-                padding: 2rem;
+                padding: 6rem 10vw;
+                height: auto;
+                gap: 8rem;
             }
 
             section.main {
-                padding: 4rem 1rem;
+                padding: 4rem 8vw;
             }
 
             section.story {
@@ -1276,7 +1340,7 @@
             }
 
             section.banner {
-                padding: 5rem 1rem;
+                padding: 5rem 10vw;
             }
 
             section.alchemical {
@@ -1284,7 +1348,7 @@
             }
 
             section.remember {
-                padding: 2rem;
+                padding: 4rem 8vw;
             }
 
             section.container-alchemical-one {
@@ -1296,11 +1360,15 @@
             }
 
             div.container-columns {
-                padding: 6.5rem 2rem 0rem;
+                padding: 6.5rem 8vw 0rem;
             }
 
             div.container-columns.two {
                 padding: 1rem 2rem 0rem;
+            }
+
+            img.northstar-h1 {
+                height: 2rem;
             }
 
             h1 {
@@ -1313,6 +1381,11 @@
 
             h2 {
                 font-size: 2rem;
+            }
+
+            img.alchemical {
+                max-width: 120vw;
+                object-fit: cover;
             }
 
         }
@@ -1334,37 +1407,23 @@
 </head>
 <body>
 
+    <div class="bg"></div>
+
     <!-- HERO HERO -->
 
     <section class="gold hero">
 
         <div class="title-container">
 
-            <h1 style="font-weight: normal;">Welcome</h1>
+            <h1 style="font-weight: normal;">Welcome&nbsp;<span style="font-weight: 300;">to</span></h1>
 
-            <h1>to&nbsp;the&nbsp;1&#8209;Day</h1>
+            <h1>the&nbsp;1&#8209;Day</h1>
 
             <div class="title-line-h1 border-gold wide"><h1><strong>Pointholding</strong></h1></div>
 
             <div class="title-line-h1 wide right-align">
                 <h1><em>Immersion</em></h1>
-                <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 59 60" fill="none">
-                    <path d="M29.5 57.5L35.2117 40.1328L29.5 30V57.5Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M39.6328 24.2882L43.25 16.25L29.5 30L39.6328 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M35.2117 19.8672L29.5 2.5V30L35.2117 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M23.7882 19.8672L15.75 16.25L29.5 30L23.7882 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M19.3672 24.2882L2 30H29.5L19.3672 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 30L39.6328 24.2882L57 30H29.5ZM29.5 30L39.6328 35.7117L43.25 43.75L29.5 30ZM29.5 30L23.7882 40.1328L15.75 43.75L29.5 30Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M23.7882 40.1328L29.5 57.5V30L23.7882 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M35.2117 40.1328L43.25 43.75L29.5 30L35.2117 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M39.6328 35.7117L57 30H29.5L39.6328 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M43.25 16.25L35.2117 19.8672L29.5 30L43.25 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M29.5 2.5L23.7882 19.8672L29.5 30V2.5Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M15.75 16.25L19.3672 24.2882L29.5 30L15.75 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M2 30L19.3672 35.7117L29.5 30H2Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M19.3672 35.7117L15.75 43.75L29.5 30L19.3672 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M29.5 2.5L35.2117 19.8672M29.5 2.5L23.7882 19.8672M29.5 2.5V30M35.2117 19.8672L43.25 16.25M35.2117 19.8672L29.5 30M23.7882 19.8672L15.75 16.25M23.7882 19.8672L29.5 30M15.75 16.25L19.3672 24.2882M15.75 16.25L29.5 30M19.3672 24.2882L2 30M19.3672 24.2882L29.5 30M2 30L19.3672 35.7117M2 30H29.5M19.3672 35.7117L15.75 43.75M19.3672 35.7117L29.5 30M15.75 43.75L23.7882 40.1328M15.75 43.75L29.5 30M23.7882 40.1328L29.5 57.5M23.7882 40.1328L29.5 30M29.5 57.5L35.2117 40.1328M29.5 57.5V30M35.2117 40.1328L43.25 43.75M35.2117 40.1328L29.5 30M43.25 43.75L39.6328 35.7117M43.25 43.75L29.5 30M39.6328 35.7117L57 30M39.6328 35.7117L29.5 30M57 30L39.6328 24.2882M57 30H29.5M39.6328 24.2882L43.25 16.25M39.6328 24.2882L29.5 30M43.25 16.25L29.5 30" stroke="#FAB837"/>
-                  </svg>
+                <img class="northstar-h1" src="northstar-gold.svg" alt="The North Star">
             </div>
 
         </div>
@@ -1421,8 +1480,9 @@
                     </div>
 
                 </div>
-                <div class="title-line-h1 right-align wide">
-                    <h2><em>Authentic&nbsp;Nature</em></h2>
+                <div class="title-line-h1 right-align wide breaking-title-three">
+                    <h2><em>Authentic</em></h2>
+                    <h2><em>Nature</em></h2>
                 </div>
             </div>
 
@@ -1443,7 +1503,13 @@
 
     <section class="main remember one">
         
-        <div class="title-container bigger-gap blue" style="max-width: none;">
+        <div class="title-container bigger-gap blue" 
+        style="
+            max-width: 1000px;
+            align-self: center;
+            width: 100%;
+            "
+        >
 
             <h2 class="and-a-half">
                 This&nbsp;<em>Immersion</em>
@@ -1466,9 +1532,7 @@
             </div>
 
             <div class="title-line-h1 right-align wide">
-                <svg style="margin-top: -5px;" width="2.5rem" height="2.5rem" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="northstar-simple" d="M17 2.5L20.1155 11.973M17 2.5L13.8845 11.973M17 2.5V17.5M20.1155 11.973L24.5 10M20.1155 11.973L17 17.5M13.8845 11.973L9.5 10M13.8845 11.973L17 17.5M9.5 10L11.473 14.3845M9.5 10L17 17.5M11.473 14.3845L2 17.5M11.473 14.3845L17 17.5M2 17.5L11.473 20.6155M2 17.5H17M11.473 20.6155L9.5 25M11.473 20.6155L17 17.5M9.5 25L13.8845 23.027M9.5 25L17 17.5M13.8845 23.027L17 32.5M13.8845 23.027L17 17.5M17 32.5L20.1155 23.027M17 32.5V17.5M20.1155 23.027L24.5 25M20.1155 23.027L17 17.5M24.5 25L22.527 20.6155M24.5 25L17 17.5M22.527 20.6155L32 17.5M22.527 20.6155L17 17.5M32 17.5L22.527 14.3845M32 17.5H17M22.527 14.3845L24.5 10M22.527 14.3845L17 17.5M24.5 10L17 17.5" stroke="#0080FF"/>
-                </svg>
+                <img class="northstar-h2-and-a-half" src="northstar-blue-big-stroke.svg" alt="The North Star">
                 <h2 class="and-a-half">
                     <em>Remembrances</em>
                 </h2>
@@ -1542,23 +1606,7 @@
 
             <div class="title-line-h1 wide right-align">
                 <h1><em>Immersion</em></h1>
-                <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 59 60" fill="none">
-                    <path d="M29.5 57.5L35.2117 40.1328L29.5 30V57.5Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M39.6328 24.2882L43.25 16.25L29.5 30L39.6328 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M35.2117 19.8672L29.5 2.5V30L35.2117 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M23.7882 19.8672L15.75 16.25L29.5 30L23.7882 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M19.3672 24.2882L2 30H29.5L19.3672 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 30L39.6328 24.2882L57 30H29.5ZM29.5 30L39.6328 35.7117L43.25 43.75L29.5 30ZM29.5 30L23.7882 40.1328L15.75 43.75L29.5 30Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M23.7882 40.1328L29.5 57.5V30L23.7882 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M35.2117 40.1328L43.25 43.75L29.5 30L35.2117 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M39.6328 35.7117L57 30H29.5L39.6328 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M43.25 16.25L35.2117 19.8672L29.5 30L43.25 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M29.5 2.5L23.7882 19.8672L29.5 30V2.5Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M15.75 16.25L19.3672 24.2882L29.5 30L15.75 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M2 30L19.3672 35.7117L29.5 30H2Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M19.3672 35.7117L15.75 43.75L29.5 30L19.3672 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M29.5 2.5L35.2117 19.8672M29.5 2.5L23.7882 19.8672M29.5 2.5V30M35.2117 19.8672L43.25 16.25M35.2117 19.8672L29.5 30M23.7882 19.8672L15.75 16.25M23.7882 19.8672L29.5 30M15.75 16.25L19.3672 24.2882M15.75 16.25L29.5 30M19.3672 24.2882L2 30M19.3672 24.2882L29.5 30M2 30L19.3672 35.7117M2 30H29.5M19.3672 35.7117L15.75 43.75M19.3672 35.7117L29.5 30M15.75 43.75L23.7882 40.1328M15.75 43.75L29.5 30M23.7882 40.1328L29.5 57.5M23.7882 40.1328L29.5 30M29.5 57.5L35.2117 40.1328M29.5 57.5V30M35.2117 40.1328L43.25 43.75M35.2117 40.1328L29.5 30M43.25 43.75L39.6328 35.7117M43.25 43.75L29.5 30M39.6328 35.7117L57 30M39.6328 35.7117L29.5 30M57 30L39.6328 24.2882M57 30H29.5M39.6328 24.2882L43.25 16.25M39.6328 24.2882L29.5 30M43.25 16.25L29.5 30" stroke="#FAB837"/>
-                  </svg>
+                <img class="northstar-h1" src="northstar-gold.svg" alt="The North Star">
             </div>
 
         </div>
@@ -1640,7 +1688,7 @@
 
                         <div class="title-line-h1 wide">
                             <h2>An&nbsp;Embodied</h2>
-                            <div class="title-line-h1 border-blue right-align wide"></div>
+                            <div class="title-line-h1 border-blue-mid right-align wide"></div>
                         </div>
 
                         <div class="title-line-h1 breaking-title-two">
@@ -1918,7 +1966,7 @@
 
     <!--MODALITIES-->
 
-    <section class="main  one modalities">
+    <section class="main  one modalities" id="modalities">
 
         <div class="modalities-columns">
 
@@ -1958,7 +2006,7 @@
                                         Pointholding
                 
                                 </h2>
-                                <div class="title-line-h1 border-blue right-align wide"></div>
+                                <div class="title-line-h1 border-blue-mid right-align wide"></div>
                             </div>
         
                             <h2 class="h-wrap">
@@ -2002,7 +2050,7 @@
                                 <h2>
                                     Integration
                                 </h2>
-                                <div class="title-line-h1 border-blue right-align wide"></div>
+                                <div class="title-line-h1 border-blue-mid right-align wide"></div>
                             </div>
         
                             <h2 class="h-wrap">
@@ -2038,7 +2086,7 @@
                                 <h2>
                                     Nervous&nbsp;System
                                 </h2>
-                                <div class="title-line-h1 border-blue right-align wide"></div>
+                                <div class="title-line-h1 border-blue-mid right-align wide"></div>
                             </div>
         
                             <h2 class="h-wrap">
@@ -2073,7 +2121,7 @@
                                         Preperation
                  
                                 </h2>
-                                <div class="title-line-h1 border-blue right-align wide"></div>
+                                <div class="title-line-h1 border-blue-mid right-align wide"></div>
                             </div>
         
                             <h2 class="h-wrap">
@@ -2104,7 +2152,7 @@
                                 <h2>
                                     Integration
                                 </h2>
-                                <div class="title-line-h1 border-blue right-align wide"></div>
+                                <div class="title-line-h1 border-blue-mid right-align wide"></div>
                             </div>
         
                             <h2 class="h-wrap">
@@ -2151,7 +2199,7 @@
 
     <!--BIOS-->
 
-    <section class="main  one" style="gap: 2rem;">
+    <section class="main  one" style="gap: 2rem;" id="who">
 
         <div class="container bios">
 
@@ -2313,9 +2361,7 @@
 
             <div class="title-line-h1 wide">
 
-                <svg width="3rem" height="3rem" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="northstar-simple" d="M17 2.5L20.1155 11.973M17 2.5L13.8845 11.973M17 2.5V17.5M20.1155 11.973L24.5 10M20.1155 11.973L17 17.5M13.8845 11.973L9.5 10M13.8845 11.973L17 17.5M9.5 10L11.473 14.3845M9.5 10L17 17.5M11.473 14.3845L2 17.5M11.473 14.3845L17 17.5M2 17.5L11.473 20.6155M2 17.5H17M11.473 20.6155L9.5 25M11.473 20.6155L17 17.5M9.5 25L13.8845 23.027M9.5 25L17 17.5M13.8845 23.027L17 32.5M13.8845 23.027L17 17.5M17 32.5L20.1155 23.027M17 32.5V17.5M20.1155 23.027L24.5 25M20.1155 23.027L17 17.5M24.5 25L22.527 20.6155M24.5 25L17 17.5M22.527 20.6155L32 17.5M22.527 20.6155L17 17.5M32 17.5L22.527 14.3845M32 17.5H17M22.527 14.3845L24.5 10M22.527 14.3845L17 17.5M24.5 10L17 17.5" stroke="#0080FF"/>
-                </svg>
+                <img class="northstar-h1" src="northstar-blue-big-stroke.svg" alt="The North Star">
 
                 <h1><em>My&nbsp;Story</em></h1>
             </div>
@@ -2358,9 +2404,7 @@
 
             <div class="container" style="gap: 4rem; width: 100%;">
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                    <path d="M17 2L20.1155 11.473M17 2L13.8845 11.473M17 2V17M20.1155 11.473L24.5 9.5M20.1155 11.473L17 17M13.8845 11.473L9.5 9.5M13.8845 11.473L17 17M9.5 9.5L11.473 13.8845M9.5 9.5L17 17M11.473 13.8845L2 17M11.473 13.8845L17 17M2 17L11.473 20.1155M2 17H17M11.473 20.1155L9.5 24.5M11.473 20.1155L17 17M9.5 24.5L13.8845 22.527M9.5 24.5L17 17M13.8845 22.527L17 32M13.8845 22.527L17 17M17 32L20.1155 22.527M17 32V17M20.1155 22.527L24.5 24.5M20.1155 22.527L17 17M24.5 24.5L22.527 20.1155M24.5 24.5L17 17M22.527 20.1155L32 17M22.527 20.1155L17 17M32 17L22.527 13.8845M32 17H17M22.527 13.8845L24.5 9.5M22.527 13.8845L17 17M24.5 9.5L17 17" stroke="#0080FF"/>
-                </svg>
+                <img class="northstar-h1" src="northstar-blue-big-stroke.svg" alt="The North Star">
 
             </div>
 
@@ -2427,7 +2471,7 @@
 
             <div class="title-line-h1 wide">
               
-<h1><strong>Logistics</strong></h1>
+                <h1><strong>Logistics</strong></h1>
                 <div class="title-line-h1 right-align border-gold wide"></div>
 
         <!--  <img style="height: 3rem;" src="title-lars-king-pointholding-immersion.svg" alt="The 1-Day Pointholding Immersion"> -->
@@ -2440,7 +2484,7 @@
 
     <!--LOGISTICS-->
 
-    <section class="main one  modalities">
+    <section class="main one  modalities" id="logistics">
 
         <div class="modalities-columns">
 
@@ -2567,7 +2611,7 @@
 
     </section>
 
-    <!--BANNER + BUTTON-->
+    <!--BANNER + "BOOK NOW"-->
 
     <section class="main banner gold">
 
@@ -2575,23 +2619,7 @@
 
             <div class="title-line-h1 wide center-align">
                 <h1><strong>Book</strong>&nbsp;<em>Now</em></h1>
-                <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 59 60" fill="none">
-                    <path d="M29.5 57.5L35.2117 40.1328L29.5 30V57.5Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M39.6328 24.2882L43.25 16.25L29.5 30L39.6328 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M35.2117 19.8672L29.5 2.5V30L35.2117 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M23.7882 19.8672L15.75 16.25L29.5 30L23.7882 19.8672Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M19.3672 24.2882L2 30H29.5L19.3672 24.2882Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 30L39.6328 24.2882L57 30H29.5ZM29.5 30L39.6328 35.7117L43.25 43.75L29.5 30ZM29.5 30L23.7882 40.1328L15.75 43.75L29.5 30Z" fill="#0080FF" fill-opacity="0.2"/>
-                    <path d="M23.7882 40.1328L29.5 57.5V30L23.7882 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M35.2117 40.1328L43.25 43.75L29.5 30L35.2117 40.1328Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M39.6328 35.7117L57 30H29.5L39.6328 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M43.25 16.25L35.2117 19.8672L29.5 30L43.25 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M29.5 2.5L23.7882 19.8672L29.5 30V2.5Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M15.75 16.25L19.3672 24.2882L29.5 30L15.75 16.25Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M2 30L19.3672 35.7117L29.5 30H2Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M19.3672 35.7117L15.75 43.75L29.5 30L19.3672 35.7117Z" fill="#FAB837" fill-opacity="0.5"/>
-                    <path d="M29.5 2.5L35.2117 19.8672M29.5 2.5L23.7882 19.8672M29.5 2.5V30M35.2117 19.8672L43.25 16.25M35.2117 19.8672L29.5 30M23.7882 19.8672L15.75 16.25M23.7882 19.8672L29.5 30M15.75 16.25L19.3672 24.2882M15.75 16.25L29.5 30M19.3672 24.2882L2 30M19.3672 24.2882L29.5 30M2 30L19.3672 35.7117M2 30H29.5M19.3672 35.7117L15.75 43.75M19.3672 35.7117L29.5 30M15.75 43.75L23.7882 40.1328M15.75 43.75L29.5 30M23.7882 40.1328L29.5 57.5M23.7882 40.1328L29.5 30M29.5 57.5L35.2117 40.1328M29.5 57.5V30M35.2117 40.1328L43.25 43.75M35.2117 40.1328L29.5 30M43.25 43.75L39.6328 35.7117M43.25 43.75L29.5 30M39.6328 35.7117L57 30M39.6328 35.7117L29.5 30M57 30L39.6328 24.2882M57 30H29.5M39.6328 24.2882L43.25 16.25M39.6328 24.2882L29.5 30M43.25 16.25L29.5 30" stroke="#FAB837"/>
-                    </svg>
+                <img class="northstar-h1" src="northstar-gold.svg" alt="The North Star">
             </div>
 
         </div>
@@ -2600,7 +2628,7 @@
 
     <!--BOOK A CALL-->
 
-    <section style="background-blend-mode: screen;" class="main  one">
+    <section style="background-blend-mode: screen;" class="main  one" id="book">
 
         <div class="title-container banner wide blue" style="max-width: 900px;">
 
@@ -2610,9 +2638,7 @@
 
             <div class="title-line-h1 wide right-align">
                 <h1><em>Immersion</em></h1>
-                <svg width="3rem" height="3rem" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="northstar-simple" d="M17 2.5L20.1155 11.973M17 2.5L13.8845 11.973M17 2.5V17.5M20.1155 11.973L24.5 10M20.1155 11.973L17 17.5M13.8845 11.973L9.5 10M13.8845 11.973L17 17.5M9.5 10L11.473 14.3845M9.5 10L17 17.5M11.473 14.3845L2 17.5M11.473 14.3845L17 17.5M2 17.5L11.473 20.6155M2 17.5H17M11.473 20.6155L9.5 25M11.473 20.6155L17 17.5M9.5 25L13.8845 23.027M9.5 25L17 17.5M13.8845 23.027L17 32.5M13.8845 23.027L17 17.5M17 32.5L20.1155 23.027M17 32.5V17.5M20.1155 23.027L24.5 25M20.1155 23.027L17 17.5M24.5 25L22.527 20.6155M24.5 25L17 17.5M22.527 20.6155L32 17.5M22.527 20.6155L17 17.5M32 17.5L22.527 14.3845M32 17.5H17M22.527 14.3845L24.5 10M22.527 14.3845L17 17.5M24.5 10L17 17.5" stroke="#0080FF"/>
-                </svg>
+                <img class="northstar-h1" src="northstar-blue-big-stroke.svg" alt="The North Star">
             </div>
 
         </div>
