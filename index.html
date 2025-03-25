@@ -139,15 +139,30 @@
 
         h1.h-wrap {
             font-size: calc(4rem * .92);
+            line-height: 1.1;
         }
 
         h1.h-wrap > em {
             font-size: 4rem;
+            line-height: .8;
         }
+
+        h1.h-wrap > strong {
+            font-weight: 600;
+        }
+
+        h1.h-wrap > span > strong {
+            font-weight: 600;
+        }
+
 
         h2.and-a-half {
             font-size: 3.25rem;
             line-height: .69;
+        }
+
+        h2.and-half.h-wrap {
+            font-size: calc(3.25rem * .92);
         }
 
         h2 {
@@ -158,10 +173,12 @@
 
         h2.h-wrap {
             font-size: calc(2.25rem * .92);
+            line-height: 1.3;
         }
 
         h2.h-wrap > em {
             font-size: 2.25rem;
+            line-height: .8;
         }
 
         h3 {
@@ -190,6 +207,10 @@
 
         h4.h-wrap > em {
             font-size: 1.5rem;
+        }
+
+        h4.h-wrap > strong {
+            font-weight: 600;
         }
 
         h5 {
@@ -654,14 +675,17 @@
             gap: 1rem;
         }
 
+        div.title-container.hero {
+            gap: 0.1rem;
+        }
+
         div.title-container.banner {
             align-self: center;
         }
 
         div.title-container.subtitle-hero {
             gap: .75rem;
-            align-self: stretch;
-            width: 21.5rem;
+            align-items: end;
         }
         
         div.title-container.bigger-gap {
@@ -670,6 +694,8 @@
 
         div.subtitle-container-hero {
             display: flex;
+            flex-direction: column;
+            gap: 6.5rem;
             justify-content: space-between;
             align-items: center;
             align-self: stretch;
@@ -679,6 +705,7 @@
             display: flex;
             flex-direction: row;
             gap: 1rem;
+            align-items: center;
         }
 
         div.container-columns {
@@ -693,7 +720,7 @@
 
         div.container-columns.two {
             max-width: none;
-            justify-content: start;
+            justify-content: center;
             align-items: end;
             align-self: stretch;
             gap: 0rem;
@@ -727,7 +754,7 @@
         }
 
         div.alchemical {
-            display: flex;
+            display: none;
             justify-self: center;
         }
 
@@ -1147,16 +1174,6 @@
 
         @media only screen and (max-width: 750px) {
             
-            div.subtitle-container-hero {
-                flex-direction: column;
-                width: 100%;
-                gap: 6.5rem;
-            }
-
-            div.subtitle-hero.right {
-                align-self: flex-end;
-            }
-            
             div.container-columns {
                 flex-direction: column;
                 align-items: center;
@@ -1217,6 +1234,14 @@
             }
 
             h1 {
+                font-size: 3.5rem;
+            }
+
+            h1.h-wrap {
+                font-size: calc(3.5rem * .92);
+            }
+
+            h1.h-wrap > em {
                 font-size: 3.5rem;
             }
 
@@ -1292,12 +1317,24 @@
                 font-size: 3.25rem;
             }
 
+            h1.h-wrap {
+                font-size: calc(3.25rem * .92);
+            }
+
+            h1.h-wrap > em {
+                font-size: 3.25rem;
+            }
+
             h2.and-a-half {
                 font-size: 2.5rem;
             }
 
             h2 {
                 font-size: 2rem;
+            }
+
+            h2.h-wrap {
+                font-size: calc(2rem * .92);
             }
 
             h2.h-wrap > em {
@@ -1403,12 +1440,16 @@
                 font-size: 2.5rem;
             }
 
-            h2.and-a-half {
-                font-size: 2.15rem;
+            h1.h-wrap {
+                font-size: calc(2.5rem * .92);
             }
 
-            h2 {
-                font-size: 2rem;
+            h1.h-wrap > em {
+                font-size: 2.5rem;
+            }
+
+            h2.and-a-half {
+                font-size: 2.15rem;
             }
 
             img.alchemical {
@@ -1444,16 +1485,17 @@
     <!--HERO HERO-->
 
     <section class="gold hero">
+ 
+        <div class="title-container hero">
 
-        <div class="title-container">
-
-            <h1 style="font-weight: normal;">Welcome&nbsp;<span style="font-weight: 300;">to</span></h1>
-
-            <h1>the&nbsp;1&#8209;Day</h1>
-
-            <div class="title-line-h1 border-gold wide"><h1><strong>Pointholding</strong></h1></div>
-
-            <div class="title-line-h1 wide right-align">
+            <h1 class="h-wrap">
+                <span style="font-size: .5em;">
+                    Welcome&nbsp;to&nbsp;the
+                </span>
+                <br>
+                1&#8209;Day <strong style="font-weight: 600;">Pointholding</strong>
+            </h1>
+            <div class="title-line-h1">
                 <h1><em>Immersion</em></h1>
                 <img class="northstar-h1" src="northstar-gold.svg" alt="The North Star">
             </div>
@@ -1462,6 +1504,15 @@
 
         <div class="subtitle-container-hero">
 
+            <div class="title-container wide subtitle-hero">
+                <h4 class="subtitle"><strong>Austin,</strong>&nbsp;Texas&nbsp;|&nbsp;<strong>April 19,</strong>&nbsp;<em>2025</em></h4>
+            </div>
+
+            <div class="title-container wide subtitle-hero">
+                <h4 class="subtitle">Hosted&nbsp;By&nbsp;<em>Lars&nbsp;King</em></h4>
+                <h4 class="subtitle"><strong>&&nbsp;2&nbsp;Skilled&nbsp;Facilitators</strong></h4>
+            </div>
+            <!--
             <div class="title-container wide subtitle-hero">
                 <h4 class="subtitle"><strong>Austin</strong></h4>
                 <div class="title-line-h1 wide small-gap">
@@ -1484,7 +1535,7 @@
                 </div>
                 <h4 class="subtitle">&&nbsp;2&nbsp;Skilled&nbsp;Facilitators</h4>
             </div>
-
+            -->
         </div>
 
     </section>
@@ -1495,6 +1546,15 @@
     
         <div class="container wide">
             
+            <div class="title-container blue">
+
+                <h2 class="h-wrap" style="line-height: 1.2;">
+                    Restore the <strong class="five">Light, Power and Truth</strong> of <em>Your Authentic Nature</em>
+                </h2>
+
+            </div>
+
+            <!--
             <div class="title-container blue">
 
                 <h2>
@@ -1517,6 +1577,7 @@
                     <h2><em>Nature</em></h2>
                 </div>
             </div>
+            -->
 
             <p>
                 You are invited to join me and a team of skilled facilitators in an intimate 
@@ -1525,7 +1586,7 @@
             </p>
 
             <a class="button" href="#book">
-                Book <em>Now</em>
+                <em>Book Now</em>
             </a>
 
         </div>
@@ -1535,6 +1596,25 @@
 
     <section class="main remember one">
         
+        <div class="title-container blue" 
+            style="
+                max-width: 900px;
+                align-self: center;
+                width: 100%;
+                ">
+
+            <h2 class="h-wrap" style="line-height: 1.1;">
+
+                This&nbsp;<strong class="five">Immersion</strong> is&nbsp;Based&nbsp;On
+                <br>
+                <span style="font-size: 1.3em;">
+                    <em>3 Key Remembrances</em>
+                </span>
+            </h2>
+
+        </div>
+
+        <!--
         <div class="title-container bigger-gap blue" 
         style="
             max-width: 1000px;
@@ -1570,17 +1650,21 @@
                 </h2>
             </div>
         </div>
+        -->
 
         <div class="container wide">
             <div class="title-container blue">
-                <h3>
-                    <em>Remember</em>
+                <h3 class="h-wrap">
+                    <em>Remember</em> What Got Stuck
                 </h3>
 
+                <!--
                 <div class="title-line-h1 wide">
                     <div class="title-line-h1 border-blue-small right-align" style="width: 3rem;"></div>
                     <h3>What&nbsp;Got&nbsp;Stuck</h3>
                 </div>
+                -->
+
             </div>
 
             <p> 
@@ -1594,11 +1678,18 @@
         <div class="container wide">
             <div class="title-container blue">
                 
+                <h3 class="h-wrap">
+                    Re - <em>Member</em>
+                </h3>
+
+                <!--
                 <div class="title-line-h1 wide">
                     <h3>Re</h3>
                     <div class="title-line-h1 border-blue-small right-align" style="width: 3rem;"></div>
                     <h3><em>Member</em></h3>
                 </div>
+                -->
+
             </div>
 
             <p> 
@@ -1609,6 +1700,12 @@
 
         <div class="container wide">
             <div class="title-container blue">
+
+                <h3 class="h-wrap">
+                    <em>Remember Who You Are</em>
+                </h3>
+
+                <!--
                 <h3>
                     <em>Remember</em>
                 </h3>
@@ -1617,6 +1714,8 @@
                     <div class="title-line-h1 border-blue-small right-align" style="width: 4rem;"></div>
                     <h3><em>Who&nbsp;You&nbsp;Are</em></h3>
                 </div>
+                -->
+
             </div>
 
             <p> 
@@ -1630,6 +1729,19 @@
 
     <section class="main banner gold">
 
+        <div class="title-container banner hero">
+
+            <h1 class="h-wrap">
+                1&#8209;Day <strong style="font-weight: 600;">Pointholding</strong>
+            </h1>
+            <div class="title-line-h1">
+                <h1><em>Immersion</em></h1>
+                <img class="northstar-h1" src="northstar-gold.svg" alt="The North Star">
+            </div>
+
+        </div>
+
+        <!--
         <div class="title-container banner wide">
 
             <h1>The&nbsp;1-Day</h1>
@@ -1642,9 +1754,10 @@
             </div>
 
         </div>
+        -->
 
         <a class="button" href="#book">
-            Book <em>Now</em>
+            <em>Book Now</em>
         </a>
 
     </section>
@@ -1664,6 +1777,13 @@
 
                 <div class="community-copy" >
 
+                    <h3 class="h-wrap blue" style="line-height: 1.1;">
+                        Transformative
+                        <br>
+                        <em>Community & Support</em>
+                    </h3>
+
+                    <!--
                     <div class="title-container bigger-gap blue transformative-community">
 
                         <div class="title-line-h1 wide">
@@ -1692,7 +1812,8 @@
                         </div>
 
                     </div>
-                    
+                    -->
+
                     <p>
                         The Pointholding Immersion is more than just an immersion; it's an intimate 
                         community experience where each participant contributes to the healing of others. 
@@ -1716,6 +1837,13 @@
 
                 <div class="community-copy-two">
 
+                    <h3 class="h-wrap blue" style="line-height: 1.1;">
+                        An Embodied
+                        <br>
+                        <em>Alchemical Container</em>
+                    </h3>
+
+                    <!--
                     <div class="title-container bigger-gap blue" style="align-self: auto;">
 
                         <div class="title-line-h1 wide">
@@ -1733,6 +1861,7 @@
                         </div>
 
                     </div>
+                    -->
 
                     <p>
                         I've crafted an alchemical container that nurtures every aspect of your being—mental, 
@@ -1759,6 +1888,18 @@
 
     <section class="main banner gold">
 
+        <div class="title-container banner hero">
+
+            <h1 class="h-wrap">
+                <span style="font-size: .5em;">
+                    Is&nbsp;This&nbsp;<strong>Immersion</strong>
+                </span>
+                <br>
+                <em>Right For You?</em>
+        </div>
+
+        <!--
+
         <div class="title-container banner wide">
 
             <div class="title-line-h1 breaking-title" style="gap: 1rem;">
@@ -1772,8 +1913,9 @@
                     <h1><em>You?</em></h1>
                 </div>
             </div>
-
         </div>
+
+        -->
 
     </section>
 
@@ -1783,17 +1925,11 @@
 
         <div class="right-for-you">
 
-            <div class="title-container blue" style="gap: .5em;">
-
-                <div class="title-line-h1 wide">
-                    <h4>This&nbsp;<em>Immersion</em></h4>
-                    <div class="title-line-h1 border-blue-small wide"></div>
-                </div>
-
-                <div class="title-line-h1">
-                    <h4 class="h-wrap">Is Right For You If...</h4>
-                </div>
-            </div>
+            <h4 class="h-wrap blue">
+                This <strong>Immersion</strong>
+                <br>
+                Is Right For You If...
+            </h4>
 
             <ul>
                 <li>You seek lasting change and are open to new experiences.</li>
@@ -1808,17 +1944,11 @@
 
         <div class="right-for-you">
 
-            <div class="title-container blue" style="gap: .5em;">
-
-                <div class="title-line-h1 wide">
-                    <h4>This&nbsp;<em>Immersion</em></h4>
-                    <div class="title-line-h1 border-blue-small wide"></div>
-                </div>
-
-                <div class="title-line-h1">
-                    <h4 class="h-wrap">Might Not Be For You If...</h4>
-                </div>
-            </div>
+            <h4 class="h-wrap blue">
+                This <strong>Immersion</strong>
+                <br>
+                Might Not Be For You If...
+            </h4>
 
             <ul>
                 <li>You seek lasting change and are open to new experiences.</li>
@@ -1837,14 +1967,16 @@
 
     <section class="main banner gold">
 
-        <div class="title-container banner wide" style="max-width: 500px;">
+        <div class="title-container banner hero">
 
-            <h1>You <strong>Will</strong></h1>
-            
-            <div class="title-line-h1 wide">
-                <div class="title-line-h1 border-gold right-align wide">
-                    <h1><em>Recieve</em></h1>
-                </div>
+            <h1 class="h-wrap">
+                <span style="font-size: .5em;">
+                    You&nbsp;will
+                </span>
+            </h1>
+            <div class="title-line-h1">
+                <h1><em>Receive</em></h1>
+                <img class="northstar-h1" src="northstar-gold.svg" alt="The North Star">
             </div>
 
         </div>
@@ -1876,7 +2008,7 @@
 
             <div class="testimonials-column">
 
-                <div class="testimonial">
+                <div class="testimonial" id="Justin">
 
                     <div class="quote">
                         <h5 class="h-wrap blue">“I feel totally transformed at the core of my being...”</h5>
@@ -1904,7 +2036,7 @@
 
             <div class="testimonials-column">
 
-                <div class="testimonial">
+                <div class="testimonial" id="Meghan">
 
                     <div class="quote">
                         <h5 class="h-wrap blue">“I am much more grounded in my body and heart....”</h5>
@@ -1936,20 +2068,20 @@
 
             <div class="testimonials-column">
 
-                <div class="testimonial">
+                <div class="testimonial" id="Hasmig">
 
                     <div class="quote">
                         <h5 class="h-wrap blue">
-                            “This was the most transformational and powerful form of healing...”
+                            “This was the most transformational and powerful form of healing I have ever experienced.”
                         </h5>
                     </div>
 
                     <div class="author">
                         <div class="title-line-h1 wide">
                             <div class="title-line-h1 border-blue-small right-align wide"></div>
-                            <h6><em>Meghan&nbsp;MacDonald</em></h6>
+                            <h6><em>Hasmig&nbsp;Annoush</em></h6>
                         </div>
-                        <p class="author">Co-Founder, Conscious Lifestyle Magazine</p>
+                        <p class="author">Founder, Hasmig Annoush Jewelry</p>
                     </div>
 
                 </div>
@@ -1984,14 +2116,8 @@
 
     <section class="main banner gold" id="modalities">
 
-        <div class="title-container banner wide" style="max-width: 900px;">
-            
-            <div class="title-line-h1 wide">
-                <div class="title-line-h1 border-gold center-align wide">
-                    <h1><em>Modalities</em></h1>
-                </div>
-            </div>
-
+        <div class="title-container banner hero">
+            <h1><em>Modalities</em></h1>
         </div>
 
     </section>
@@ -2016,7 +2142,7 @@
                     <h5 class="h-wrap text-right">Nervous System Relaxation + Balancing Techniques</h5>
                 </a>
 
-                <a class="modalities" href="#preperation-call">
+                <a class="modalities" href="#preparation-call">
                     <h5 class="h-wrap text-right">Preparation Call</h5>
                 </a>
 
@@ -2030,22 +2156,14 @@
                 <div class="modality" id="pointholding">
                     <div class="modality-title">
 
-                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
-
-                            <div class="title-line-h1 wide">
-                                <h2>
-             
-                                        Pointholding
-                
-                                </h2>
-                                <div class="title-line-h1 border-blue-mid right-align wide"></div>
-                            </div>
+                        <h2 class="h-wrap">
         
-                            <h2 class="h-wrap">
-                                <em>The Heart of the Immersion</em>
-                            </h2>
-                        </div>
-                    
+                            Pointholding
+                            <br>
+                            <em>The Heart of the Immersion</em>
+        
+                        </h2>
+
                     </div>
 
                     <div class="modality-copy">
@@ -2076,20 +2194,13 @@
                 <div class="modality" id="integration-mini">
                     <div class="modality-title">
 
-                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
-
-                            <div class="title-line-h1 wide">
-                                <h2>
-                                    Integration
-                                </h2>
-                                <div class="title-line-h1 border-blue-mid right-align wide"></div>
-                            </div>
+                        <h2 class="h-wrap">
         
-                            <h2 class="h-wrap">
-                                <em>Mini-<span style="word-break: break-all;">Constellation</span></em>
-                            </h2>
-
-                        </div>
+                            Integration
+                            <br>
+                            <em>Mini-Constellation</em>
+        
+                        </h2>
 
                         <h6 class="h-wrap blue">From the <strong class="five">Family Constellations</strong> Method</h6>  
 
@@ -2097,7 +2208,7 @@
 
                     <div class="modality-copy">
 
-                        <h5 class="h-wrap blue">“A cosmic, interactive game that makes uncovering the truth fun...”</h5>
+                        <h5 class="h-wrap blue">“A cosmic, interactive modality that makes uncovering the truth fun...”</h5>
                         <p class="modalities">
                             Family Constellations is a fascinating and fun way to discover what's hidden in your subconscious 
                             mind. With this modality, you can release family and ancestral burdens, and also receive personalized 
@@ -2112,20 +2223,13 @@
                 <div class="modality" id="nervous-system">
                     <div class="modality-title">
 
-                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
-
-                            <div class="title-line-h1 wide">
-                                <h2>
-                                    Nervous&nbsp;System
-                                </h2>
-                                <div class="title-line-h1 border-blue-mid right-align wide"></div>
-                            </div>
+                        <h2 class="h-wrap">
         
-                            <h2 class="h-wrap">
-                                <em>Relaxation + Balancing Techniques</em>
-                            </h2>
-
-                        </div>
+                            Nerveous System
+                            <br>
+                            <em>Relaxation + Balancing Techniques</em>
+        
+                        </h2>
 
                     </div>
 
@@ -2142,25 +2246,16 @@
                     </div>
                 </div> 
 
-                <div class="modality" id="preperation-call">
+                <div class="modality" id="preparation-call">
                     <div class="modality-title">
 
-                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
-
-                            <div class="title-line-h1 wide">
-                                <h2>
-                         
-                                        Preperation
-                 
-                                </h2>
-                                <div class="title-line-h1 border-blue-mid right-align wide"></div>
-                            </div>
+                        <h2 class="h-wrap">
         
-                            <h2 class="h-wrap">
-                                <em>Call</em>
-                            </h2>
-
-                        </div>
+                            preparation
+                            <br>
+                            <em>Call</em>
+        
+                        </h2>
 
                     </div>
 
@@ -2178,20 +2273,13 @@
                 <div class="modality" id="integration-call">
                     <div class="modality-title">
 
-                        <div class="title-container blue" style="align-self: auto; gap: .75rem;">
-
-                            <div class="title-line-h1 wide">
-                                <h2>
-                                    Integration
-                                </h2>
-                                <div class="title-line-h1 border-blue-mid right-align wide"></div>
-                            </div>
+                        <h2 class="h-wrap">
         
-                            <h2 class="h-wrap">
-                                <em>Call</em>
-                            </h2>
-
-                        </div>
+                            Integration
+                            <br>
+                            <em>Call</em>
+        
+                        </h2>
 
                     </div>
 
@@ -2216,14 +2304,11 @@
 
     <section class="main banner gold" id="who">
 
-        <div class="title-container banner wide" style="max-width: 600px;">
-            
-            <div class="title-line-h1 wide">
-                <h1>Who&nbsp;<strong>We</strong></h1>
-                <div class="title-line-h1 border-gold right-align wide">
-                    <h1><em>Are</em></h1>
-                </div>
-            </div>
+        <div class="title-container banner hero">
+
+            <h1 class="h-wrap">
+                <em>Who We Are</em>
+            </h1>
 
         </div>
 
@@ -2233,7 +2318,7 @@
 
     <section class="main  one" style="gap: 2rem;">
 
-        <div class="container bios">
+        <div class="container bios" id="Lars">
 
             <div class="picture-frame">
                 <div class="picture-border">
@@ -2284,7 +2369,7 @@
 
         </div>
 
-        <div class="container bios-reverse">
+        <div class="container bios-reverse" id="Hannah">
 
             <div class="bios-copy">
 
@@ -2336,7 +2421,7 @@
 
         </div>
 
-        <div class="container bios">
+        <div class="container bios" id="Darci">
 
             <div class="picture-frame">
                 <div class="picture-border">
@@ -2383,41 +2468,85 @@
 
         </div>
 
+        <div class="container bios-reverse" id="Cee">
+
+            <div class="bios-copy">
+
+                <div class="bios-title">
+
+                    <div class="title-container blue" style="align-self: auto; gap: .75rem;">
+
+                        <div class="title-line-h1 wide">
+                            <h2><em>Cee&nbsp;Johnson</em></h2>
+                            <div class="title-line-h1 border-blue right-align wide"></div>
+                        </div>
+
+                    </div>
+
+                    <h6 class="h-wrap blue"><strong class="five">Facilitator</strong></h6>  
+
+                </div>
+
+                <p>
+                    Cee is a bodyworker with 30+ years of experience who offers sessions to clear energetic 
+                    channels and reconnect individuals to their life force. 
+                    <br>
+                    <br>
+                    His work supports deep healing, inner peace, and full-body vitality.
+                </p>
+
+                <h6 style="display: none;" class="h-wrap blue">
+                    <strong class="five">
+                        Learn More About Hannah's Work Here:
+                        <br>
+                        <a class="bio-link" href="www.flowwellnessatx.com">
+                            www.flowwellnessatx.com
+                        </a>
+                    </strong>
+                </h6>
+
+            </div>
+
+            <div class="picture-frame">
+                <div class="picture-border">
+                    <img style="object-fit: contain;" class="frame" src="cee-johnson-pointholding-immersion-flow-wellness-austin.png" alt="A smilling Cee Johnson"> 
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
     <!--MY STORY WITH POINTHOLDING-->
 
     <section class="main subtitle story">
 
-        <div class="title-container bigger-gap wide blue" style="max-width: 1200px;">
+        <div class="container blue" style="gap: 0rem; width: 100%;">
 
-            <div class="title-line-h1 wide">
-
+            <div class="title-line-h1">
+                <h1 style="line-height: 1.2;"><em>My&nbsp;Story</em></h1>
                 <img class="northstar-h1" src="northstar-blue-big-stroke.svg" alt="The North Star">
-
-                <h1><em>My&nbsp;Story</em></h1>
             </div>
 
-            <div class="title-line-h1 bigger-gap breaking-title wide" style="gap: 1rem;">
-                <div class="title-line-h1 wide">
-                    <h1>With</h1>
-                    <div class="title-line-h1 border-blue right-align wide"></div>
-                </div>
-                <!-- <h1 style="margin-left: -0.4em;"><strong>Pointholding</strong></h1> -->
-                <h1><strong>Pointholding</strong></h1>
-            </div>
+            <h1 class="h-wrap">
+                With <strong style="font-weight: 600;">Pointholding</strong>
+            </h1>
+
+
+
 
         </div>
 
-
         <div class="story">
             <div class="container">
+
                 <h5 class="h-wrap blue">
                     <strong class="five">
                         My first pointholding session was just weeks after my mom passed away, 
                         and it supported me beyond what I knew was possible....
                     </strong>
                 </h5>
+
                 <p>
                     After my first experience, I knew that I needed to immerse myself in this. I've traveled all around the world 
                     finding the modalities that resonate the most and achieve consistent, life changing results. 
@@ -2432,30 +2561,13 @@
                     <br>
                     I have taken myself through everything I am offering here to you, and it is the absolute best I can give.
                 </p>
+
             </div>
 
             <div class="container" style="gap: 4rem; width: 100%;">
 
                 <img class="northstar-h1" src="northstar-blue-big-stroke.svg" alt="The North Star">
-
-            </div>
-
-            <div class="container desktop-only" style="gap: 4rem; max-width: 1200px; width: 100%; padding-left: 6.5rem;">
-
-                <h5 class="h-wrap blue">
-
-                        <strong class="five">
-                        I would love to invite you
-                        <br>
-                        into this intimate space...
-                      </strong>
-
-                </h5>
-
-            </div>
-
-            <div class="container mobile-only story-end">
-
+                
                 <h5 class="h-wrap blue">
 
                         <strong class="five">
@@ -2466,7 +2578,7 @@
 
                 </h5>
 
-                <h4 class="h-wrap blue" style="align-self: flex-end; text-align: right;">
+                <h4 class="h-wrap blue">
 
                     <em>Remembrance & Rebirth;</em>
                     <br>
@@ -2477,18 +2589,12 @@
 
             </div>
 
+            <div class="container story-end">
 
-            <div class="container wide desktop-only" style="align-self: start; max-width: none;">
-                <h3 class="blue">
-                    <em>
-                        ...Of&nbsp;Remembrance&nbsp;&&nbsp;REBIRTH;
-                    </em>
-                </h3>
-                <div class="title-line-h1 right-align blue wide">
-                    <div class="title-line-h1 border-blue-small wide"></div>
-                    <h3>You&nbsp;Will&nbsp;Never&nbsp;Be&nbsp;The&nbsp;Same.</h3>
-                </div>
+                
+
             </div>
+
         </div>
 
     </section>
@@ -2498,16 +2604,12 @@
     <section class="main banner gold" id="logistics">
 
 
-        <div class="title-container banner wide">
+        <div class="title-container banner hero">
 
-            <div class="title-line-h1 wide">
-              
-                <h1><strong>Logistics</strong></h1>
-                <div class="title-line-h1 right-align border-gold wide"></div>
+            <h1 class="h-wrap">
+                <em>Logistics</em>
+            </h1>
 
-        <!--  <img style="height: 3rem;" src="title-lars-king-pointholding-immersion.svg" alt="The 1-Day Pointholding Immersion"> -->
-
-            </div>
         </div>
 
 
@@ -2597,12 +2699,10 @@
                             Fresh and Healthy Meals
                         </h5>
                         <p class="modalities">
-                            Family Constellations is a fascinating and fun way to discover what's hidden in your subconscious 
-                            mind. With this modality, you can release family and ancestral burdens, and also receive personalized 
-                            wisdom and guidance that is intricately tailored to you. I will facilitate an integration 
-                            “mini-constellation” a new style of the work I've developed, where you will receive guidance that 
-                            supports you to discover the specific energy that life is encouraging you to claim. You'll walk away 
-                            clear, confident, and in awe of how accurate this was!
+                            Enjoy organic meals designed to nourish and support your transformation. 
+                            Prepared with love and care, each dish is made using fresh, high-quality 
+                            ingredients to accommodate dietary needs. Tea and organic snacks will also 
+                            be available throughout your stay.
                         </p>
                     </div>
                 </div> 
@@ -2629,9 +2729,13 @@
                             More Accessible Than Ever
                         </h5>
                         <p class="modalities">
-                            This transformative retreat was originally offered at $3500. To make this powerful experience 
-                            more accessible to people's schedules and budgets, I've condensed it into a single day while 
-                            maintaining its core value and integration focus.
+                            I used to run longer pointholding retreats at $3500, and while it was very much worth 
+                            the investment for attendees, I wanted to make the experience more accessible and a 
+                            simpler fit into people's schedules (while also keeping it as valuable and integration 
+                            focused as I could). That's why I shortened it to one full Saturday, where attendees can 
+                            have a self-guided integration day on Sunday. The investment is about 1/4 of what it 
+                            used to be, with more facilitators (3 facilitators for 6 attendees), more preparation 
+                            support, and generous payment plans if necessary.
                         </p>
                     </div>
                 </div> 
@@ -2646,15 +2750,14 @@
 
     <section class="main banner gold" id="book">
 
-        <div class="title-container banner wide">
+        <div class="title-container banner hero">
 
-            <div class="title-line-h1 wide center-align">
-                <h1><strong>Book</strong>&nbsp;<em>Now</em></h1>
+            <div class="title-line-h1">
+                <h1><em>Book Now</em></h1>
                 <img class="northstar-h1" src="northstar-gold.svg" alt="The North Star">
             </div>
 
         </div>
-
     </section>
 
     <!--BOOK A CALL-->
@@ -2663,13 +2766,16 @@
 
         <div class="title-container banner wide blue" style="max-width: 900px;">
 
-            <h1>The&nbsp;1-Day</h1>
+            <div class="title-container banner hero">
 
-            <div class="title-line-h1 border-blue wide"><h1><strong>Pointholding</strong></h1></div>
-
-            <div class="title-line-h1 wide right-align">
-                <h1><em>Immersion</em></h1>
-                <img class="northstar-h1" src="northstar-blue-big-stroke.svg" alt="The North Star">
+                <h1 class="h-wrap">
+                    1&#8209;Day <strong style="font-weight: 600;">Pointholding</strong>
+                </h1>
+                <div class="title-line-h1">
+                    <h1><em>Immersion</em></h1>
+                    <img class="northstar-h1" src="northstar-blue-big-stroke.svg" alt="The North Star">
+                </div>
+    
             </div>
 
         </div>
@@ -2692,7 +2798,7 @@
             </p>
 
             <a class="button book" href="https://www.calendly.com/larsking/immersion" target="_blank">
-                Book <em>Now</em>
+                <em>Book A Call</em>
             </a>
         
         </div>
