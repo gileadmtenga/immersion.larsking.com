@@ -280,7 +280,7 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background-image: url(67de3a618e3d64acab6af419_background-lars-king-immersion-steve-petty-QM7V795AvEM-unsplash.avif);
+            background-image: url(steve-petty-QM7V795AvEM-unsplash\ 2.png);
             background-size: cover;
             z-index: -999; /* Ensures it stays in the background */
         }
@@ -294,9 +294,9 @@
             height: 100%;
             background: url(grain-slow-240px-50OPA.gif) repeat;
             background-size: 120px 90px;
-            opacity: 0.025;
+            opacity: 0.035;
             pointer-events: none;
-            mix-blend-mode: saturation; 
+            mix-blend-mode: luminosity; 
             z-index: -9;
         }
 
@@ -384,7 +384,7 @@
             height: 100%;
             background: url(grain-slow-240px-50OPA.gif) repeat;
             background-size: 120px 90px;
-            opacity: 0.03; /* Adjust for transparency */
+            opacity: 0.01; /* Adjust for transparency */
             pointer-events: none; /* Ensures it doesn't block interactions */
             mix-blend-mode: lighten; /* Adjust blend mode for effect */
             z-index: 99; /* Places it over other layers */
@@ -585,7 +585,7 @@
 
         section.banner {
             gap: 8rem;
-            background: linear-gradient(180deg, rgba(0, 128, 255, 0.00) 0%, rgba(0, 128, 255, 0.50) 50%, rgba(0, 128, 255, 0.00) 100%);
+            background: linear-gradient(180deg, rgba(0, 128, 255, 0.75) 0%, rgba(0, 128, 255, 0.75) 100%);
             box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.09) inset;
             padding: 8rem;
         }
@@ -687,6 +687,8 @@
             gap: .75rem;
             align-items: end;
             align-self: flex-end;
+            align-items: start;
+            align-self: flex-start;
         }
         
         div.title-container.bigger-gap {
@@ -699,6 +701,9 @@
             justify-content: space-between;
             align-items: end;
             align-self: stretch;
+            flex-direction: column;
+            gap: 4rem;
+            align-self: flex-start;
         }
 
         div.title-line-h1 {
@@ -1169,7 +1174,6 @@
             ul.two {
                 font-size: 1.3rem;
             }
-
         }
 
         @media only screen and (max-width: 750px) {
@@ -1403,7 +1407,6 @@
             section.hero {
                 padding: 6rem 10vw;
                 height: auto;
-                gap: 8rem;
             }
 
             section.main {
@@ -1494,7 +1497,7 @@
 
     <!--HERO HERO-->
 
-    <section class="gold hero">
+    <section class="blue hero">
  
         <div class="title-container hero">
 
@@ -1507,7 +1510,7 @@
             </h1>
             <div class="title-line-h1">
                 <h1><em>Immersion</em></h1>
-                <img class="northstar-h1" src="northstar-gold.svg" alt="The North Star">
+                <img class="northstar-h1" src="northstar-blue-big-stroke.svg" alt="The North Star">
             </div>
 
         </div>
@@ -1547,6 +1550,8 @@
             </div>
             -->
         </div>
+
+        <img class="northstar-h1" style="align-self: start; justify-self: start;" src="northstar-blue-big-stroke.svg" alt="The North Star">        
 
     </section>
 
