@@ -551,6 +551,7 @@
             height: 100vh;
             min-height: 400px;
             justify-content: space-between;
+            gap: 6.5rem;
         }
 
         section.main {
@@ -1183,6 +1184,17 @@
                 align-items: center;
             }
 
+            div.bg {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-image: url(MOBILE-steve-petty-QM7V795AvEM-unsplash\ 2.png);
+                background-size: cover;
+                z-index: -999; /* Ensures it stays in the background */
+            }
+
             div.community-copy-two {
                 align-items: stretch;
             }
@@ -1407,6 +1419,7 @@
             section.hero {
                 padding: 6rem 10vw;
                 height: auto;
+                min-height: 80vh;
             }
 
             section.main {
