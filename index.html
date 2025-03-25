@@ -686,6 +686,7 @@
         div.title-container.subtitle-hero {
             gap: .75rem;
             align-items: end;
+            align-self: flex-end;
         }
         
         div.title-container.bigger-gap {
@@ -694,10 +695,9 @@
 
         div.subtitle-container-hero {
             display: flex;
-            flex-direction: column;
-            gap: 6.5rem;
+
             justify-content: space-between;
-            align-items: center;
+            align-items: end;
             align-self: stretch;
         }
 
@@ -1359,6 +1359,17 @@
 
         }
 
+        @media only screen and (max-width: 850px) {
+            div.subtitle-container-hero {
+                display: flex;
+                flex-direction: column;
+                gap: 6.5rem;
+                justify-content: end;
+                align-items: center;
+                align-self: stretch;
+            }
+        }  
+
         @media only screen and (max-width: 499px) {
             
             :root {
@@ -1503,11 +1514,11 @@
 
         <div class="subtitle-container-hero">
 
-            <div class="title-container wide subtitle-hero" style="max-width: none;">
+            <div class="title-container subtitle-hero" style="max-width: none;">
                 <h4 class="subtitle"><strong>Austin,</strong>&nbsp;Texas&nbsp;|&nbsp;<strong>April 19,</strong>&nbsp;<em>2025</em></h4>
             </div>
 
-            <div class="title-container wide subtitle-hero" style="max-width: none;">
+            <div class="title-container subtitle-hero" style="max-width: none;">
                 <h4 class="subtitle">Hosted&nbsp;By&nbsp;<em>Lars&nbsp;King</em></h4>
                 <h4 class="subtitle"><strong>&&nbsp;2&nbsp;Skilled&nbsp;Facilitators</strong></h4>
             </div>
