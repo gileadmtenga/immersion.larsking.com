@@ -294,7 +294,7 @@
             height: 100%;
             background: url(grain-slow-240px-50OPA.gif) repeat;
             background-size: 120px 90px;
-            opacity: 0.035;
+            opacity: 0.01;
             pointer-events: none;
             mix-blend-mode: luminosity; 
             z-index: -9;
@@ -372,7 +372,7 @@
             height: 100%;
             background: url(grain-slow-240px-50OPA.gif) repeat;
             background-size: 120px 90px;
-            opacity: 0.5; /* Adjust for transparency */
+            opacity: 0.05; /* Adjust for transparency */
             pointer-events: none; /* Ensures it doesn't block interactions */
             mix-blend-mode: lighten; /* Adjust blend mode for effect */
             z-index: -9; /* Places it over other layers */
@@ -1203,6 +1203,12 @@
                 align-items: stretch;
             }
 
+
+            img.community {
+                max-width: none;
+                max-height: 100%;
+            }
+
             div.container-columns.two {
                 padding: 1rem 6.5rem 0rem;
                 align-items: center;
@@ -1273,6 +1279,17 @@
                 gap: 4rem;
             }
 
+            div.picture-wrapper {
+                display: flex;
+                width: 90vw;
+                height: 90vw;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 0rem;
+                max-width: 600px;
+            }
+
         }
 
         @media only screen and (max-width: 595px) {
@@ -1315,11 +1332,6 @@
 
             div.container-columns.two {
                 padding: 1rem 4rem 0rem;
-            }
-
-            img.community {
-                max-width: none;
-                max-height: 130%;
             }
 
             img.northstar-h1 {
@@ -1379,8 +1391,8 @@
 
             div.picture-wrapper {
                 display: flex;
-                width: 30rem;
-                height: 20rem;
+                width: 90vw;
+                height: 90vw;
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: center;
